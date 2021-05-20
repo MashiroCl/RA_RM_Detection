@@ -1,0 +1,395 @@
+commit f3999dcb3170617dda1ef3915c8ae0d8040f83a4
+Merge: c03f72b a26b807
+Author: Ferran Garriga <zegnus@gmail.com>
+Date:   Sat Jun 15 19:35:50 2019 +0100
+
+    Merge pull request #54 from novoda/mvi_sample
+    
+    Example implementation of the model view intent pattern
+
+commit c03f72bc1944a9b8a502cec9f41f355483922d43
+Merge: e74bf78 cbc77b7
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Jan 22 10:35:33 2019 +0000
+
+    Merge pull request #52 from novoda/switch_api_to_kotlin
+    
+    Switch api to kotlin
+
+commit e74bf782a9d1e10f44568ed4e39ada3d0d60f67d
+Merge: ec6d69e 275bea6
+Author: Jonathan Taylor <jgtaylor123@users.noreply.github.com>
+Date:   Thu Dec 13 16:42:14 2018 +0000
+
+    Merge pull request #51 from novoda/updating_dependencies
+    
+    updating some dependencies
+
+commit ec6d69e655a337c72f707f7ec6a5eff741cd9ff2
+Merge: 50daf34 597b0e9
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Oct 23 12:17:34 2018 +0100
+
+    Merge pull request #50 from novoda/add_repository_for_test
+    
+    Add repository for test
+
+commit 50daf341b0aac92624246debc0fdb93425a4f39f
+Merge: a17dbf2 61957e4
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Fri Oct 19 11:10:22 2018 +0100
+
+    Merge pull request #48 from novoda/add_rule_for_mockserver
+    
+    Add rule for mockserver
+
+commit a17dbf2b364f77508dbdbbed9489a0c7a8b8a3ee
+Merge: f181d61 282dc09
+Author: Sven Kroell <thywen@users.noreply.github.com>
+Date:   Fri Sep 28 15:23:54 2018 +0200
+
+    Merge pull request #46 from novoda/page-object-chaining
+    
+    Add user flows to test automation starter
+
+commit f181d613f495ee8c69e0c5fb7c7387394cb312b2
+Merge: e5c0687 c8504f0
+Author: Daniele Conti <fourlastor@users.noreply.github.com>
+Date:   Tue Jul 24 09:30:55 2018 +0100
+
+    Merge pull request #45 from novoda/remove-header-tests
+    
+    Removed redundant tests
+
+commit e5c06872d8141a051d0c81243a05b71e4a44f8c5
+Merge: 5e25d5a b226bb6
+Author: Jonathan Taylor <jgtaylor123@users.noreply.github.com>
+Date:   Wed Jul 11 10:58:29 2018 +0100
+
+    Merge pull request #44 from novoda/test_automation_starter
+    
+    Test automation starter
+
+commit 8ca5f8df5f574c843fd08e04cfeda8bd779c82d5
+Merge: cd67348 26dfdf9
+Author: Ryan Feline <ryan.feline@novoda.com>
+Date:   Wed Jan 24 11:35:18 2018 +0000
+
+    Merge pull request #39 from novoda/fix_snowy_wallpaper_readme
+    
+    Fix Snowy Village wallpaper readme
+
+commit cd67348b994318a42e76b4b1cfe88c5ad41d6107
+Merge: bb65a90 33bc10c
+Author: Sebastiano Poggi <rock3r@users.noreply.github.com>
+Date:   Thu Nov 30 14:08:19 2017 +0000
+
+    Merge pull request #38 from novoda/remove-spritz
+    
+    Remove Spritz from android-demos
+
+commit 81ed1ed76953ccf269782bdf3e3f2740ea1bc21c
+Merge: 2dc04e1 84f1c59
+Author: Sebastiano Poggi <rock3r@users.noreply.github.com>
+Date:   Thu Nov 16 17:41:41 2017 +0000
+
+    Merge pull request #37 from novoda/add-link
+    
+    [Spritz] Add credits and link to blog post
+
+commit 2dc04e10a4a82a54c3b974d33ae7674844cabd0e
+Merge: be77bc1 506feec
+Author: Sebastiano Poggi <rock3r@users.noreply.github.com>
+Date:   Thu Nov 16 11:44:42 2017 +0000
+
+    Merge pull request #36 from novoda/new-animation
+    
+    [Spritz] Add new animation, update Gradle and README
+
+commit be77bc1307869d18d45d6e57dea894d575ca35fe
+Merge: b91c782 ba041d3
+Author: Rui Teixeira <takecare@users.noreply.github.com>
+Date:   Thu Oct 5 16:23:16 2017 +0100
+
+    Merge pull request #35 from novoda/pixel-perf
+    
+    [spritz] Extract logic into collaborators, simplify swipe handling
+
+commit b91c7826367de5700ef84c0eb2e7f60012293084
+Merge: 76881fc 74a2745
+Author: Adam Brown <adampsbrown@googlemail.com>
+Date:   Tue Sep 26 10:01:07 2017 -0700
+
+    Merge pull request #34 from novoda/release/spritz/0.0.1-really
+    
+    Spritz: set project version properly
+
+commit 76881fcd413279aeb7e368583fcd46001472442f
+Merge: 0404907 5eb726b
+Author: Adam Brown <adampsbrown@googlemail.com>
+Date:   Tue Sep 26 09:40:09 2017 -0700
+
+    Merge pull request #33 from novoda/release/spritz/0.0.1
+    
+    Spritz: prepare for release
+
+commit 0404907f7f63eef94293c59e75c7d2e37715ed73
+Merge: 7d9e5c2 6062a0f
+Author: Antonio Bertucci <archano@gmail.com>
+Date:   Tue Sep 26 17:32:02 2017 +0200
+
+    Merge pull request #32 from novoda/spritz
+    
+    Add spritz library and demo
+
+commit 7d9e5c23e7a4604e2e6e955e2ca0adc96391ac61
+Merge: ce00836 9153393
+Author: Ryan Feline <ryan.feline@novoda.com>
+Date:   Fri Jul 14 08:50:52 2017 +0100
+
+    Merge pull request #31 from novoda/clean-up-persistence-tdd-demo
+    
+    TDDPersistence Sample TODO app / Clean up: remove unused, fix package names
+
+commit ce008367da66239503f950975a34f6aec3e1eaa4
+Merge: fc10d38 a6429fe
+Author: Daniele <dany.bony@gmail.com>
+Date:   Thu Jun 29 14:44:57 2017 +0200
+
+    Merge pull request #30 from novoda/move_snow_village_wallpaper
+    
+    Move snow village live wallpaper to demos
+
+commit fc10d3829037b2950ce6ab8368bcdeb35d94b9ff
+Merge: 36f4f29 3c9606e
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Mon Jun 26 12:07:03 2017 +0100
+
+    Merge pull request #29 from bryant1410/master
+    
+    Fix broken headings in Markdown files
+
+commit 36f4f29458fc01db90930defd8c808109aa4135a
+Merge: ac07b1a a88d47c
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Thu Mar 2 08:49:13 2017 +0000
+
+    Merge pull request #28 from novoda/effective_java
+    
+    Effective java
+
+commit 591de4a1c76cde87a40c0121c683eb6f20f1d76a
+Merge: 9e485c8 446a3b2
+Author: Said Tahsin Dane <tasomaniac@gmail.com>
+Date:   Thu Jan 19 08:43:11 2017 +0100
+
+    Merge pull request #27 from novoda/syntax-highlighting
+    
+    Turn on syntax highlighting by specifying `java`
+
+commit 9e485c866e1fac644105b2043c1d9cc3a8bf1868
+Merge: 563ab8d 3da83b8
+Author: Tobias Heine <t.heine84@gmail.com>
+Date:   Wed Jan 18 08:37:01 2017 +0100
+
+    Merge pull request #26 from novoda/recipe_native_ads_express
+    
+    Recipe / Add Native Ads Express
+
+commit 7340b84502bd1f3373f2d7d25abc93060d08fff8
+Merge: 6b55290 f10d864
+Author: Said Tahsin Dane <tasomaniac@gmail.com>
+Date:   Tue Jan 10 18:39:31 2017 +0100
+
+    Merge pull request #25 from novoda/PT-275/Recipe_to_change_locale_for_tests
+    
+    PT-275: Recipe about how to change the Device locale for instrumentation tests
+
+commit 6b55290ce95feba0f65352aec533ca9dbac97369
+Merge: 6109f9b 964a805
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Thu Dec 22 09:50:49 2016 +0100
+
+    Merge pull request #24 from novoda/wear_config
+    
+    Wear configuration demo
+
+commit 6109f9b4394f306771382c52faf3422b3e390df1
+Merge: a161b59 b82e416
+Author: Florian Mierzejewski <florian.pub@gmail.com>
+Date:   Fri Aug 5 12:38:39 2016 +0200
+
+    Merge pull request #23 from novoda/add_chips_demo
+    
+    Add chips demo
+
+commit d1001ebb59513a1def614ab7ac898d180b7b7270
+Merge: 9cb3bf2 febee02
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Fri May 6 10:40:07 2016 +0100
+
+    Merge pull request #22 from novoda/automation-sandbox
+    
+    Automation sandbox
+
+commit 783808ff0b62fa74d5ea3a2342ccc3242b8c6761
+Merge: 3a7db81 fd55298
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Fri Jul 3 23:43:03 2015 +0100
+
+    Merge pull request #17 from novoda/chore/delete_tabhostactivity_demos
+    
+    Chore/Delete tabhostactivity demos
+
+commit fd5529846c99e81b424b18a4eed4b03a6d32d294
+Merge: 514524f 3a7db81
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Fri Jul 3 20:17:47 2015 +0200
+
+    Merge branch 'master' into chore/delete_tabhostactivity_demos
+    
+    Conflicts:
+            README.md
+
+commit 3a7db814a4dc78ee9272d2081bd8723489bb8e9d
+Merge: 436c618 87641e5
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Fri Jul 3 17:22:58 2015 +0200
+
+    Merge pull request #16 from novoda/push/delete
+    
+    Update/Delete push demos
+
+commit 436c618614e9c5190e87f6f6e8cd48b4623e76f5
+Merge: ce59fbe 1a7b4ee
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Fri Jul 3 15:52:57 2015 +0200
+
+    Merge pull request #18 from novoda/add/optional-dependencies
+    
+    Add/Optional dependencies
+
+commit 51b2098bb81009b296a3aec826d1223185815182
+Merge: 86cfdc9 ce59fbe
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Wed Jul 1 14:41:16 2015 +0200
+
+    Merge branch 'master' into chore/delete_tabhostactivity_demos
+    
+    Conflicts:
+            CustomTabsHack/build.gradle
+            MultpileActivityTabHost/build.gradle
+            TabHostMultipleActivityBrowsing/build.gradle
+
+commit ce59fbe0e7ae6d5d4b6d19c7478e579c3bc06fc7
+Merge: 121d740 972f69d
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Tue Jun 30 17:46:02 2015 +0100
+
+    Merge pull request #15 from novoda/chore/more_nos_work
+    
+    Chore/More NOS work
+
+commit 121d740525ade58eb07d31012db145ea55e9bf2c
+Merge: 40d2429 f812451
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Tue Jun 30 14:06:15 2015 +0100
+
+    Merge pull request #14 from novoda/13/links_to_nos_demos
+    
+    13/Links to NOS demos
+
+commit f812451b880a3665e5c45e90e15d92283d0ead62
+Merge: 0d7e4e6 40d2429
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Tue Jun 30 13:36:31 2015 +0200
+
+    Merge branch 'master' into 13/links_to_nos_demos
+
+commit 40d242919cac18d3343281500ec1a9e540933fd8
+Merge: 0a29057 4a9d055
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Tue Jun 30 12:17:03 2015 +0100
+
+    Merge pull request #9 from novoda/chore/readme
+    
+    Chore/Add readme content
+
+commit 50919095d6e06a5d5c16c3aaae469d89223099bf
+Merge: 0f99f5b 0a29057
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Mon Jun 29 13:16:06 2015 +0200
+
+    Merge branch 'master' into chore/readme
+    
+    Conflicts:
+            CHANGELOG.md
+
+commit 7d3186e278ccc33d359200b00488983b1f26da99
+Merge: 3b06364 cd61f99
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Mon Jun 29 08:14:28 2015 +0100
+
+    Merge pull request #8 from novoda/chore/update_app_ids
+    
+    Chore/Update app ids, add readme
+
+commit 3b06364b8caf359a142ffd98d7eb4210bbdb64d5
+Merge: 443dc43 fb183ad
+Author: Stefan Hoth <stefanhoth.de@gmail.com>
+Date:   Wed Jan 7 11:01:39 2015 +0100
+
+    Merge pull request #6 from novoda/gradle-ify_all_the_things_part_2
+    
+    Gradle-ify All The Things (part 2)
+
+commit 99535eb43613e5b0b20147dac3d5d7b13f602e96
+Merge: b9a3ceb 443dc43
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 18:38:19 2015 +0000
+
+    Merge commit '443dc43ba410d475b83516fc990716e8a6528664' into gradle-ify_all_the_things_part_2
+
+commit 443dc43ba410d475b83516fc990716e8a6528664
+Merge: 533ae97 798915a
+Author: Stefan Hoth <stefanhoth.de@gmail.com>
+Date:   Tue Jan 6 19:07:56 2015 +0100
+
+    Merge pull request #7 from novoda/gradle-ify_all_the_things_1.5
+    
+    Gradle-ify All The Things v1.5
+
+commit 533ae977159ecebfd8f1902ba1d0d83e2fe34e52
+Merge: 83e47ad d060bdb
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Thu Dec 4 15:10:28 2014 +0000
+
+    Merge pull request #5 from novoda/gradle-ify_all_the_things
+    
+    Gradle-ify (the first part of) All The Things
+
+commit a918b47a941fab2f66a0119c28caebbd9c671848
+Merge: df627b8 a3206f0
+Author: gerlac <gerlac@gmail.com>
+Date:   Fri Jul 13 12:25:49 2012 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit df627b87733459797ff8d15db71b8dd905a00816
+Merge: c77c4bf 8954610
+Author: gerlac <gerlac@gmail.com>
+Date:   Fri Jul 13 10:49:37 2012 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 981078d60dd3be55fed9d7ee99c41e1ccc26e448
+Merge: 3922efa a63e31b
+Author: Gonçalo Silva <gnorsilva@gmail.com>
+Date:   Wed Jan 19 15:53:45 2011 +0000
+
+    Merge branch 'master', remote branch 'origin/master'
+    
+    Conflicts:
+            FixedSizeTextColumns/res/menu/webview_menu.xml
+            FixedSizeTextColumns/res/values/strings.xml
+            FixedSizeTextColumns/src/com/novoda/HelloWebView.java

@@ -1,0 +1,2349 @@
+commit f3999dcb3170617dda1ef3915c8ae0d8040f83a4
+Merge: c03f72b a26b807
+Author: Ferran Garriga <zegnus@gmail.com>
+Date:   Sat Jun 15 19:35:50 2019 +0100
+
+    Merge pull request #54 from novoda/mvi_sample
+    
+    Example implementation of the model view intent pattern
+
+commit a26b807b01792df527ab652fa48ff0399d6a8d98
+Author: Tobias Heine <tobias@novoda.com>
+Date:   Tue Jun 11 13:56:46 2019 +0200
+
+    Add example implementation of the model view intent pattern
+
+commit c03f72bc1944a9b8a502cec9f41f355483922d43
+Merge: e74bf78 cbc77b7
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Jan 22 10:35:33 2019 +0000
+
+    Merge pull request #52 from novoda/switch_api_to_kotlin
+    
+    Switch api to kotlin
+
+commit cbc77b785613f6bf9ac81325c74907973010f3c1
+Author: Sven Kroell <sven.kroell@googlemail.com>
+Date:   Mon Jan 21 11:23:53 2019 +0100
+
+    fix typos, clarify method names
+
+commit c1733cdb6410f5d18d6df758de6c10f8939b2c1c
+Author: Sven Kroell <sven.kroell@googlemail.com>
+Date:   Mon Dec 17 14:59:02 2018 +0100
+
+    remove ktlint
+
+commit 97bfbf209a73e40e9a6d04dafdfc3b635f7583f1
+Author: Sven Kroell <sven.kroell@googlemail.com>
+Date:   Mon Dec 17 14:58:43 2018 +0100
+
+    add health endpoint
+
+commit 8353aa9f310652703294d8494a867da06a0588cd
+Author: Sven Kroell <sven.kroell@googlemail.com>
+Date:   Mon Dec 17 14:47:10 2018 +0100
+
+    add new lines
+
+commit 40235c88f3aca945f2559ffaf086356fd89d6905
+Author: Sven Kroell <sven.kroell@googlemail.com>
+Date:   Mon Dec 17 14:30:32 2018 +0100
+
+    enforce kotlin style
+
+commit 75d89e7243d9a69496d9256e52231c5de1821f1a
+Author: Sven Kroell <sven.kroell@googlemail.com>
+Date:   Mon Dec 17 12:36:11 2018 +0100
+
+    use router - check database integrity
+
+commit 2bb5d79aa4313846cc9d75c553e9b2fffc94b78c
+Author: Sven Kroell <sven.kroell@googlemail.com>
+Date:   Fri Dec 14 18:18:44 2018 +0100
+
+    add start server sh and rename packages
+
+commit 9f03b31f122256a7ca612c48bedf5e3dbec1196c
+Author: Sven Kroell <sven.kroell@googlemail.com>
+Date:   Fri Dec 14 18:05:47 2018 +0100
+
+    use kotlin instead of ruby api
+
+commit f0a249317e2a56cbacda435bd8103788d05f0ace
+Author: Sven Kroell <sven.kroell@googlemail.com>
+Date:   Fri Dec 14 17:22:44 2018 +0100
+
+    add categories
+
+commit e71d8727307e1577831d6548ae6274b501ac6e31
+Author: Sven Kroell <sven.kroell@googlemail.com>
+Date:   Fri Dec 14 15:53:26 2018 +0100
+
+    add simple spark api
+
+commit e74bf782a9d1e10f44568ed4e39ada3d0d60f67d
+Merge: ec6d69e 275bea6
+Author: Jonathan Taylor <jgtaylor123@users.noreply.github.com>
+Date:   Thu Dec 13 16:42:14 2018 +0000
+
+    Merge pull request #51 from novoda/updating_dependencies
+    
+    updating some dependencies
+
+commit 275bea68f7bf725e0e617cc978e3e69e2a88a42c
+Author: Jonathan Taylor <jonathan@novoda.com>
+Date:   Thu Dec 13 15:21:31 2018 +0000
+
+    updating some dependencies
+
+commit ec6d69e655a337c72f707f7ec6a5eff741cd9ff2
+Merge: 50daf34 597b0e9
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Oct 23 12:17:34 2018 +0100
+
+    Merge pull request #50 from novoda/add_repository_for_test
+    
+    Add repository for test
+
+commit 50daf341b0aac92624246debc0fdb93425a4f39f
+Merge: a17dbf2 61957e4
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Fri Oct 19 11:10:22 2018 +0100
+
+    Merge pull request #48 from novoda/add_rule_for_mockserver
+    
+    Add rule for mockserver
+
+commit 597b0e9f403c27f57144524a251a3eb91670c1de
+Author: Sven Kroell <sven@novoda.com>
+Date:   Wed Oct 10 11:06:19 2018 +0200
+
+    add new lines
+
+commit d280dead46d0a3096821c7fe6c0741ad5320d0f8
+Author: Sven Kroell <sven@novoda.com>
+Date:   Wed Oct 10 10:36:22 2018 +0200
+
+    extract articles to constants
+
+commit c42a8172d7e8908e273300d0fcb6b01fe661719a
+Author: Sven Kroell <sven@novoda.com>
+Date:   Wed Oct 10 09:34:00 2018 +0200
+
+    add constants for fetching from repository
+
+commit a5dec5c1ac3d2b0f726c9d9908391544344bfc52
+Author: Sven Kroell <sven@novoda.com>
+Date:   Tue Oct 9 12:28:36 2018 +0200
+
+    use before class
+
+commit 581030a761012c6688694554530768ca70df8317
+Author: Sven Kroell <sven@novoda.com>
+Date:   Tue Oct 9 11:45:02 2018 +0200
+
+    use moshi instead of gson
+
+commit 61957e4fbd15cd6c5e741c9768fb7b68a2917d6f
+Author: Sven Kroell <sven@novoda.com>
+Date:   Tue Oct 9 10:33:59 2018 +0200
+
+    change var to val
+
+commit f55c3368e91a1df9aee5f2eacef164b44aa06677
+Author: Sven Kroell <sven@novoda.com>
+Date:   Tue Oct 9 10:33:03 2018 +0200
+
+    separate rules
+
+commit 203ddbaa94bf90070205c09f5764c8099e6835e1
+Author: Sven Kroell <sven@novoda.com>
+Date:   Fri Oct 5 09:59:17 2018 +0200
+
+    rename models
+
+commit 4e41040171e82627bbce9abee3bb2c8544d42a6e
+Author: Sven Kroell <sven@novoda.com>
+Date:   Fri Oct 5 09:20:26 2018 +0200
+
+    fix typo
+
+commit 8ee9e5de42c28704ba8c9cc5b3c86b30ed587f88
+Author: Sven Kroell <sven@novoda.com>
+Date:   Fri Oct 5 09:20:10 2018 +0200
+
+    split dtos into smaller methods
+
+commit 4de460c37134dafb8af812bd22bf78ccfcbb8510
+Author: Sven Kroell <sven@novoda.com>
+Date:   Thu Oct 4 17:21:52 2018 +0200
+
+    add repositories
+
+commit b44420ea6076cbd5d84867e20b88645e3be391f0
+Author: Sven Kroell <sven@novoda.com>
+Date:   Tue Oct 2 13:42:08 2018 +0200
+
+    add new line
+
+commit 5521fd300d1e2a261fc743de9a56cd0e883cdd83
+Author: Sven Kroell <sven@novoda.com>
+Date:   Tue Oct 2 13:27:38 2018 +0200
+
+    add model and simple repository
+
+commit 08bcc26974e0d627678c46a4e6f81d5fa8d47a68
+Author: Sven Kroell <sven@novoda.com>
+Date:   Tue Oct 2 12:58:06 2018 +0200
+
+    add shutdown method
+
+commit 37ba7b23a04bd320dea26bda0ff0fec76abc1196
+Author: Sven Kroell <sven@novoda.com>
+Date:   Tue Oct 2 12:56:47 2018 +0200
+
+    use rule in test
+
+commit bc9b5264405b6b5bd0016d7cd0a5a2681d314a1e
+Author: Sven Kroell <sven@novoda.com>
+Date:   Tue Oct 2 12:55:19 2018 +0200
+
+    add methods for json response
+
+commit c2e3a49495b811d4b6b223564ac0dd6e4b834290
+Author: Sven Kroell <sven@novoda.com>
+Date:   Tue Oct 2 12:51:53 2018 +0200
+
+    add test rule
+
+commit a17dbf2b364f77508dbdbbed9489a0c7a8b8a3ee
+Merge: f181d61 282dc09
+Author: Sven Kroell <thywen@users.noreply.github.com>
+Date:   Fri Sep 28 15:23:54 2018 +0200
+
+    Merge pull request #46 from novoda/page-object-chaining
+    
+    Add user flows to test automation starter
+
+commit 282dc09eb008efa120c743879c6ac036b6a31bdf
+Author: Sven Kroell <sven@novoda.com>
+Date:   Fri Sep 7 10:10:42 2018 +0200
+
+    rename test methods
+
+commit 469b7c2e82801a9d686e693d7e69c040175818b3
+Author: Sven Kroell <sven@novoda.com>
+Date:   Fri Sep 7 10:07:22 2018 +0200
+
+    remove accidentily added gradlewrapper and add new line
+
+commit 32608ddc2e1b20767d4097abadf3c93d4d1d9a2b
+Author: Sven Kroell <sven@novoda.com>
+Date:   Thu Sep 6 10:02:10 2018 +0200
+
+    chain page objects and add user flow
+
+commit ae54d5018421231eb01a612956bb6293f84e54cb
+Author: Sven Kroell <sven@novoda.com>
+Date:   Wed Sep 5 11:14:12 2018 +0200
+
+    use main page method in test
+
+commit f181d613f495ee8c69e0c5fb7c7387394cb312b2
+Merge: e5c0687 c8504f0
+Author: Daniele Conti <fourlastor@users.noreply.github.com>
+Date:   Tue Jul 24 09:30:55 2018 +0100
+
+    Merge pull request #45 from novoda/remove-header-tests
+    
+    Removed redundant tests
+
+commit c8504f0d9254d555d471674e1027885d38062286
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Mon Jul 23 19:28:26 2018 +0300
+
+    Duplicate of EspressoUserFlowTests
+
+commit 262b2d3d934f3d79520d7bea7973db7605c4ca17
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Mon Jul 23 19:22:00 2018 +0300
+
+    Removed HeaderPageObject
+
+commit 7b4e17c6e12ef7e79bc81b43d55965c9d958752d
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Mon Jul 23 19:20:47 2018 +0300
+
+    updated MainActivityPageObject
+
+commit dafbef3b88d58ad54122b07e1f597939a2f19b72
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Mon Jul 23 18:12:32 2018 +0300
+
+    Removed redundant tests
+
+commit e5c06872d8141a051d0c81243a05b71e4a44f8c5
+Merge: 5e25d5a b226bb6
+Author: Jonathan Taylor <jgtaylor123@users.noreply.github.com>
+Date:   Wed Jul 11 10:58:29 2018 +0100
+
+    Merge pull request #44 from novoda/test_automation_starter
+    
+    Test automation starter
+
+commit b226bb60cd06397dd50333deadf41d2eae10eba5
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Jul 10 14:36:50 2018 +0300
+
+    Added missing ")"
+
+commit 7bd478090bf922df85f8c302ccfb026441c6c913
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Jul 10 14:32:58 2018 +0300
+
+    Refactored ProductListInteractorImpl to better follow Kotlin syntax
+
+commit b1a48a80c41b6efd02caa0c7a8343620bfcf49c9
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Jul 10 14:28:44 2018 +0300
+
+    Made server repository more readable
+
+commit fc234eadfe7059fc98e5f9f5f7bfbc282116f628
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Jul 10 14:27:46 2018 +0300
+
+    Small typo
+
+commit 52a6235a6039d55585ba89843bfc5ca54a7f1d5f
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Jul 10 14:27:30 2018 +0300
+
+    File formatting
+
+commit 1d14e369a8bdc3d39fcb6c9a196ceb40ad201e1b
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Jul 10 14:26:31 2018 +0300
+
+    Use primary constructor
+
+commit 5e2f7d48b63caab3efbaa37113ee48461b0f2afe
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Jul 10 14:24:39 2018 +0300
+
+    Refactored the Interactor classes to better follow Kotlin syntax
+
+commit 5d603ce260b60eb811f2377d972a194e5a74784c
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Jul 10 14:22:01 2018 +0300
+
+    Remove unnecessary toString() implementation
+
+commit 4228a7863069f9a1c5c71f670cb392d3913acc28
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Jul 10 14:21:16 2018 +0300
+
+    make intent a property
+
+commit 700d476a4e7d94865f92e8b20a98a9af1ae6a1fc
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Jul 10 13:37:56 2018 +0300
+
+    Make NetworkTimeout @Named
+
+commit 217b15b9dcc9a6c2a8d4d4bf54bfc3d162450ec4
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Jul 10 13:36:37 2018 +0300
+
+    Remove app module
+
+commit f33e9d822557778392632be16d91d8c743bd175e
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Tue Jul 10 13:16:04 2018 +0300
+
+    Remove import
+
+commit 309a3a7ddb54a40e535f2b8fe88b89ad9d8674ce
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Mon Jul 9 20:43:35 2018 +0300
+
+    Server cleaning up
+
+commit 7ad5d75b2c4f8e7b02d690946ad0a774acdda3a3
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Mon Jul 9 20:43:17 2018 +0300
+
+    Cleaning up
+
+commit 68361611dd3c880a0554d039d3c7630f25262ec4
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Mon Jul 9 20:41:45 2018 +0300
+
+    Removed obsolete @RunWith(AndroidJUnit4.class) from the Tests
+
+commit a6abf1ee48e824facb8707fb13b97c9459a01a35
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Mon Jul 9 18:28:00 2018 +0300
+
+    ViewMatchers  cleaning up
+
+commit 00d4fdbace80497dc64b4facf2cf55e646b8e3b6
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Thu Jul 5 15:57:14 2018 +0300
+
+    Added the local server
+
+commit 30711f70331bc055b000210b49a5ec97809d7c4f
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Thu Jul 5 15:40:09 2018 +0300
+
+    Deleted wrongly configured simplesinatraapi directory
+
+commit dcd75d510ea7112ca5d72d6efe027fe8d8b50900
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Thu Jul 5 13:43:18 2018 +0300
+
+    Run the ktlint formatter on the project
+
+commit 014061ef41c5581ae6e1eced1825125605535817
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Wed Jul 4 19:34:43 2018 +0300
+
+    Removed Cucumber-related dependencies, Custom Test Runner, and Step Definitions
+
+commit 9bd38a8e610d7398ffbd0686be3b53ccb3be4eeb
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Fri Jun 29 16:53:47 2018 +0100
+
+    Updated min SDK
+
+commit 4841f0ff7c0a668372f48a59a5559662b2d33eb3
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Fri Jun 29 16:36:15 2018 +0100
+
+    Updated README
+
+commit aebd2b2d621d7f2b2d74aa3a07f09d2177b18cfc
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Mon Jun 25 17:18:38 2018 +0100
+
+    README cleaning
+
+commit f4ec2087a3161aa618096d901ff828541ebead89
+Author: Dimitris Karavias <karavias.d@gmail.com>
+Date:   Thu May 17 21:49:04 2018 +0200
+
+    Added to Android Demos
+
+commit 5e25d5a6e52e740f7b96389f7aa3575d4dbe41df
+Author: lgvalle <luis.gvalle@gmail.com>
+Date:   Wed May 16 11:54:45 2018 +0100
+
+    Demo movie app. First commit
+
+commit 8ca5f8df5f574c843fd08e04cfeda8bd779c82d5
+Merge: cd67348 26dfdf9
+Author: Ryan Feline <ryan.feline@novoda.com>
+Date:   Wed Jan 24 11:35:18 2018 +0000
+
+    Merge pull request #39 from novoda/fix_snowy_wallpaper_readme
+    
+    Fix Snowy Village wallpaper readme
+
+commit 26dfdf932fd2e0964f8adf7d63926c36b12beaf6
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Wed Jan 24 12:14:29 2018 +0100
+
+    Fix icon and preview paths in Readme
+
+commit cd67348b994318a42e76b4b1cfe88c5ad41d6107
+Merge: bb65a90 33bc10c
+Author: Sebastiano Poggi <rock3r@users.noreply.github.com>
+Date:   Thu Nov 30 14:08:19 2017 +0000
+
+    Merge pull request #38 from novoda/remove-spritz
+    
+    Remove Spritz from android-demos
+
+commit 33bc10c6418d858238e6a6c25d6857a69b5af4f2
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Nov 30 13:56:24 2017 +0000
+
+    Remove unused images
+
+commit 45352e3035711c4aeca3ead582b37341cdd5018c
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Nov 30 13:55:07 2017 +0000
+
+    Remove Spritz from android-demos
+
+commit bb65a907863425a02a321e8e0bea22df9a94d269
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Mon Nov 20 14:12:43 2017 +0100
+
+    Update README with link to blog post
+
+commit 81ed1ed76953ccf269782bdf3e3f2740ea1bc21c
+Merge: 2dc04e1 84f1c59
+Author: Sebastiano Poggi <rock3r@users.noreply.github.com>
+Date:   Thu Nov 16 17:41:41 2017 +0000
+
+    Merge pull request #37 from novoda/add-link
+    
+    [Spritz] Add credits and link to blog post
+
+commit 84f1c59087ba8091026284d3bf59f4d73ba97c37
+Author: Chris Basha <chrisbasha95@gmail.com>
+Date:   Thu Nov 16 17:39:24 2017 +0000
+
+    Fix RTL support and unused style
+
+commit e5b97f9fab2f9c2bc60edac1b77d0022d3fbe67b
+Author: Chris Basha <chrisbasha95@gmail.com>
+Date:   Thu Nov 16 15:17:32 2017 +0000
+
+    Add credits and link to blog post
+
+commit 2dc04e10a4a82a54c3b974d33ae7674844cabd0e
+Merge: be77bc1 506feec
+Author: Sebastiano Poggi <rock3r@users.noreply.github.com>
+Date:   Thu Nov 16 11:44:42 2017 +0000
+
+    Merge pull request #36 from novoda/new-animation
+    
+    [Spritz] Add new animation, update Gradle and README
+
+commit 506feec0cf6325854ba82d598af442c482055cbd
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Nov 16 11:41:02 2017 +0000
+
+    Remove orientation in relative layout
+
+commit 28491f07482c538884cefad0f5e07eda217dea99
+Author: Chris Basha <chrisbasha95@gmail.com>
+Date:   Thu Nov 16 11:36:17 2017 +0000
+
+    Fix header alignment and removed description text
+
+commit aa3250ddfd63f9367047de26f546f3e951f165f7
+Author: Chris Basha <chrisbasha95@gmail.com>
+Date:   Thu Nov 16 11:18:55 2017 +0000
+
+    Fix header height and alignment
+
+commit c2081c4692d93e24ad7e4f5cbe660744ad09ace3
+Author: Chris Basha <chrisbasha95@gmail.com>
+Date:   Thu Nov 16 11:14:01 2017 +0000
+
+    Replace readme images with even better ones
+
+commit d70d8abc5a67e5c2a61694e57691b9d5cf057fb8
+Author: Chris Basha <chrisbasha95@gmail.com>
+Date:   Thu Nov 16 11:08:19 2017 +0000
+
+    Fix sizing of header logo
+
+commit 5b82ec7ec1e697f072d9cf83e8d0b9111f812a9e
+Author: Chris Basha <chrisbasha95@gmail.com>
+Date:   Thu Nov 16 11:04:29 2017 +0000
+
+    Replace readme images
+
+commit b7464ac15c32ad79eff8e6a5305bf2859d99e85a
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Nov 16 10:33:18 2017 +0000
+
+    Update README with feature image and new GIF
+
+commit ca9a0c6c6cc5b7526e4dce49236c5a2cc2be1476
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Nov 16 10:32:56 2017 +0000
+
+    Ignore release files
+
+commit 565b4e0e1aab813c0d0b090accdb02a3e9ac6506
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Nov 16 10:32:47 2017 +0000
+
+    Add new animation
+
+commit cf0364fe771f91d395ae961128caf1ee11d11a1b
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Nov 16 10:32:34 2017 +0000
+
+    Update Gradle and SDK
+
+commit be77bc1307869d18d45d6e57dea894d575ca35fe
+Merge: b91c782 ba041d3
+Author: Rui Teixeira <takecare@users.noreply.github.com>
+Date:   Thu Oct 5 16:23:16 2017 +0100
+
+    Merge pull request #35 from novoda/pixel-perf
+    
+    [spritz] Extract logic into collaborators, simplify swipe handling
+
+commit ba041d3f0f6cc7b70501ded73a5fd42b484fc726
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Wed Oct 4 14:24:20 2017 +0100
+
+    Rename classes to avoid Spritz prefix if not public API
+
+commit 4d09abbdfc796cd87c13676f315cac81fb80f190
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Wed Oct 4 11:02:13 2017 +0100
+
+    Use proper formatting
+
+commit c6122444e8274850fd525f8bdc11e50e1b156b51
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Wed Oct 4 11:02:01 2017 +0100
+
+    Remove useless condition
+
+commit 20f5d92a128089b7d80c8c432ddf3b29b0bc7b04
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Oct 3 17:04:11 2017 +0100
+
+    Reduce tag length
+
+commit 275baa6b7a7447cf0f2523ab830a39a5f65fa7eb
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Oct 3 16:49:31 2017 +0100
+
+    Restore original calculation for start of swipe calculation
+
+commit 39a238f6d8d85ff90c53b0d1d2830c32fb5634cc
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Oct 3 15:43:58 2017 +0100
+
+    Simplify listener structure
+
+commit 65b20a92905efbb60746faef6adf86e8f961629b
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Oct 3 15:32:58 2017 +0100
+
+    Remove concept of automatic swipe completion, automatically handled
+
+commit 5c52382a109d4cce880fa203136558ff50176179
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Oct 3 15:21:58 2017 +0100
+
+    Change calculation for manual swipe, improve naming, add logging
+
+commit 686a51c9cd930a60e8e427a16c506f3cb13491ee
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Oct 3 13:55:19 2017 +0100
+
+    Set the cached position when the pager is settled, not when page is selected
+
+commit 4463f70ebdd031955d9b023fdbeb51ea01e0b3d8
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Oct 3 13:33:17 2017 +0100
+
+    Extract OnPageChangeListener to separate class
+
+commit 133c4fcf5741cf3ee4e8e7ea4a9663f730487a4d
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Oct 3 12:52:19 2017 +0100
+
+    Extract animation, position calculator and pager
+
+commit 09fe3fdad9221a34d31a7eb4073f474a631b0017
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Oct 3 12:31:34 2017 +0100
+
+    Extract animation player into separate class
+
+commit e6c9695afce1a05566aae79feef00630e9728ee5
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Oct 3 10:56:35 2017 +0100
+
+    Fix swipe backwards, then autoplay again when page stays the same
+
+commit a53c2477eb73a10d32a437e4932e7e3106145f74
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Mon Oct 2 16:52:04 2017 +0100
+
+    Add debug activity
+
+commit b91c7826367de5700ef84c0eb2e7f60012293084
+Merge: 76881fc 74a2745
+Author: Adam Brown <adampsbrown@googlemail.com>
+Date:   Tue Sep 26 10:01:07 2017 -0700
+
+    Merge pull request #34 from novoda/release/spritz/0.0.1-really
+    
+    Spritz: set project version properly
+
+commit 74a274533d9dda9b770e31f799c77fe6803af2dc
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Sep 26 19:00:06 2017 +0200
+
+    Set project version properly
+
+commit 76881fcd413279aeb7e368583fcd46001472442f
+Merge: 0404907 5eb726b
+Author: Adam Brown <adampsbrown@googlemail.com>
+Date:   Tue Sep 26 09:40:09 2017 -0700
+
+    Merge pull request #33 from novoda/release/spritz/0.0.1
+    
+    Spritz: prepare for release
+
+commit 5eb726bcb0071ff41d54f424f2da1c6f467e7eae
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Sep 26 18:38:42 2017 +0200
+
+    Prepare for release
+
+commit 0404907f7f63eef94293c59e75c7d2e37715ed73
+Merge: 7d9e5c2 6062a0f
+Author: Antonio Bertucci <archano@gmail.com>
+Date:   Tue Sep 26 17:32:02 2017 +0200
+
+    Merge pull request #32 from novoda/spritz
+    
+    Add spritz library and demo
+
+commit 6062a0fbcc3da1f066ea159c8589034ac67fe6e9
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Sep 26 13:59:09 2017 +0200
+
+    Update README with more compact info
+
+commit 98543eb4dc7ebdc7a0bd8676cf53ec767becd4c8
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Sep 26 13:58:58 2017 +0200
+
+    Add icons to app
+
+commit 798587a202aded5688059fb29d8956b381507fa4
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Sep 26 13:58:45 2017 +0200
+
+    Change default swipe animation
+
+commit 97a96827503b9fbf8b63770f8bf29f76d04b32aa
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Tue Sep 26 12:08:39 2017 +0200
+
+    Rewrite API to build Spritz, then attach, start animations, detach
+
+commit b2e8c6d2050aaf19b2a02a29d7fdeb4a7573dbb0
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Mon Sep 25 14:18:02 2017 +0100
+
+    Remove auto-generated comment
+
+commit d0615f0eaef246046c8ea55e152b0d438d200f0b
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Mon Sep 25 14:16:27 2017 +0100
+
+    Build Spritz instance and retrieve listener separately
+
+commit 2be9a1807bd9569d4df9fcded758b2d4efe8dbd4
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Fri Sep 22 09:34:17 2017 +0100
+
+    Use View for empty mock layout
+
+commit 0a6abe94e0ba611d97570909f42bffbd2187bfe0
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Fri Sep 22 09:33:05 2017 +0100
+
+    Start pending animations in onStart
+
+commit f44b30d478853854fb618a3dbc9881bed4d37c42
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Fri Sep 22 09:32:14 2017 +0100
+
+    Remove support dependencies
+
+commit 2f5e61a472fd70180ccdad9a6c9ea95810b4dd75
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:30:51 2017 +0100
+
+    Remove whiteline and comments
+
+commit 7310506c771437dedd2ac58ddc074a5bf6c6a982
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:29:19 2017 +0100
+
+    Remove comments
+
+commit ebe99aaeb3931424b1b1d4ae249401269a023e03
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:28:52 2017 +0100
+
+    Format strings.xml
+
+commit b8aac679c88dfbfb33f64c4fbb71788c19578ac9
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:28:19 2017 +0100
+
+    Remove whiteline
+
+commit bf8af393e8ffd08e0294948383ba373bde63e63e
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:27:36 2017 +0100
+
+    Remove constraint layout dependency
+
+commit efe508669bc9b38523311c9def54b54435736883
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:25:41 2017 +0100
+
+    Remove Nullable annotation
+
+commit 635fd6158c58fde214d93abb95a699868919a90b
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:24:19 2017 +0100
+
+    Rename constant, make it private
+
+commit bec8bf8a5da89d03bf4646289c0d4ce3fe9464e4
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:23:42 2017 +0100
+
+    Set allowBackup to false
+
+commit bc0c033522d78ef89f5798d780a84a1362b52a4f
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:21:25 2017 +0100
+
+    Update Lottie, remove duplicate imports
+
+commit bd30c37c43e4749853fb732b993c05c7cc01a824
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:20:12 2017 +0100
+
+    Add Apache 2.0 license file
+
+commit 30085d03d38ca15e25083f45da022d506a92ad45
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:18:36 2017 +0100
+
+    Remove double spacing
+
+commit 7adc4638ab2c0b1e585c94fd305ce220724b2e61
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:18:00 2017 +0100
+
+    Add java language to markdown code
+
+commit 62ad738a64883501985846f1525dba12c839016f
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:17:16 2017 +0100
+
+    Include better gitignore
+
+commit e2a51cdb19e2d3e97f72ab0f246ac572131838bd
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:12:32 2017 +0100
+
+    Rename page to step
+
+commit 4bfb1654368f0becc7a283392e72483f336b173b
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 16:01:40 2017 +0100
+
+    Remove default proguard-rules.pro files
+
+commit 96a580d7747ed633d2e2e0672dee327caaeb826c
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 15:59:35 2017 +0100
+
+    Remove module from root project
+
+commit 8c97f9cdeeefc70e291983c2e929bb507b878c17
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 10:50:08 2017 +0100
+
+    Add GIF to README
+
+commit 98b423a8a47d8a3ccd97a4ad219950a5010b8e20
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 10:46:45 2017 +0100
+
+    Fix doc
+
+commit 4dd83ebc34127467fc9a9f79a18ec4620384f6ff
+Author: Francesco Pontillo <francescopontillo@gmail.com>
+Date:   Thu Sep 21 10:37:19 2017 +0100
+
+    Add spritz library and demo
+
+commit 7d9e5c23e7a4604e2e6e955e2ca0adc96391ac61
+Merge: ce00836 9153393
+Author: Ryan Feline <ryan.feline@novoda.com>
+Date:   Fri Jul 14 08:50:52 2017 +0100
+
+    Merge pull request #31 from novoda/clean-up-persistence-tdd-demo
+    
+    TDDPersistence Sample TODO app / Clean up: remove unused, fix package names
+
+commit 9153393a7707da307d890cc1ec3b917290740aec
+Author: Luis G. Valle <luis.gvalle@gmail.com>
+Date:   Thu Jul 13 10:37:44 2017 +0100
+
+    Clean up: remove unused, fix package names
+
+commit ce008367da66239503f950975a34f6aec3e1eaa4
+Merge: fc10d38 a6429fe
+Author: Daniele <dany.bony@gmail.com>
+Date:   Thu Jun 29 14:44:57 2017 +0200
+
+    Merge pull request #30 from novoda/move_snow_village_wallpaper
+    
+    Move snow village live wallpaper to demos
+
+commit a6429fe11dd1e96a10d3965ffefa35553245f613
+Author: Ryan Feline <ryan.feline@novoda.com>
+Date:   Wed Jun 28 17:08:09 2017 +0100
+
+    Move snow village live wallpaper to demos.
+
+commit fc10d3829037b2950ce6ab8368bcdeb35d94b9ff
+Merge: 36f4f29 3c9606e
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Mon Jun 26 12:07:03 2017 +0100
+
+    Merge pull request #29 from bryant1410/master
+    
+    Fix broken headings in Markdown files
+
+commit 3c9606e102228459c43850a9b9c7df2526f88f43
+Author: Santiago Castro <santi.1410@hotmail.com>
+Date:   Sun Apr 16 16:43:23 2017 -0300
+
+    Fix broken Markdown headings
+
+commit 36f4f29458fc01db90930defd8c808109aa4135a
+Merge: ac07b1a a88d47c
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Thu Mar 2 08:49:13 2017 +0000
+
+    Merge pull request #28 from novoda/effective_java
+    
+    Effective java
+
+commit a88d47c9d553dd84f481b24ae3e1cb5d5e45af41
+Author: Hawazine H <hawazine@novoda.com>
+Date:   Wed Mar 1 07:52:27 2017 +0000
+
+    Remove redundancy for encryption and decryption
+
+commit 5f3b7f9b709acdf44d94cf8487f0e93cf64355ce
+Author: Hawazine H <hawazine@novoda.com>
+Date:   Wed Mar 1 07:39:39 2017 +0000
+
+    Throw exceptions appropriate to the abstraction
+
+commit 088ebca5472aa02ac3d65c60b78665e4a659e39d
+Author: Hawazine H <hawazine@novoda.com>
+Date:   Fri Feb 24 15:17:58 2017 +0000
+
+    Add more details to error messages
+
+commit 16d950a3f3869c253b01ea2593ff4ccdf4ccea75
+Author: Hawazine H <hawazine@novoda.com>
+Date:   Sat Feb 18 15:39:25 2017 +0000
+
+    Add more information to the catch of IOException
+
+commit 4de26123f75ebbab54d97b88a8b78146810fb226
+Author: Hawazine H <hawazine@novoda.com>
+Date:   Sat Feb 18 15:36:56 2017 +0000
+
+    Add more information to the catch of the nullPointerException
+
+commit d683906ad137944d9294d17f8289024fc63b84e5
+Author: Hawazine H <hawazine@novoda.com>
+Date:   Sat Feb 18 15:34:20 2017 +0000
+
+    Add more information to the catch of the parseException
+
+commit 4ed92aa9043ac803615443afe5b908dfa48174df
+Author: Hawazine H <hawazine@novoda.com>
+Date:   Sun Feb 12 19:15:07 2017 +0000
+
+    Define the tag of the log
+
+commit fee5a22b3cbafa818102fc7324d9a5d3bcc95dc1
+Author: Hawazine H <hawazine@novoda.com>
+Date:   Sun Feb 12 19:11:10 2017 +0000
+
+    Add log for exception catched
+
+commit c8bbc4ca2b2de193a6e77ad7f92610719220109c
+Author: Hawazine H <hawazine@novoda.com>
+Date:   Sun Feb 12 17:52:36 2017 +0000
+
+    Add TAG
+
+commit 898d093beeefdd2e05e9adb379b666bf5f226d37
+Author: Hawazine H <hawazine@novoda.com>
+Date:   Sun Feb 12 17:44:48 2017 +0000
+
+    Document exception thrown
+
+commit ac07b1a73b42e4083ea66422c80f3ae62d027fcf
+Author: Luis G. Valle <luis.gvalle@gmail.com>
+Date:   Tue Jan 31 14:08:28 2017 +0000
+
+    Add README
+
+commit 547f9e72989a5064feaa51931967e0cfb7aa0133
+Author: Luis G Valle <luis.gvalle@gmail.com>
+Date:   Mon Jan 30 17:39:40 2017 +0000
+
+    TestingPersistence: improve UI
+
+commit 8f246d38ad03aa22eee1e8671b5c21f2850bbcb5
+Author: Luis G Valle <luis.gvalle@gmail.com>
+Date:   Mon Jan 30 12:24:51 2017 +0000
+
+    Add sample for blogpost
+
+commit 591de4a1c76cde87a40c0121c683eb6f20f1d76a
+Merge: 9e485c8 446a3b2
+Author: Said Tahsin Dane <tasomaniac@gmail.com>
+Date:   Thu Jan 19 08:43:11 2017 +0100
+
+    Merge pull request #27 from novoda/syntax-highlighting
+    
+    Turn on syntax highlighting by specifying `java`
+
+commit 446a3b2c707a73a927eb9290df63a7770d0cf976
+Author: Dominic Freeston <dominicfreeston@users.noreply.github.com>
+Date:   Wed Jan 18 17:30:07 2017 +0000
+
+    Turn on syntax highlighting by specifying `java`
+
+commit 9e485c866e1fac644105b2043c1d9cc3a8bf1868
+Merge: 563ab8d 3da83b8
+Author: Tobias Heine <t.heine84@gmail.com>
+Date:   Wed Jan 18 08:37:01 2017 +0100
+
+    Merge pull request #26 from novoda/recipe_native_ads_express
+    
+    Recipe / Add Native Ads Express
+
+commit 3da83b8f16f944e71db12529e2182bdabc5208b8
+Author: Luis G. Valle <luis.gvalle@gmail.com>
+Date:   Tue Jan 17 16:55:11 2017 +0000
+
+    Update main README
+
+commit 5f81b00f8407dd46a5e687c08b0238f0e57db257
+Author: Luis G. Valle <luis.gvalle@gmail.com>
+Date:   Tue Jan 17 16:53:18 2017 +0000
+
+    Add backticks to code
+
+commit 74dcf572c17a7366e148f78d51344cca7976946d
+Author: Luis G. Valle <luis.gvalle@gmail.com>
+Date:   Tue Jan 17 16:52:41 2017 +0000
+
+    Fix index
+
+commit 563ab8d7ba9b8079ce372bc9afb56a2392b4cfa2
+Author: Said Tahsin Dane <tasomaniac@gmail.com>
+Date:   Tue Jan 17 11:12:49 2017 +0100
+
+    Fix formatting in the README
+
+commit 963b36fff1344c09700db9e303724735c563be2c
+Author: Luis G. Valle <luis.gvalle@gmail.com>
+Date:   Thu Jan 12 16:21:51 2017 +0000
+
+    Add Native Ads Express recipe
+
+commit 7340b84502bd1f3373f2d7d25abc93060d08fff8
+Merge: 6b55290 f10d864
+Author: Said Tahsin Dane <tasomaniac@gmail.com>
+Date:   Tue Jan 10 18:39:31 2017 +0100
+
+    Merge pull request #25 from novoda/PT-275/Recipe_to_change_locale_for_tests
+    
+    PT-275: Recipe about how to change the Device locale for instrumentation tests
+
+commit f10d8645f02d9ec8d1df75d3509b1703a784f3d6
+Author: Tobias Heine <tobias@novoda.com>
+Date:   Tue Jan 10 16:25:34 2017 +0100
+
+    add README with a link to the first recipe
+
+commit 23f7d1c7fcb37658541696b4aa2b12caf9a2990c
+Author: Tobias Heine <tobias@novoda.com>
+Date:   Tue Jan 10 16:09:48 2017 +0100
+
+    add finally block so the language is changed back to the default in any case
+
+commit 8877b8434525bdf7bd51b216b398e981849f8006
+Author: Tobias Heine <tobias@novoda.com>
+Date:   Mon Jan 9 11:10:21 2017 +0100
+
+    fix typo
+
+commit 34e77965759729076bf06dce9392a6e6ba41359a
+Author: Tobias Heine <tobias@novoda.com>
+Date:   Fri Jan 6 16:11:53 2017 +0100
+
+    Add recipe to change the locale for instrumentation tests
+
+commit 6b55290ce95feba0f65352aec533ca9dbac97369
+Merge: 6109f9b 964a805
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Thu Dec 22 09:50:49 2016 +0100
+
+    Merge pull request #24 from novoda/wear_config
+    
+    Wear configuration demo
+
+commit 964a805b81f9e450ecf93be8935d3d7da1f5a340
+Author: Daniele <dany.bony@gmail.com>
+Date:   Mon Dec 12 17:08:12 2016 +0100
+
+    Create README for WearBuildConfig
+
+commit 4fe9e8b6b1ea1b6b92e7318994101aecf46bdfbb
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Mon Dec 12 11:15:56 2016 +0100
+
+    Update gradle version for WearBuildConfig demo
+
+commit dec78a29bfe68f851b7a63c06d1dc7fece30a882
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Mon Dec 12 11:06:24 2016 +0100
+
+    Make WearBuildConfig an independent project
+
+commit 3f4cf8d1d9feeb9fbc0481f72c3a28034efae44d
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Wed Dec 7 17:57:38 2016 +0100
+
+    Use rootProject.file() for signing config loading
+
+commit 6f52498c8dd6198a2f37512127f7425f7ba05397
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Wed Dec 7 17:47:03 2016 +0100
+
+    Rename qaRelease with qa
+
+commit 042ae781186e2a90e089d0e5c5bf943d7af140d0
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Wed Dec 7 16:01:39 2016 +0100
+
+    Rename preProduction to development
+
+commit 4bb043c0500d6d7511eea468433cbb4aa348000d
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Wed Dec 7 12:39:03 2016 +0100
+
+    Add watch demo activity
+
+commit 4fb1e7a406d483546dfbe190b6d083ce3d99b026
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Wed Dec 7 12:31:11 2016 +0100
+
+    Enable Wear bundling for QaRelease builds
+
+commit 50683b0ecdf6c04620ca0c693fb7f8c4b0ba661b
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Wed Dec 7 11:29:31 2016 +0100
+
+    Add shared signing config
+
+commit 77ae77ef5cbbc413396dece152daf1f2ad3ee5a0
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Dec 6 18:13:50 2016 +0100
+
+    Add multi-dimensions flavors
+
+commit aeb420e725eecf8be19ecac6a42be612baa37561
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Dec 6 16:00:21 2016 +0100
+
+    Create minimum required modules for wear
+
+commit 3c289313961558e02b4375a005ff8594dc931254
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Dec 6 15:36:56 2016 +0100
+
+    Update gradle build tools
+
+commit 6109f9b4394f306771382c52faf3422b3e390df1
+Merge: a161b59 b82e416
+Author: Florian Mierzejewski <florian.pub@gmail.com>
+Date:   Fri Aug 5 12:38:39 2016 +0200
+
+    Merge pull request #23 from novoda/add_chips_demo
+    
+    Add chips demo
+
+commit b82e416c4bc921a34dd1a0872c7eaa0016b27111
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Fri Aug 5 12:35:11 2016 +0200
+
+    Fixes wording of the documentation
+
+commit fbbad87694ba48ede0c523ffb53c30171b5702eb
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Fri Aug 5 12:34:51 2016 +0200
+
+    Extracts explainatory method
+
+commit 3fb5423dc57fc6c2a87c9c8731437eedefdc7a03
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Fri Aug 5 12:31:25 2016 +0200
+
+    Use the dependency from jcenter directly
+
+commit 8046c8108d8667e8d44cffae94f4bcb7e86b5d00
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Thu Aug 4 18:35:08 2016 +0200
+
+    Extract methods and simplify the code a bit
+
+commit 6b9ad5f3741b6ff8c049c4a83373bbfe2a970e38
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Thu Aug 4 18:06:15 2016 +0200
+
+    Removes unnecessary permission
+
+commit d44e76ec07d40bc41e64b02f0a6678c0d1ccc85c
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Thu Aug 4 18:03:04 2016 +0200
+
+    Renames YOLO suggestions because they're not YOLO
+
+commit d3b70eed4faf894fc4feaaf8188bfc1974cd5cae
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Thu Aug 4 18:02:02 2016 +0200
+
+    Rename classes to have shorter names
+
+commit 19c78e76f143d7aadb26b956db396e15b1d9fe40
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Thu Aug 4 17:59:46 2016 +0200
+
+    Move both demos to a their own package each
+
+commit 203db0d601d7a93515a324d998c1e2e73c646bec
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Thu Aug 4 17:56:16 2016 +0200
+
+    Fix the RegEx for detecting leading spaces
+
+commit d24149c6398809ef7d7a4c7392b9afcdd84843e8
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Thu Aug 4 17:55:59 2016 +0200
+
+    Code cleanup: Extract classes and move code around
+
+commit fd1a112d4958b5b6e516547d8b2114a0f6581fc8
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Thu Aug 4 17:44:00 2016 +0200
+
+    Don't let the user select the hint, not even the first character
+
+commit a5108ed5be659d128805ae577563fc6a9dad35f8
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Thu Aug 4 17:41:26 2016 +0200
+
+    Show hint even when tags have leading spaces
+
+commit f7fe17835c02fef4fad6d440179fdacc7b544049
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Thu Aug 4 17:40:53 2016 +0200
+
+    Comment empty methods
+
+commit f8032e72a030a9a9cc9edc5d6cd330b335fdb4b3
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Thu Aug 4 17:40:46 2016 +0200
+
+    Remove unnecessary dependencies and use gradle 2.14
+
+commit 2f4bcfcef0baf6c85432eb29f1d06e931b705fa7
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Wed Aug 3 16:43:09 2016 +0200
+
+    Add demo to README
+
+commit 65e74d07c48b1253ef622eacdf7c3a259ab9cf51
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Wed Aug 3 15:45:53 2016 +0200
+
+    Clean up the code a bit and add a couple of features:
+    
+     - Make tags selectable
+     - Use a different resource for selected tags
+     - When the 'Enter' key is pressed add the text as a tag and don't hide
+       the keyboard
+
+commit a38ac448c0681db6944b8d82a61c16cceabbe7ca
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Tue Aug 2 19:17:13 2016 +0200
+
+    Improve Splitwise's demo to add the features we need
+
+commit 212479bbfd79214dbdf70751cb35edd35af3c413
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Mon Aug 1 19:08:10 2016 +0200
+
+    Removes libraries that aren't suitable and implements the ones that work
+    for us
+
+commit 18bd99df19abfdaabebea48afe9a6482ad43ca01
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Mon Aug 1 12:45:49 2016 +0200
+
+    Add blank screens that will be used to demo each library
+
+commit 39e37bc7ab68b7bea69a612cbf0eadc793cf69c4
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Mon Aug 1 12:25:26 2016 +0200
+
+    Add basic skeletton for the chips view demo
+
+commit 4a2597b1daee6b4af4e0ce09ae50a14775c6f753
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Mon Aug 1 12:25:17 2016 +0200
+
+    Update gradle and android gradle plugin
+
+commit a161b59b7ebeb8c40589d7ebfd3e8382e68c2a19
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Fri May 6 11:00:15 2016 +0100
+
+    Update README.MD
+
+commit e077505e93ca187091cc82928cc31e78444c5432
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Fri May 6 10:57:06 2016 +0100
+
+    Update README.MD
+
+commit 218daeba04fcddff1f9d383d6ab74ae52b415b23
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Fri May 6 10:44:45 2016 +0100
+
+    Update README.MD
+
+commit 6411be9a995cbad68df185d860b444bb08ee4667
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Fri May 6 10:44:04 2016 +0100
+
+    Create README.MD
+
+commit d1001ebb59513a1def614ab7ac898d180b7b7270
+Merge: 9cb3bf2 febee02
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Fri May 6 10:40:07 2016 +0100
+
+    Merge pull request #22 from novoda/automation-sandbox
+    
+    Automation sandbox
+
+commit febee02ac4befa357ac555d68226a9a43ba7719a
+Author: Adam Brown <adam@novoda.com>
+Date:   Thu May 5 19:10:38 2016 +0100
+
+    adding details screen to show some stats about the application
+
+commit 512d102353b868953af061f128ad3d9e177208f8
+Author: Adam Brown <adam@novoda.com>
+Date:   Tue May 3 18:48:17 2016 +0100
+
+    initial commit of super barebones sample app to display the installed apps on a device after gettinpast a sign in screen
+
+commit 9cb3bf2ec70add4185361cbb78c51c8562a442e5
+Author: Ataul Munim <timberwo7ves@gmail.com>
+Date:   Tue Feb 23 14:15:25 2016 +0000
+
+    Add line breaks around headings so markdown recognises
+
+commit 783808ff0b62fa74d5ea3a2342ccc3242b8c6761
+Merge: 3a7db81 fd55298
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Fri Jul 3 23:43:03 2015 +0100
+
+    Merge pull request #17 from novoda/chore/delete_tabhostactivity_demos
+    
+    Chore/Delete tabhostactivity demos
+
+commit fd5529846c99e81b424b18a4eed4b03a6d32d294
+Merge: 514524f 3a7db81
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Fri Jul 3 20:17:47 2015 +0200
+
+    Merge branch 'master' into chore/delete_tabhostactivity_demos
+    
+    Conflicts:
+            README.md
+
+commit 3a7db814a4dc78ee9272d2081bd8723489bb8e9d
+Merge: 436c618 87641e5
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Fri Jul 3 17:22:58 2015 +0200
+
+    Merge pull request #16 from novoda/push/delete
+    
+    Update/Delete push demos
+
+commit 436c618614e9c5190e87f6f6e8cd48b4623e76f5
+Merge: ce59fbe 1a7b4ee
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Fri Jul 3 15:52:57 2015 +0200
+
+    Merge pull request #18 from novoda/add/optional-dependencies
+    
+    Add/Optional dependencies
+
+commit 1a7b4eeabe9319c604b5a986d30c0da8a2637550
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Wed Jul 1 16:02:06 2015 +0200
+
+    add readme and update global readme
+
+commit ecb9bf70c20c811168f1eefbee0bdedd7fc7843e
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Wed Jul 1 15:55:51 2015 +0200
+
+    add demo how to use optional dependencies
+
+commit 514524f4d86e406636c8b7c39a1cc540ca98268c
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Wed Jul 1 14:44:48 2015 +0200
+
+    update readme after running task updateDemos
+
+commit 51b2098bb81009b296a3aec826d1223185815182
+Merge: 86cfdc9 ce59fbe
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Wed Jul 1 14:41:16 2015 +0200
+
+    Merge branch 'master' into chore/delete_tabhostactivity_demos
+    
+    Conflicts:
+            CustomTabsHack/build.gradle
+            MultpileActivityTabHost/build.gradle
+            TabHostMultipleActivityBrowsing/build.gradle
+
+commit 87641e562f9010476d8f8d8ea2527325fcfc298d
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Wed Jul 1 14:38:07 2015 +0200
+
+    add updated readme after running task updateDemos
+
+commit a0b2ec5589e0ace6dbacece9c98a52b8531e6024
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Wed Jul 1 14:11:19 2015 +0200
+
+    delete urban airship (devs should inspect https://github.com/urbanairship/android-samples/), delete gcm sample (devs should inspect https://github.com/google/gcm)
+
+commit ce59fbe0e7ae6d5d4b6d19c7478e579c3bc06fc7
+Merge: 121d740 972f69d
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Tue Jun 30 17:46:02 2015 +0100
+
+    Merge pull request #15 from novoda/chore/more_nos_work
+    
+    Chore/More NOS work
+
+commit 86cfdc907301d4331eb57866d2f130071e155d61
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Tue Jun 30 16:38:57 2015 +0200
+
+    delete demo CustomTabsHack, delete demo MultipleActivityTabHost
+
+commit 972f69d6e0a2ea35cc8ad5425a7215d6a09cb69e
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Tue Jun 30 16:31:39 2015 +0200
+
+    use master branch
+
+commit de930d2eca1ddee780dd77efc636db175d02ef1a
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Tue Jun 30 16:30:28 2015 +0200
+
+    add references to NOS libraries and gradle plugins
+
+commit 121d740525ade58eb07d31012db145ea55e9bf2c
+Merge: 40d2429 f812451
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Tue Jun 30 14:06:15 2015 +0100
+
+    Merge pull request #14 from novoda/13/links_to_nos_demos
+    
+    13/Links to NOS demos
+
+commit f812451b880a3665e5c45e90e15d92283d0ead62
+Merge: 0d7e4e6 40d2429
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Tue Jun 30 13:36:31 2015 +0200
+
+    Merge branch 'master' into 13/links_to_nos_demos
+
+commit 40d242919cac18d3343281500ec1a9e540933fd8
+Merge: 0a29057 4a9d055
+Author: Xavi Rigau <xavi@novoda.com>
+Date:   Tue Jun 30 12:17:03 2015 +0100
+
+    Merge pull request #9 from novoda/chore/readme
+    
+    Chore/Add readme content
+
+commit 0d7e4e69035e2dcc41c111a9c5ea03870b9c9987
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Mon Jun 29 17:35:26 2015 +0200
+
+    use demos.json file to generate link list
+
+commit 4a9d05585b797050c0fb2377dc91c01efd2704d5
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Mon Jun 29 13:19:34 2015 +0200
+
+    leave changeling unchanged
+
+commit 50919095d6e06a5d5c16c3aaae469d89223099bf
+Merge: 0f99f5b 0a29057
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Mon Jun 29 13:16:06 2015 +0200
+
+    Merge branch 'master' into chore/readme
+    
+    Conflicts:
+            CHANGELOG.md
+
+commit 14b00b95872fc2fb8cef1e7ef3df2327ef36ab6b
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Mon Jun 29 13:13:38 2015 +0200
+
+    Delete TabHostMultipleActivityBrowsing
+
+commit 0a2905713a504400aaf0b24ae0b2f0165551d263
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Mon Jun 29 11:41:33 2015 +0200
+
+    Add licences button
+
+commit 7d3186e278ccc33d359200b00488983b1f26da99
+Merge: 3b06364 cd61f99
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Mon Jun 29 08:14:28 2015 +0100
+
+    Merge pull request #8 from novoda/chore/update_app_ids
+    
+    Chore/Update app ids, add readme
+
+commit cd61f9911f8e550f0a3dc1fd1fffcabc582fa925
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Sat Jun 27 00:11:52 2015 +0200
+
+    fix format in changelog
+
+commit eb9d8ca0281618294682d50a53889e07c18993b5
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Sat Jun 27 00:08:54 2015 +0200
+
+    move maintenance code to separate gradle file
+
+commit 0f99f5b933247d6e8ddeb48be30e9906c341f0c0
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Fri Jun 26 18:51:21 2015 +0200
+
+    add changelog for June 2015
+
+commit 14730288a9b3dae712573abafda388c770f192f7
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Fri Jun 26 14:27:10 2015 +0200
+
+    remove use of android-command plugin
+
+commit 905be05c51c21993715c06f3dca6aaa288de0c97
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Fri Jun 26 13:10:13 2015 +0200
+
+    add short readmes for all projects
+
+commit 4eeac6a89e7d1a7aa4941d8a7fcc53c840452a26
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Fri Jun 26 11:51:00 2015 +0200
+
+    add readme, correct spaces
+
+commit 112d2b9dfc8ffa913da868126368c28d4c1778a2
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Fri Jun 26 11:10:15 2015 +0200
+
+    add readme, use CursorLoader
+
+commit 98a82b324abe63c41f6dd945d94d214239287d7b
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Fri Jun 26 10:43:36 2015 +0200
+
+    add readme, fix maxSdkVersion to 15 (https://github.com/android/platform_frameworks_base/blob/master/location/java/android/location/LocationManager.java#L1709)
+
+commit 9c8b72fc49eb146f36fc07700f10b0a996e415f6
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Fri Jun 26 10:31:12 2015 +0200
+
+    use landscape screenshot
+
+commit a58a1247fa0937d00d36013c8a5c39735a6140d4
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Fri Jun 26 10:29:35 2015 +0200
+
+    add read and screenshot
+
+commit 7810b32cb477f9fa64552b8b0d6a84a37abf47f9
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Fri Jun 26 10:05:34 2015 +0200
+
+    Add change log file
+
+commit d717c7e8eedbcc75c4e5c6aef2804a939c10b37d
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Fri Jun 26 10:05:22 2015 +0200
+
+    move license to license file
+
+commit 90705cd16380a1e07124d5f734f4c5e611caf1eb
+Author: Friedger Müffke <friedger@gmail.com>
+Date:   Thu Jun 25 22:47:23 2015 +0200
+
+    use gradle 2.4, add task to update all demos, stream line application ids, add empty readme files, add list of all demos, add android-command plugin
+
+commit 3b06364b8caf359a142ffd98d7eb4210bbdb64d5
+Merge: 443dc43 fb183ad
+Author: Stefan Hoth <stefanhoth.de@gmail.com>
+Date:   Wed Jan 7 11:01:39 2015 +0100
+
+    Merge pull request #6 from novoda/gradle-ify_all_the_things_part_2
+    
+    Gradle-ify All The Things (part 2)
+
+commit fb183adba3b9d6481e45c49e12927e830f486844
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 18:50:22 2015 +0000
+
+    Update buildToolsVersion to "21.1.2"
+
+commit 99535eb43613e5b0b20147dac3d5d7b13f602e96
+Merge: b9a3ceb 443dc43
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 18:38:19 2015 +0000
+
+    Merge commit '443dc43ba410d475b83516fc990716e8a6528664' into gradle-ify_all_the_things_part_2
+
+commit 443dc43ba410d475b83516fc990716e8a6528664
+Merge: 533ae97 798915a
+Author: Stefan Hoth <stefanhoth.de@gmail.com>
+Date:   Tue Jan 6 19:07:56 2015 +0100
+
+    Merge pull request #7 from novoda/gradle-ify_all_the_things_1.5
+    
+    Gradle-ify All The Things v1.5
+
+commit 798915a0d28a4f1a7a20d45ba2a91f83d82e674f
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 17:13:27 2015 +0000
+
+    Remove useless task wrapper closure from subproject
+
+commit b9a3ceb7299fdb038d88a4ffe5517567f9ee3765
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 16:01:32 2015 +0000
+
+    Update gradle to 1.0.0 and wrapper to 2.2.1
+
+commit ce24944e5bef2bfe775dd6d1c3ab567fc40e5c2b
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 15:38:21 2015 +0000
+
+    Update targetSdkVersion (21)
+
+commit a462cc1f3daf703cb133036a010139da6f115890
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 15:09:54 2015 +0000
+
+    Update compileSdkVersion (21) and buildToolsVersion ("21.1.1")
+
+commit e66fe0ce2f457728fc1e8a903556a81dd8f9af3b
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 14:59:05 2015 +0000
+
+    Gradleify wizard
+
+commit 1ca0bc11b8867b5084c372c6720bb5cbf7a3dfb7
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 14:46:46 2015 +0000
+
+    Gradleify TabHostSelfContainedTabBrowsing
+
+commit 5c9f7f9bc02fdad2ecb55caedd4e99ebef64fd01
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 14:41:53 2015 +0000
+
+    Gradleify TabHostMultipleActivityBrowsing
+
+commit aa14d1111fb0d50cdc3a8310b4f1dfc499506c49
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 14:36:23 2015 +0000
+
+    Gradleify TabHostExample
+
+commit f4001a840851604acbc2d1a695356ab1bfa50258
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 14:31:19 2015 +0000
+
+    Gradleify sms
+
+commit 6f7c2ac66247d90e7dc4d3452e28c0633d662680
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 14:25:53 2015 +0000
+
+    Gradleify simperAudioStreamer
+
+commit a572cb3b062be6f887aaaa9fd25167d6f695d460
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 14:16:33 2015 +0000
+
+    Gradleify PushNotifications
+
+commit a7474af8ca65f5b582a9f54ff23e06416e287b9d
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 12:37:21 2015 +0000
+
+    Gradleify PinchZoomDetector
+
+commit 305e957abaf62014d6e7d1fdfe2393db520efec4
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 12:34:37 2015 +0000
+
+    Gradleify MultpileActivityTabHost
+
+commit a3ef851e2a6d5fbe1169f591d3304779324d05d3
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 12:30:14 2015 +0000
+
+    Gradleify MultipleContacts
+
+commit dd3df62a5cfbd99c7b3ca42c02cede33c9e2d475
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 12:14:51 2015 +0000
+
+    Gradleify MapApiV2Demo
+
+commit 066d1c64c5a0daca816d0d7280928b5dff8b97f3
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 11:47:11 2015 +0000
+
+    Gradleify Livewallpaper
+
+commit 86e5ecc2248a0a4d6cc34319aa085c4958676293
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 11:27:59 2015 +0000
+
+    Gradleify ListStyles
+
+commit 7640a2f66f0f13ddd9b6a39dc1f6ee7a5dd65865
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 11:27:38 2015 +0000
+
+    Delete unused LeftNavLibrary
+
+commit f2a67eb4344b16465bd7fcb50b0bec16c70d7ec6
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 11:09:47 2015 +0000
+
+    Add LeftNavBarExample to global settings
+
+commit e4efc6b7e4acb03a129e7d33fbab423b581a1bad
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 11:09:28 2015 +0000
+
+    Rename LeftNavBarExample subdir to Example
+
+commit 0f1450c5b98a4e055de9cda1b2f0bcb1011006f9
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 10:50:55 2015 +0000
+
+    Adds Gradle to LeftNavBarExample module
+
+commit f689507b3a69adc7aa837488c738d89681a331bd
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 10:43:38 2015 +0000
+
+    Fix Registered class is not instantiatable lint error
+
+commit 6d9c77d2d3d65915917c00a6e8ef7bfbab79bf6e
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 10:43:08 2015 +0000
+
+    Update gradle version for this project
+
+commit d6e107019cbed329520f8b27f809da2d43380bb3
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 10:40:00 2015 +0000
+
+    Add required overriden methods to TabImpl
+
+commit a7b1993e1b0199878c1e9640250cd2abcfe25d73
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 10:39:46 2015 +0000
+
+    Add required overriden methods to LeftNavBar
+
+commit f5633a7bd1928c507ffe484d2553c22e3d8c4dcc
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Jan 6 10:11:14 2015 +0000
+
+    Move LeftNavBarExample as independent project
+
+commit 533ae977159ecebfd8f1902ba1d0d83e2fe34e52
+Merge: 83e47ad d060bdb
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Thu Dec 4 15:10:28 2014 +0000
+
+    Merge pull request #5 from novoda/gradle-ify_all_the_things
+    
+    Gradle-ify (the first part of) All The Things
+
+commit d060bdbeada04de63780a11b772d616ab0dc8e45
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Dec 2 14:34:39 2014 +0000
+
+    Gradle-ify GsonJsonWebservice
+
+commit 84046635c3e2c96e3b98b3a33f327f83e06e2677
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Dec 2 13:56:41 2014 +0000
+
+    Gradle-ify CompassExample
+
+commit dc3de58aa59f89bb47b25e2c57534972bab34e8a
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Dec 2 12:08:40 2014 +0000
+
+    Gradle-ify Fragments
+
+commit 598b77305fcdddcb087eee25ebbff867ec38f657
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Dec 2 11:26:14 2014 +0000
+
+    Gradle-ify FixedSizeTextColumns
+
+commit 998f9707f98c4be1428d8f3df00cdf123b3858e3
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Dec 2 11:18:25 2014 +0000
+
+    Gradle-ify encryption
+
+commit c9a6c4602c5550f2cf358b3d99e90955e213a67f
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Dec 2 11:10:25 2014 +0000
+
+    Gradle-ify DynamicListItems
+
+commit f75c9afae9afa5f9de3f8489e91d4c925423ec7a
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Dec 2 11:06:57 2014 +0000
+
+    Gradle-ify CustomTabsHack
+
+commit 791c1361fe7f98b89ce56c94f64dc62fee00119e
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Tue Dec 2 11:00:47 2014 +0000
+
+    Gradle-ify ContactSelector
+
+commit 57d7c8a6b7f12ae28ebc8609c6ab69a2aace18c2
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Mon Dec 1 15:56:01 2014 +0100
+
+    Gradle-ify CarouselFragment
+
+commit 91b433cd5306de43bea8fdf42960623bf9b2ccad
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Mon Dec 1 15:41:09 2014 +0100
+
+    Gradle-ify CustomActivityTransition
+
+commit c292acffe3b6026f6153a6125ba54b0a56924f58
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Mon Dec 1 15:39:52 2014 +0100
+
+    Add gradle wrapper
+
+commit e8e3ca387944842711ed7a6a91d274577d5ab54f
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Mon Dec 1 15:38:45 2014 +0100
+
+    Add build results to gitignore
+
+commit 1014741b549ba763ccab4ac40648411238882202
+Author: Daniele Bonaldo <dany.bony@gmail.com>
+Date:   Mon Dec 1 15:33:32 2014 +0100
+
+    Add .gradle to gitignore
+
+commit 83e47adad54a7a3e3b7c560128c305f2c6e744ab
+Author: Paul Blundell <blundell.app.dev@gmail.com>
+Date:   Mon May 26 10:31:17 2014 +0100
+
+    Adds license
+
+commit 3052e6d253bd6a29c3e9b043ba87021242857ba5
+Author: Adam <adam@novoda.com>
+Date:   Fri Dec 7 11:42:10 2012 +0000
+
+    adding map api v2 demo, updating gitignore
+
+commit 2bb1098b42cf97cea9921e549341932dae89b5d9
+Author: friedger <friedger@gmail.com>
+Date:   Mon Nov 26 12:37:34 2012 +0100
+
+    moved push demos to PushNotifications
+
+commit e4ed0723abdc4b599d3e6156ccda963bea521c2c
+Author: akshaydashrath <akshaydashrath@gmail.com>
+Date:   Fri Jul 13 14:25:52 2012 +0100
+
+    -using a rotatable imageview till the multi otuch view is ready
+
+commit d292dc9c0e6af5197f514320a0bf7e35711539d9
+Author: akshaydashrath <akshaydashrath@gmail.com>
+Date:   Fri Jul 13 13:19:14 2012 +0100
+
+    -fixing bits of the rotated image view
+
+commit 6afa4ab2cbaea988a65f7d4bb0a5b7c0f6a6530a
+Author: gerlac <gerlac@gmail.com>
+Date:   Fri Jul 13 12:48:16 2012 +0100
+
+    it was not in the correct package
+
+commit c22c81c76b5826683301300f93daf5fc5fe4e6b1
+Author: gerlac <gerlac@gmail.com>
+Date:   Fri Jul 13 12:47:30 2012 +0100
+
+    first integration with compass but still not working fine
+
+commit 0dc5642d58aa935903fbd774fa4a1b0cbca1d909
+Author: gerlac <gerlac@gmail.com>
+Date:   Fri Jul 13 12:46:51 2012 +0100
+
+    example floorplan
+
+commit a918b47a941fab2f66a0119c28caebbd9c671848
+Merge: df627b8 a3206f0
+Author: gerlac <gerlac@gmail.com>
+Date:   Fri Jul 13 12:25:49 2012 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit a3206f0964fb140a9c3c80bd071abbd439d25c10
+Author: akshaydashrath <akshaydashrath@gmail.com>
+Date:   Fri Jul 13 11:55:44 2012 +0100
+
+    actionbar now activate deactivates the compass
+
+commit df627b87733459797ff8d15db71b8dd905a00816
+Merge: c77c4bf 8954610
+Author: gerlac <gerlac@gmail.com>
+Date:   Fri Jul 13 10:49:37 2012 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit c77c4bf11ec28f9f57dc073b70f005a74d0aafb9
+Author: gerlac <gerlac@gmail.com>
+Date:   Fri Jul 13 10:48:18 2012 +0100
+
+    Rotation Image activity
+
+commit 3494fc42fff5af3a37d0984e8bf8aa0a40d693a2
+Author: gerlac <gerlac@gmail.com>
+Date:   Fri Jul 13 10:47:14 2012 +0100
+
+    Image rotation and translation. Not still functional
+
+commit 8954610f0492fbafd975d58c08ad37d1e61ca347
+Author: akshaydashrath <akshaydashrath@gmail.com>
+Date:   Thu Jul 12 16:15:49 2012 +0100
+
+    -rotation and bearing is now working
+
+commit 9ffeb3e943a843f615b6909d721069cc751e36bf
+Author: akshaydashrath <akshaydashrath@gmail.com>
+Date:   Thu Jul 12 13:47:25 2012 +0100
+
+    -added activity to handle basic compass and accelerometer values
+
+commit 0eac14c496cd71674d3048e985c2f728ce801d8b
+Author: akshaydashrath <akshaydashrath@gmail.com>
+Date:   Thu Jul 12 12:47:13 2012 +0100
+
+    -location is functional
+
+commit e6ea3f2fc94bd7619661e56e667e1249f45e3861
+Author: akshaydashrath <akshaydashrath@gmail.com>
+Date:   Thu Jul 12 11:51:30 2012 +0100
+
+    -refactored
+
+commit ab536dca9f865d173769d4314b79e2c20d65d144
+Author: akshaydashrath <akshaydashrath@gmail.com>
+Date:   Thu Jul 12 11:48:35 2012 +0100
+
+    -added setup for novocation
+    -refactored package structure
+
+commit 2c36d923607e464742f61a576de54f04e1fed746
+Author: akshaydashrath <akshaydashrath@gmail.com>
+Date:   Thu Jul 12 11:36:55 2012 +0100
+
+    -added novocation and manifest changes
+
+commit 97c0ec8c03bd2ce6872c4961165bba2769a7368b
+Author: akshaydashrath <akshaydashrath@gmail.com>
+Date:   Thu Jul 12 10:51:55 2012 +0100
+
+    -added setup for compass example
+
+commit 8b53d87e0baefa8d1687a475a00952182aab00ac
+Author: Adam <adam@novoda.com>
+Date:   Wed Jul 11 17:01:13 2012 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit c047f7b702bace3872b214639458f47cf90f7417
+Author: Adam <adam@novoda.com>
+Date:   Wed Jul 11 17:00:58 2012 +0100
+
+    [maven-release-plugin] prepare release leftnavbar-lib-parent-1.1
+
+commit 0406548f2e9b0d15fb3253b336dec05348065ab2
+Author: Adam <adam@novoda.com>
+Date:   Wed Jul 11 16:58:58 2012 +0100
+
+    fixed xml package names
+
+commit 69428c1adcc8d0414231dd7e9ddcbb5e701d9451
+Author: Adam <adam@novoda.com>
+Date:   Wed Jul 11 12:38:17 2012 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit 897851bcd2d03a530e6866203995a745ead249b5
+Author: Adam <adam@novoda.com>
+Date:   Wed Jul 11 12:38:07 2012 +0100
+
+    [maven-release-plugin] prepare release leftnavbar-lib-parent-1.0
+
+commit c73af91d8b9712c83f92c9bee06362dab23da9b1
+Author: Adam <adam@novoda.com>
+Date:   Wed Jul 11 12:37:29 2012 +0100
+
+    bumped version of pom and chanegd from common to android
+
+commit 68fc81938b46834112a79c42f9acc27703d3e276
+Author: Adam <adam@novoda.com>
+Date:   Wed Jul 11 12:27:46 2012 +0100
+
+    updated leftnavlibrary snapshot
+
+commit 68527a610678c8406f3e19404dca8ea6877067d2
+Author: Adam <adam@novoda.com>
+Date:   Wed Jul 11 12:03:19 2012 +0100
+
+    added leftnavbar library
+
+commit a3d2e996d239ec5b7147bc6f2ba03b07d8f80037
+Author: Adam <adam@novoda.com>
+Date:   Tue Jul 10 13:31:36 2012 +0100
+
+    Fixed readme spelling
+
+commit d9bf1067d01c134d4e1f1424c4e7cdb6c11569a1
+Author: Adam <adam@novoda.com>
+Date:   Tue Jul 10 13:28:08 2012 +0100
+
+    Removed out folder from example
+
+commit b749f27e71dd14093cdc700ef1b341c2062c1036
+Author: Adam <adam@novoda.com>
+Date:   Tue Jul 10 13:26:56 2012 +0100
+
+    Removed Intellij files from LeftNavBarExample
+
+commit bd201091340ffac195561db4c4c5f0fdb4771408
+Author: Adam <adam@novoda.com>
+Date:   Tue Jul 10 13:23:32 2012 +0100
+
+    Removed IntelliJ files from library
+
+commit c1f69793b4a994495dc8c884bc65803dc5702680
+Author: Adam <adam@novoda.com>
+Date:   Tue Jul 10 13:17:51 2012 +0100
+
+    Added LeftNavBarExample
+
+commit f60a269d2eecad6cb705da0d6d94c6efe37cf73c
+Author: Kevin McDonagh <kevin@novoda.com>
+Date:   Sun Apr 8 10:32:57 2012 +0100
+
+    IDs of clicked carousel elements are now shown when clicked.
+
+commit 6daa2323bf5040d3e63a973afad42dbd8473f97a
+Author: Kevin McDonagh <kevin@novoda.com>
+Date:   Sat Apr 7 12:09:05 2012 +0100
+
+    updated placeholder images.
+
+commit f46828bf0706a6284b2ee2bd7dddf8a5c03cd87f
+Author: Kevin McDonagh <kevin@novoda.com>
+Date:   Fri Apr 6 18:09:12 2012 +0100
+
+    Carousel currently shows hiding and traversing.
+
+commit 32d57e0e6a8b3f88740560bd5bcf31abcab99d61
+Author: Kevin McDonagh <kevin@novoda.com>
+Date:   Sat Feb 18 19:26:44 2012 +0000
+
+    Added the first of the fragment demos.
+
+commit b07230504b083b66c85915f8ed479b77d0738844
+Author: Kevin McDonagh <kevin@novoda.com>
+Date:   Thu Jan 5 12:17:12 2012 +0000
+
+    Added a simple example originally modified from javacodegeeks.com
+
+commit 053d7ca9ea5a778da6c0df9b4efcd2e9c266e2c1
+Author: Gonçalo Silva <gnorsilva@gmail.com>
+Date:   Sat Oct 15 18:50:51 2011 +0100
+
+    Deleted activities launch mode demo - moved it to a seperate repo
+
+commit 87af9a88cfed0e0ebf725c873992811fcd4a7fb8
+Author: Kevin McDonagh <kevin@novoda.com>
+Date:   Fri Oct 14 23:44:48 2011 +0100
+
+    Added a cusomt transition demo. In this demo I simply turn off the transition but this demo can now be used to try ou tany other transition quickly in future.
+
+commit 6997f74319810a6611ce50f3bbe78245a2f3b4f8
+Author: Gonçalo Silva <gnorsilva@gmail.com>
+Date:   Thu Aug 4 17:44:29 2011 +0100
+
+    Adding intent filter options dialog
+
+commit 070785b234ab09dd4fcb7bb0f6186e5277edc3af
+Author: Gonçalo Silva <gnorsilva@gmail.com>
+Date:   Thu Aug 4 14:01:09 2011 +0100
+
+    Changed the icon slightly, made the project compatible to android 1.6
+
+commit ba40b90116c191d3cde453e66d53839f8f88b4c2
+Author: Gonçalo Silva <gnorsilva@gmail.com>
+Date:   Thu Aug 4 12:46:29 2011 +0100
+
+    Adding the "Activities LaunchMode" demo project
+
+commit 65897000ca04d58f2b2b538e5c07893063a306c6
+Author: kevinmcdonagh <kevin@novoda.com>
+Date:   Sun Jul 17 15:39:14 2011 +0100
+
+    Moved the cipher vars to constants.
+
+commit 3d647543c7c67be64f2848a7c3a0b7545af557f3
+Author: kevinmcdonagh <kevin@novoda.com>
+Date:   Sun Jul 17 15:06:41 2011 +0100
+
+    Made it clear within the exception when unencrpyted passwords were being shown.
+
+commit 1ce6848d75f6dc5042dad8b2d3392304dcc1a84f
+Author: Kevin McDonagh <kevin@novoda.com>
+Date:   Sat Jul 16 21:14:13 2011 +0100
+
+    Encryption demo.
+
+commit 62831c7c05e03894b6c0d4d95141670709084e65
+Author: Gonçalo Silva <gnorsilva@gmail.com>
+Date:   Thu Jan 20 20:07:56 2011 +0000
+
+    Merge branches 'gnorsilva' and 'master'
+
+commit 506e522ec58567bd1025ca91ba26264c482ea89f
+Author: Gonçalo Silva <gnorsilva@gmail.com>
+Date:   Thu Jan 20 20:05:43 2011 +0000
+
+    Created the PinchZoomDetector project. Implemented this class in the FixedSizeTextColumns, and checked wether a device has a multiple touch screen or not. Also, increased minimum required version to 2.1
+
+commit 981078d60dd3be55fed9d7ee99c41e1ccc26e448
+Merge: 3922efa a63e31b
+Author: Gonçalo Silva <gnorsilva@gmail.com>
+Date:   Wed Jan 19 15:53:45 2011 +0000
+
+    Merge branch 'master', remote branch 'origin/master'
+    
+    Conflicts:
+            FixedSizeTextColumns/res/menu/webview_menu.xml
+            FixedSizeTextColumns/res/values/strings.xml
+            FixedSizeTextColumns/src/com/novoda/HelloWebView.java
+
+commit 3922efa07b6461ff6aa3f55b93106b52d94d428d
+Author: Gonçalo Silva <gnorsilva@gmail.com>
+Date:   Wed Jan 19 15:29:06 2011 +0000
+
+    Renamed webview_menu to webview_main_menu
+    Created an ids file for all ids used in the layout and menu.
+    Modified the string and id names to follow naming conventions
+    Refactored the switch statements in HelloWebView
+
+commit a63e31b6ab27d4311b7575703dd97f3d96c5c8a1
+Author: kevinmcdonagh <kevin@novoda.com>
+Date:   Wed Jan 19 14:13:34 2011 +0000
+
+    Changed a few little conventions. Based on code review.
+
+commit f9da53d2a75118f3a7705d419f1e3f47182cbddd
+Author: Gonçalo Silva <gnorsilva@gmail.com>
+Date:   Wed Jan 19 13:00:40 2011 +0000
+
+    Created an app that displays text columns in a webview, with menu options for text zoom. Three different layouts are available.
+
+commit 409ca0d538a824543aed77e4937ed94f8b940f84
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Sun Feb 28 05:51:25 2010 +0000
+
+    Updated the demos to store the IDs of the resources rather than putting all the Bitmaps into memory. Runs fast enough on the phone so seems like they don't need to be taking up memory.
+
+commit 2df04423bfffc156c7bc3b193bb299e875a6355c
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Thu Feb 11 23:31:45 2010 +0000
+
+    removed some needless files.
+
+commit 967ea4ba3a20813849720e86bc37c55f2e8346ba
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Thu Feb 11 23:29:11 2010 +0000
+
+    Adding the new live Wallpaper demos
+
+commit 97c36e3acc64a5bf8f89de780274c0d7ac2d6d6e
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Thu Feb 4 00:58:28 2010 +0000
+
+    Added the customTabs Hack
+
+commit 129678fd06c5a7ccc5bf3f39174ba3e4ae0b9590
+Author: Kevin McDonagh <kevin@novoda.com>
+Date:   Fri Jan 8 21:58:10 2010 +0000
+
+    Removing unused notifications.
+
+commit 6a3a3eef51a3c761d35faf4a8327aa5191e48593
+Author: Kevin McDonagh <kevin@novoda.com>
+Date:   Fri Jan 8 21:56:10 2010 +0000
+
+    Added demos for List styles and notifications
+
+commit 402685077b42c95b5c47f68b7a4b0313a5b689f5
+Author: Kevin Mcdonagh <kevin@cpc2-cowc3-0-0-cust939.renf.cable.ntl.com>
+Date:   Wed Dec 16 13:28:35 2009 +0000
+
+    Removed the .DS_Store files which had been added by mistake.
+
+commit 072c500592e4094e17a7e7e9cb4b6e2ae26595c1
+Author: Kevin Mcdonagh <kevin@cpc2-cowc3-0-0-cust939.renf.cable.ntl.com>
+Date:   Wed Dec 16 13:27:01 2009 +0000
+
+    Deleted class files which had been inadvertedly added.
+
+commit 9cc741c03942039f37ee438807cd8bedd92eb487
+Author: Kevin Mcdonagh <kevin@cpc2-cowc3-0-0-cust939.renf.cable.ntl.com>
+Date:   Wed Dec 16 13:25:13 2009 +0000
+
+    updated the gitignore not to include classes
+
+commit 50f553d56eed05236d7032c9b51fafa14066c323
+Author: Kevin Mcdonagh <kevin@cpc2-cowc3-0-0-cust939.renf.cable.ntl.com>
+Date:   Wed Dec 16 13:22:57 2009 +0000
+
+    Added an example of tab switching with both one,selfcontained activity and many activities in each tab.
+
+commit 041343ebba8ae0e22148fbce0c86c2ee67e85673
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Fri Dec 4 21:14:45 2009 +0000
+
+    removed the 'improved' class which I commited by mistake
+
+commit 87d02ad8b043fee5b5d8f3761d5bfc24f8367430
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Fri Dec 4 20:35:27 2009 +0000
+
+    Added the audio streaming example
+
+commit 55908966f4968a4c6c07a18d42ab963c87ac9ef9
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Thu Sep 3 00:17:13 2009 +0100
+
+    Added a wizard example.
+
+commit 309e81885d7e640d83ddb7c1637c796c360f7986
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Thu Jul 30 00:06:10 2009 +0100
+
+    Added a multiple activity tabhost demo.
+
+commit 444a2891844455766c35806c1376db03df058f5d
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Wed Jul 29 18:29:36 2009 +0100
+
+    Never finished this example
+
+commit 41c1ed721b284727ac73c556f433eb50b5872b5b
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Wed Jul 29 18:28:53 2009 +0100
+
+    Added an example of using the tab host as there does not seem to be anything else available. STILL!
+
+commit c74289991d15ba20ddff0f86ebc537bd29f11756
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Tue Jul 28 19:07:12 2009 +0100
+
+    Added the Contacts Selector Demo
+
+commit f1ad7ea6916e1a5f472707ffe2d063520ae6bb43
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Tue Jul 28 19:06:44 2009 +0100
+
+    Updated the .gitignore
+
+commit 41fe159fae71f14b48c2cce65b4e5b9dbbd62a28
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Sun Jul 26 17:49:39 2009 +0100
+
+    Added a demo of Dynamic List Items
+
+commit 041d6f2b44b02ca7be8571f367663dc6ffec37a0
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Sun Jul 26 11:01:11 2009 +0100
+
+    Added ignore file
+
+commit 53554be10872b00dd30a802ef6f0d3ee4c8432b2
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Sun Jul 26 10:53:49 2009 +0100
+
+    These are all the initial demos
+
+commit a205f3558dd454b41630479988e3d3923c7a8127
+Author: kevinmcdonagh <kevin@appletv.co.uk>
+Date:   Sun Jul 26 10:53:22 2009 +0100
+
+    Adding the initial demos

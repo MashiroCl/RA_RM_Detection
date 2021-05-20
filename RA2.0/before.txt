@@ -1,0 +1,478 @@
+commit d4bce13a443cf12da40a77c16c1e591f4f985b47
+Author: Danilo F. Silva <danilofes@gmail.com>
+Date:   Wed Jun 10 18:03:54 2015 -0300
+
+    Move Method barkBark from Dog to DogManager
+
+commit 9a5c33b16d07d62651ea80552e8782974c96bb8a
+Author: Danilo F. Silva <danilofes@gmail.com>
+Date:   Wed Jun 10 18:02:48 2015 -0300
+
+    Move Attribute magicNumber from DogManager to Dog
+
+commit a5a7f852e45c7cadc8d1524bd4d14a1e39785aa5
+Author: Danilo F. Silva <danilofes@gmail.com>
+Date:   Wed Jun 10 18:00:59 2015 -0300
+
+    No refactoring.
+
+commit 0bb0526b70870d57cbac9fcc8c4a7346a4ce5879
+Author: Danilo F. Silva <danilofes@gmail.com>
+Date:   Mon Mar 23 16:53:52 2015 -0300
+
+    Rename Operation bark(): void to barkBark(): void in class
+    org.animals.Dog.
+
+commit c286db365e7374fe4d08f54077abb7fba81dd296
+Merge: ef34225 f3b628f
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 19:50:29 2014 -0200
+
+    Merge pull request #24 from danilofes/branch1
+    
+    Delete attributes in Snake;
+
+commit f3b628f8f9c71a2cdfa052025c4a1ed78ee4c45d
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 19:50:11 2014 -0200
+
+    Delete attributes in Snake;
+
+commit ef3422578c0bcaef1561980ef077d06c3f6fc9f9
+Merge: 3ce445f 1328d78
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 19:41:24 2014 -0200
+
+    Merge pull request #23 from danilofes/branch1
+    
+    Extract Interface Animal to Animal Super
+
+commit 1328d7873efe6caaffaf635424e19a4bb5e786a8
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 19:40:55 2014 -0200
+
+    Extract Interface Animal to Animal Super
+
+commit 3ce445fc6c67df447d30cc43556f204038e350c1
+Merge: 32c9c7b 0a46ed5
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 19:13:46 2014 -0200
+
+    Merge pull request #22 from danilofes/branch1
+    
+    Push down Attributes and methods AnimalMarilho to Reptile.
+
+commit 0a46ed5c56c8b1576dfc92f3ec5bc2f0ea68aafe
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 19:13:24 2014 -0200
+
+    Push down Attributes and methods AnimalMarilho to Reptile.
+
+commit 32c9c7bf044c1cc0aeb4f9086c62b094bcc6f77a
+Merge: f7b41d1 638f37c
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 19:09:56 2014 -0200
+
+    Merge pull request #21 from danilofes/branch1
+    
+    Push down methodo Reptile to TurtleMarinha.
+
+commit 638f37ca6b4dcdbb6a4735f93e37445aeef79749
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 19:09:32 2014 -0200
+
+    Push down methodo Reptile to TurtleMarinha.
+
+commit f7b41d1ef7cacf04c023305ae028a01aaa06562c
+Merge: e6237f7 0e193b7
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 19:07:10 2014 -0200
+
+    Merge pull request #20 from danilofes/branch1
+    
+    Extract Method AnimalMarilho to Reptile
+
+commit 0e193b7d02902c6f2abf7c88eebe937d1ac5fc51
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 19:06:38 2014 -0200
+
+    Extract Method AnimalMarilho to Reptile
+
+commit e6237f795546c5f14765330ceebe44cd41cdfffe
+Merge: 9697891 b61e75b
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 19:03:13 2014 -0200
+
+    Merge pull request #19 from danilofes/branch1
+    
+    Push down method Equals to AnimalMarilho to Reptile.
+
+commit b61e75b773f48e680f5bb7362445ba0642c2ee91
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 19:02:50 2014 -0200
+
+    Push down method Equals to AnimalMarilho to Reptile.
+
+commit 96978914696ea0b0bf0a69146145d96f6d5a9ee2
+Merge: a474193 6bbfab9
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:58:30 2014 -0200
+
+    Merge pull request #18 from danilofes/branch1
+    
+    Extract SuperClass AnimalMarilho to Reptile.
+
+commit 6bbfab9e7051362aad9d993f5f6a013b73e75117
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:58:19 2014 -0200
+
+    Extract SuperClass AnimalMarilho to Reptile.
+
+commit a47419336fd3cdacba8d03f24ad4f25c26cd881a
+Merge: 6213ba3 bbd8dc0
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:56:33 2014 -0200
+
+    Merge pull request #17 from danilofes/branch1
+    
+    Create AnimalMarilho. Extract SuperClass.
+
+commit bbd8dc082406a950adf73b7211c887bfab6480f1
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:56:10 2014 -0200
+
+    Create AnimalMarilho. Extract SuperClass.
+
+commit 6213ba3222cb095b09bb20553be4157c3983f67c
+Merge: 4db9657 9803046
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:53:16 2014 -0200
+
+    Merge pull request #16 from danilofes/branch1
+    
+    Push down method Age and Name Reptile to TurtleMarinha.
+
+commit 9803046111744317efaa65a83e65ce8ceb0c15c2
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:53:04 2014 -0200
+
+    Push down method Age and Name Reptile to TurtleMarinha.
+    Delete Turtle.java.
+
+commit 4db96573ae339aa9b50860a4f2ff5dfe57a50a14
+Merge: 213db3b 9b23cc2
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:47:35 2014 -0200
+
+    Merge pull request #15 from danilofes/branch1
+    
+    Create Turtle e TurtleTerrarium
+
+commit 9b23cc2184438f93923c972c45b7caeb43d77d24
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:47:16 2014 -0200
+
+    Create Turtle e TurtleTerrarium
+
+commit 213db3b657692bd0e27a34f0daf4279cf7aba59a
+Merge: 70a7a2e a1b3a91
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:42:08 2014 -0200
+
+    Merge pull request #14 from danilofes/branch1
+    
+    Rename class turtle to TurtleMarinha.
+
+commit a1b3a91d1a423f2b7360e009e47f30aedb663b6f
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:40:35 2014 -0200
+
+    Rename class turtle to TurtleMarinha.
+
+commit 70a7a2e7df29bae52a7cc35d68e200dca5342927
+Merge: 4340f2f 802e21b
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:36:06 2014 -0200
+
+    Merge pull request #13 from danilofes/branch1
+    
+    Create superclass Reptile. Extract atributos and methods of Turtle to Re...
+
+commit 802e21bffe95f0740f44d1a45e3c22adae0ba48c
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:32:45 2014 -0200
+
+    Create superclass Reptile. Extract atributos and methods of Turtle to Reptile
+
+commit 4340f2f64fd5409e3a09966a21d4c82dd82e1ce5
+Merge: 0060ef1 5849e14
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:30:00 2014 -0200
+
+    Merge pull request #12 from danilofes/branch1
+    
+    Create ToString in Turtle.java.
+
+commit 5849e143567474f037950f005d994729de0775fc
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:29:41 2014 -0200
+
+    Create ToString in Turtle.java.
+
+commit 0060ef157ad76efd4c9e68e764cf423aa8f5d3f2
+Merge: 97a9ff2 3f35528
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:26:02 2014 -0200
+
+    Merge pull request #11 from danilofes/branch1
+    
+    Move speed Feline to Tiger.
+
+commit 3f3552830d3e464f96f99bd55641a7c7b16bdd11
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:25:42 2014 -0200
+
+    Move speed Feline to Tiger.
+    Create Snake, Turtle (attributes: age, nage, spead and action)
+    Methods Get and Set to attributes: age, nage, spead and action
+    Methods equals, hashCode and ToString.
+    Constructors to attributes: age, nage, spead and action.
+
+commit 97a9ff285d2b71c320857f0025ebb067fa1e1bd4
+Merge: dde3ef0 f35b2c8
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:04:36 2014 -0200
+
+    Merge pull request #10 from danilofes/branch1
+    
+    Extract method in Cat.java.
+
+commit f35b2c8eb8c320f173237e44d04eefb4634649a2
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:04:03 2014 -0200
+
+    Extract method in Cat.java.
+
+commit dde3ef036bdddae550c4e98373db4c81d77b5043
+Merge: b95891f c0a051f
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:00:56 2014 -0200
+
+    Merge pull request #9 from danilofes/branch1
+    
+    Create method sleep in cat. Move attribute speed the Tiger to Feline.
+
+commit c0a051fdeb02fd4374ebe625d6af9e3125a2b9af
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 18:00:32 2014 -0200
+
+    Create method sleep in cat. Move attribute speed the Tiger to Feline.
+
+commit b95891f09907aaa0c6dfc6012a7b3add6b33a9b1
+Merge: 76b12f8 7ebd3de
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:52:09 2014 -0200
+
+    Merge pull request #8 from danilofes/branch1
+    
+    Create attribute Tiger, remove extentes and include implemets Anima
+
+commit 7ebd3deba1ae42ff1e9c8585fc304839c5288863
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:51:37 2014 -0200
+
+    Create attribute Tiger, remove extentes and include implemets Anima
+
+commit 76b12f8bd6559f9ab1c830ae2b4be2afad16ec22
+Merge: df7fd69 217e55f
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:45:33 2014 -0200
+
+    Merge pull request #7 from danilofes/branch1
+    
+    Create method action em Animal Interface. Cat implements Animal.
+
+commit 217e55ff9d01038a23508d24fe4b8af33ac449d1
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:44:47 2014 -0200
+
+    Create method action em Animal Interface. Cat implements Animal.
+
+commit df7fd6915a9bde2fab01565073dd60205a7462f5
+Merge: c964e5e 32bf625
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:37:51 2014 -0200
+
+    Merge pull request #6 from danilofes/branch1
+    
+    Create interface Animal.
+
+commit 32bf625304762aaad475fa817150634038f07af5
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:37:34 2014 -0200
+
+    Create interface Animal.
+
+commit c964e5e19ad5a0a1f17a6fe491c82875997514b3
+Merge: 1fb6934 92b2013
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:33:30 2014 -0200
+
+    Merge pull request #5 from danilofes/branch1
+    
+    Move methods class Tiger to Feline.
+
+commit 92b201345f730110445d83f4fefe8ae88bc4872b
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:32:44 2014 -0200
+
+    Move methods class Tiger to Feline.
+
+commit 1fb6934dac150a239ef7a1dc3f27b128f4ac00aa
+Merge: 06380fc 9a9878a
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:29:35 2014 -0200
+
+    Merge pull request #4 from danilofes/branch1
+    
+    Move method cat to feline. Create attributes in Tiger.
+
+commit 9a9878aeb62a6bb6ff2bed6c03dd1dd7ed1f202b
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:28:47 2014 -0200
+
+    Move method cat to feline. Create attributes in Tiger.
+
+commit 06380fcfc8e54577f9c07a8a9ed7113c59af2c54
+Merge: 90c0927 c946700
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:23:03 2014 -0200
+
+    Merge pull request #3 from danilofes/branch1
+    
+    Move method
+
+commit c946700398fc43a437d124f027a9bd3ba25bcafc
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:22:19 2014 -0200
+
+    Move class Feline birds to felines pkc.
+
+commit 16be1426aeb34352ba5d97811f3a721b11e3ae00
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:10:36 2014 -0200
+
+    Move method
+
+commit 90c0927162e4cef50fd65da6715932f908264d24
+Merge: 3bfbc10 0c5c243
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:05:50 2014 -0200
+
+    Merge pull request #2 from danilofes/branch1
+    
+    Move Feline the org.felines to org.birds
+
+commit 0c5c24356f3179ee320c3318f91278520caafb3a
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 17:04:14 2014 -0200
+
+    Move Feline the org.felines to org.birds
+
+commit 3bfbc107eac92f388de9f8b87682c3a0baf74981
+Merge: 05c1e77 12b11bf
+Author: Tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 16:55:30 2014 -0200
+
+    Merge pull request #1 from danilofes/branch1
+    
+    Branch1
+
+commit 12b11bf39cb4800e3fa57fb1112c5fbda26de3df
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 16:48:15 2014 -0200
+
+    Move class Tiger the pkc org.animals to org.felines
+
+commit b2c7be7001d4833d14d7fee8c7c989279b4ad039
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 16:42:41 2014 -0200
+
+    create class tiger in package org.animals extends Feline.java.
+
+commit 35790f60a526af57c82c39f5118b85c8ef36bab8
+Merge: 6022692 05c1e77
+Author: tsilva08 <thiagomagelat@yahoo.com.br>
+Date:   Mon Oct 27 16:24:11 2014 -0200
+
+    Merge branch 'iss01' into branch1
+
+commit 05c1e773878bbacae64112f70964f4f2f7944398
+Author: Danilo F. Silva <danilofes@gmail.com>
+Date:   Mon Oct 20 16:31:39 2014 -0200
+
+    Superclass Feline extract from class Cat.
+
+commit 60226924fead7d0c4646df4f4fd65667e83da6dc
+Author: Danilo F. Silva <danilofes@gmail.com>
+Date:   Mon Oct 20 16:27:41 2014 -0200
+
+    Moving Bird, Chicken and Duck to org.birds package.
+
+commit 70b71b7fd3c5973511904c468e464d4910597928
+Author: Danilo F. Silva <danilofes@gmail.com>
+Date:   Mon Oct 20 16:18:12 2014 -0200
+
+    Move Class      org.animals.Cat moved to org.felines.Cat
+
+commit e78b02fe027621aec1227cbf5555c75775ba296b
+Merge: 63cbed9 5849563
+Author: Danilo F. Silva <danilofes@gmail.com>
+Date:   Mon Oct 20 16:17:05 2014 -0200
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 63cbed99a601e79c6a0ae389b2a57acdbd3e1b44
+Author: Danilo F. Silva <danilofes@gmail.com>
+Date:   Mon Oct 20 16:14:11 2014 -0200
+
+    Rename Class    org.animals.Cow renamed to org.animals.CowRenamed
+
+commit 58495630295833c9d73559bd958c2f95339f9c62
+Author: Danilo F. Silva <danilofes@gmail.com>
+Date:   Mon Oct 20 16:10:08 2014 -0200
+
+    Extract Operation       public takeABreath() : void extracted from public
+    bark() : void in class org.animals.Dog
+
+commit 40950c317bd52ea5ce4cf0d19707fe426b66649c
+Author: Danilo F. Silva <danilofes@gmail.com>
+Date:   Mon Oct 20 15:47:36 2014 -0200
+
+    Extract Operation       public takeABreath() : void extracted from public
+    bark() : void in class org.animals.Dog
+
+commit 36287f7c3b09eff78395267a3ac0d7da067863fd
+Author: Danilo F. Silva <danilofes@gmail.com>
+Date:   Mon Oct 20 15:12:28 2014 -0200
+
+    Move Attribute  private age : int from class org.animals.Labrador to
+    class org.animals.Dog
+    Move Attribute  private age : int from class org.animals.Poodle to class
+    org.animals.Dog
+    Move Operation  public getAge() : int from class org.animals.Labrador to
+    public getAge() : int from class org.animals.Dog
+    Move Operation  public getAge() : int from class org.animals.Poodle to
+    public getAge() : int from class org.animals.Dog
+
+commit cd61fd2a70828030ccb3cf46d8719f8b204c52ed
+Author: Danilo F. Silva <danilofes@gmail.com>
+Date:   Mon Oct 20 15:02:14 2014 -0200
+
+    Versão inicial.
+
+commit 819b202bfb09d4142dece04d4039f1708735019b
+Author: danilofes <danilofes@gmail.com>
+Date:   Fri Oct 10 10:20:53 2014 -0300
+
+    Initial commit

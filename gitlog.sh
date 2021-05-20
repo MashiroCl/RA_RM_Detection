@@ -1,0 +1,1 @@
+git log >./RM/before_squash_gitlog.txt

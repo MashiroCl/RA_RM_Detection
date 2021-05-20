@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/danilofes/refactoring-toy-example.git",
+	"sha1": "a5a7f852e45c7cadc8d1524bd4d14a1e39785aa5",
+	"url": "https://github.com/danilofes/refactoring-toy-example/commit/a5a7f852e45c7cadc8d1524bd4d14a1e39785aa5",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter manager : DogManager in method public barkBark(manager DogManager) : void from class org.animals.Dog",
+	"leftSideLocations": [{
+		"filePath": "src/org/animals/Dog.java",
+		"startLine": 11,
+		"endLine": 18,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public barkBark() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/animals/Dog.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 23,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "manager : DogManager"
+}, {
+		"filePath": "src/org/animals/Dog.java",
+		"startLine": 13,
+		"endLine": 20,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public barkBark(manager DogManager) : void"
+}]
+}
+]
+}]
+}

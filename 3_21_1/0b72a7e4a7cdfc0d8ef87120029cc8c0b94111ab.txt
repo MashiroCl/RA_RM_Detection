@@ -1,0 +1,111 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/MPS.git",
+	"sha1": "0b72a7e4a7cdfc0d8ef87120029cc8c0b94111ab",
+	"url": "https://github.com/JetBrains/MPS/commit/0b72a7e4a7cdfc0d8ef87120029cc8c0b94111ab",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable nodeBelowLast : SNode in method public doExecute() : void from class jetbrains.mps.lang.text.editor.WordRangeSelection.selectNext.executeCommand",
+	"leftSideLocations": [{
+		"filePath": "languages/util/core.text/source_gen/jetbrains/mps/lang/text/editor/WordRangeSelection.java",
+		"startLine": 357,
+		"endLine": 357,
+		"startColumn": 13,
+		"endColumn": 219,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "languages/util/core.text/source_gen/jetbrains/mps/lang/text/editor/WordRangeSelection.java",
+		"startLine": 345,
+		"endLine": 362,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public doExecute() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "languages/util/core.text/source_gen/jetbrains/mps/lang/text/editor/WordRangeSelection.java",
+		"startLine": 357,
+		"endLine": 357,
+		"startColumn": 17,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "nodeBelowLast : SNode"
+}, {
+		"filePath": "languages/util/core.text/source_gen/jetbrains/mps/lang/text/editor/WordRangeSelection.java",
+		"startLine": 360,
+		"endLine": 360,
+		"startColumn": 13,
+		"endColumn": 124,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "languages/util/core.text/source_gen/jetbrains/mps/lang/text/editor/WordRangeSelection.java",
+		"startLine": 346,
+		"endLine": 366,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with extracted variable",
+		"codeElement": "public doExecute() : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable nodeAboveFirst : SNode in method public doExecute() : void from class jetbrains.mps.lang.text.editor.WordRangeSelection.selectPrevious.executeCommand",
+	"leftSideLocations": [{
+		"filePath": "languages/util/core.text/source_gen/jetbrains/mps/lang/text/editor/WordRangeSelection.java",
+		"startLine": 380,
+		"endLine": 380,
+		"startColumn": 13,
+		"endColumn": 221,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "languages/util/core.text/source_gen/jetbrains/mps/lang/text/editor/WordRangeSelection.java",
+		"startLine": 368,
+		"endLine": 385,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public doExecute() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "languages/util/core.text/source_gen/jetbrains/mps/lang/text/editor/WordRangeSelection.java",
+		"startLine": 383,
+		"endLine": 383,
+		"startColumn": 17,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "nodeAboveFirst : SNode"
+}, {
+		"filePath": "languages/util/core.text/source_gen/jetbrains/mps/lang/text/editor/WordRangeSelection.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 125,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "languages/util/core.text/source_gen/jetbrains/mps/lang/text/editor/WordRangeSelection.java",
+		"startLine": 372,
+		"endLine": 393,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with extracted variable",
+		"codeElement": "public doExecute() : void"
+}]
+}
+]
+}]
+}

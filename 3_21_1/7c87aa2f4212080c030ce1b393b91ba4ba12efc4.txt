@@ -1,0 +1,9 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/MPS.git",
+	"sha1": "7c87aa2f4212080c030ce1b393b91ba4ba12efc4",
+	"url": "https://github.com/JetBrains/MPS/commit/7c87aa2f4212080c030ce1b393b91ba4ba12efc4",
+	"refactorings": []
+}]
+}

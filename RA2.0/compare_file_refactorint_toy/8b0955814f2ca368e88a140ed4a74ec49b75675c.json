@@ -1,0 +1,66 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/danilofes/refactoring-toy-example.git",
+	"sha1": "8b0955814f2ca368e88a140ed4a74ec49b75675c",
+	"url": "https://github.com/danilofes/refactoring-toy-example/commit/8b0955814f2ca368e88a140ed4a74ec49b75675c",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter dog : Dog in method public barkBark(dog Dog) : void from class org.DogManager",
+	"leftSideLocations": [{
+		"filePath": "src/org/animals/Dog.java",
+		"startLine": 11,
+		"endLine": 18,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public bark() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/DogManager.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 23,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "dog : Dog"
+}, {
+		"filePath": "src/org/DogManager.java",
+		"startLine": 25,
+		"endLine": 32,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public barkBark(dog Dog) : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public bark() : void from class org.animals.Dog to public barkBark(dog Dog) : void from class org.DogManager",
+	"leftSideLocations": [{
+		"filePath": "src/org/animals/Dog.java",
+		"startLine": 11,
+		"endLine": 18,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public bark() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/DogManager.java",
+		"startLine": 25,
+		"endLine": 32,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public barkBark(dog Dog) : void"
+}]
+}
+]
+}]
+}

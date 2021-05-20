@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/danilofes/refactoring-toy-example.git",
+	"sha1": "0bb0526b70870d57cbac9fcc8c4a7346a4ce5879",
+	"url": "https://github.com/danilofes/refactoring-toy-example/commit/0bb0526b70870d57cbac9fcc8c4a7346a4ce5879",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public bark() : void renamed to public barkBark() : void in class org.animals.Dog",
+	"leftSideLocations": [{
+		"filePath": "src/org/animals/Dog.java",
+		"startLine": 11,
+		"endLine": 18,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public bark() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/animals/Dog.java",
+		"startLine": 11,
+		"endLine": 18,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public barkBark() : void"
+}]
+}
+]
+}]
+}
