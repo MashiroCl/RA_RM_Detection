@@ -14,7 +14,7 @@ def create_folder(folder):
     try:
         os.mkdir(path)
     except FileExistsError:
-        print("Folder " + folder + "already exists, Directory not created")
+        print("Folder " + folder + "already exists, Directory recreated")
         os.system("rm -rf "+folder)
         os.mkdir(path)
     return path
@@ -139,8 +139,8 @@ def squash(repository,commit_id):
 def combine(output,compare_file):
     create_folder(compare_file)
     result=[]
-    for f in glob.glob("*.json"):
-        with open(f,"w") as infile:
+    for f in glob.glob(output+"/"+"*.json"):
+        with open(f,"r") as infile:
             result.append(json.load(infile))
 
     with open(compare_file+"/before_squashed.json","w") as outfile:
