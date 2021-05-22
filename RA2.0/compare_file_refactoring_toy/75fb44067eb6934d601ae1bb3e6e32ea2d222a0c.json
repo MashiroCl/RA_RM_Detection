@@ -2,8 +2,8 @@
 "commits": [
 {
 	"repository": "https://github.com/danilofes/refactoring-toy-example",
-	"sha1": "dff736ed069639e3a6d89a25e00b3d33e359311d",
-	"url": "https://github.com/danilofes/refactoring-toy-example/commit/dff736ed069639e3a6d89a25e00b3d33e359311d",
+	"sha1": "75fb44067eb6934d601ae1bb3e6e32ea2d222a0c",
+	"url": "https://github.com/danilofes/refactoring-toy-example/commit/75fb44067eb6934d601ae1bb3e6e32ea2d222a0c",
 	"refactorings": [{
 	"type": "Add Parameter",
 	"description": "Add Parameter dog : Dog in method public barkBark(dog Dog) : void from class org.DogManager",

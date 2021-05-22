@@ -29,9 +29,20 @@ def git_log(path,file_name="git_log.txt"):
     os.system('git -C '+path+'/.git log>'+file_name)
     return file_name
 
+def count_commit(file_path):
+    with open(file_path) as f:
+        lines = f.readlines()
+    length = len(lines)
+    num=0
+    for i, line in enumerate(lines):
+        if "commit" in line:
+            if i < length - 1 and ("Merge: " in lines[i + 1] or "Author: " in lines[i + 1]):
+                num=num+1
+    return num
+
 def extract_commit(file_path):
-    f1=open(file_path)
-    lines=f1.readlines()
+    with open(file_path) as f1:
+        lines=f1.readlines()
     commits=[]
     length=len(lines)
     for i,line in enumerate(lines):
@@ -73,10 +84,10 @@ def RM(RM_path,repository,commits,output):
 
 
 #strategy
-def strategy(id,path):
+def strategy(id,path,beforelog):
     if id=="sequence":
         merge=extract_commit(git_merge(path))
-        log=extract_commit(git_log(path))
+        log=extract_commit(beforelog)
         cc_lists=[]
         p_lists=[]
         j=0
@@ -231,12 +242,13 @@ def RM_supported_type():
     return dict
 
 
-
 def process(id,path,RM_path,output,before_logF="before.txt",after_logF="after.txt",f_compare="compare_file"):
     #obtain git log before squash
     before_log=git_log(path,file_name=before_logF)
+    #count commits num
+    num_before=count_commit(before_log)
     #get before squashed commits
-    cc_lists,p_lists=strategy(id, path)
+    cc_lists,p_lists=strategy(id, path,before_log)
     #write cc_cluster_info with commits before the 1st merge
     cc_commits=cc_cluster_info(path,cc_lists[0])
     #create output folder
@@ -251,6 +263,8 @@ def process(id,path,RM_path,output,before_logF="before.txt",after_logF="after.tx
     squash(path,p_lists[0])
     #obtain squashed git log
     squashed_log=git_log(path,file_name=after_logF)
+    #count commits num
+    num_after=count_commit(after_logF)
     #obtain squashed commit id
     squashed_c_d=find_after_squash(cc_commits,before_log,squashed_log)
 
@@ -263,8 +277,8 @@ def process(id,path,RM_path,output,before_logF="before.txt",after_logF="after.tx
         # compare(f1,f2)
         ref_num_before,dict1_temp=stat_analysis(f1)
         ref_num_after, dict2_temp = stat_analysis(f2)
-        print("Fine grained", "Total ",ref_num_before," detected, ",exclude_0_in_dict(dict1_temp))
-        print("Coarese-grained", "Total ",ref_num_after," detected, ",exclude_0_in_dict(dict2_temp))
+        print("Fine grained",num_before,"commits in total: ", "Total ",ref_num_before," detected, ",exclude_0_in_dict(dict1_temp))
+        print("Coarese-grained",num_after,"commits in total: ", "Total ",ref_num_after," detected, ",exclude_0_in_dict(dict2_temp))
 
     totalCommits=len(cc_lists)
     totalRefactoringsDetected=0
