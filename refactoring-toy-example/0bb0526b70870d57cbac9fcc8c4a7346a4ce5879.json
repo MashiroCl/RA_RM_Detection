@@ -1,7 +1,7 @@
 {
 "commits": [
 {
-	"repository": "https://github.com/danilofes/refactoring-toy-example.git",
+	"repository": "https://github.com/danilofes/refactoring-toy-example",
 	"sha1": "0bb0526b70870d57cbac9fcc8c4a7346a4ce5879",
 	"url": "https://github.com/danilofes/refactoring-toy-example/commit/0bb0526b70870d57cbac9fcc8c4a7346a4ce5879",
 	"refactorings": [{

@@ -6,6 +6,7 @@ import json
 
 
 BEFORE_SQUASHED="before_squashed"
+RMSupportedREF="RMSupportedREF.txt"
 
 #create a folder to save information under current script path
 def create_folder(folder):
@@ -18,11 +19,6 @@ def create_folder(folder):
         os.system("rm -rf "+folder)
         os.mkdir(path)
     return path
-
-def read(file):
-    f1=open(file)
-    lines=f1.readlines()
-    return lines
 
 def git_merge(path,file_name="git_merge.txt"):
     os.system('git -C '+path+'/.git log --merges>'+file_name)
@@ -165,47 +161,74 @@ def find_after_squash(cc_commits,log1,log2):
             print("First commit contains merge")
             return None
 
-
-
-
 # use type and description to determine it as an unique refactoirng
-def read_refactorings(file_path):
-    refactorings = []
-    file = open(file_path)
+# def read_refactorings(file_path):
+#     refactorings = []
+#     file = open(file_path)
+#
+#     lines = file.readlines()
+#     for i in range(len(lines)):
+#         if '"type"' in lines[i]:
+#             one_refactoring = []
+#             one_refactoring.append(lines[i] + lines[i + 1])
+#             refactorings.append(one_refactoring)
+#
+#     return refactorings
 
-    lines = file.readlines()
-    for i in range(len(lines)):
-        if '"type"' in lines[i]:
-            one_refactoring = []
-            one_refactoring.append(lines[i] + lines[i + 1])
-            refactorings.append(one_refactoring)
 
-    return refactorings
+# def compare(f1_json,f2_json):
+#     for each in (with open(f1_json))
+#         flag = 0
+#         for each_2 in after_squashed_refactorings:
+#             if each == each_2:
+#                 flag = 1
+#         if flag == 0:
+#             difference.append(each)
+#     print(len(before_squashed_refactorings))
+#     print(len(after_squashed_refactorings))
+#     print(len(difference))
+#     if (len(difference) == 0):
+#         print("there is no difference before and after squash")
+#     else:
+#         print("differences are ")
+#         for each in difference:
+#             print(each)
 
 
-def compare(before_squashed,after_squashed):
-    before_squashed_refactorings = read_refactorings(before_squashed)
-    after_squashed_refactorings = read_refactorings(after_squashed)
-    difference = []
-    for each in before_squashed_refactorings:
-        flag = 0
-        for each_2 in after_squashed_refactorings:
-            if each == each_2:
-                flag = 1
-        if flag == 0:
-            difference.append(each)
-    print(len(before_squashed_refactorings))
-    print(len(after_squashed_refactorings))
-    print(len(difference))
-    if (len(difference) == 0):
-        print("there is no difference before and after squash")
+def stat_analysis(f_json):
+    with open(f_json,"r") as f1:
+        list1=json.load(f1)
+    dictS = RM_supported_type()
+    #ref_num, num_of_each_type
+    ref_num=0
+    if isinstance(list1,list):
+        pass
     else:
-        print("differences are ")
-        for each in difference:
-            print(each)
+        list1=[list1]
 
-def countRefactorings(rmFile):
-    pass
+    for each in list1:
+        for each_r in each["commits"][0]["refactorings"]:
+            ref_num=ref_num+1;
+            for eachD in dictS:
+                if eachD.lower() == each_r['type'].lower():
+                    dictS[eachD] = dictS[eachD] + 1
+    return ref_num,dictS
+
+def exclude_0_in_dict(dict):
+    dict2={}
+    for each in dict:
+        if dict[each]!=0:
+            dict2[each]=dict[each]
+    return dict2
+
+
+def RM_supported_type():
+    dict={}
+    with open(RMSupportedREF) as f:
+       lines=f.readlines()
+    for each in lines:
+        dict[each.strip()]=0
+    return dict
 
 
 
@@ -234,10 +257,14 @@ def process(id,path,RM_path,output,before_logF="before.txt",after_logF="after.tx
     if squashed_c_d is not None:
         #RM on squashed commit
         RM(RM_path,path,[squashed_c_d[0]],compare_file)
-        #Compare RM results
+        # #Compare RM results
         f1=compare_file+"/"+BEFORE_SQUASHED+".json"
         f2=compare_file+"/"+squashed_c_d[0]+".json"
-        compare(f1,f2)
+        # compare(f1,f2)
+        ref_num_before,dict1_temp=stat_analysis(f1)
+        ref_num_after, dict2_temp = stat_analysis(f2)
+        print("Fine grained", "Total ",ref_num_before," detected, ",exclude_0_in_dict(dict1_temp))
+        print("Coarese-grained", "Total ",ref_num_after," detected, ",exclude_0_in_dict(dict2_temp))
 
     totalCommits=len(cc_lists)
     totalRefactoringsDetected=0
@@ -261,7 +288,7 @@ output_refactoring_toy="/Users/leichen/Code/pythonProject/For_file_compare/refac
 output4="/Users/leichen/Code/pythonProject/For_file_compare/output4"
 f_compare_jfinal="compare_file_jfinal"
 f_compare_android_demos="compare_file_android_demos"
-f_compare_refactoring_toy="compare_file_refactorint_toy"
+f_compare_refactoring_toy="compare_file_refactoring_toy"
 #id,path,RM_path,output,before_logF="before.txt",after_logF="after.txt",
 #            ,f_compare="compare_file"
 process(id="sequence",path=path_refactoring_toy,RM_path=RM_path,output=output_refactoring_toy,f_compare=f_compare_refactoring_toy)
