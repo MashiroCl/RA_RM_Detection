@@ -1,0 +1,129 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jfinal/jfinal.git",
+	"sha1": "440656aafb12ecfc06593dda5242a1347f75e93b",
+	"url": "https://github.com/jfinal/jfinal/commit/440656aafb12ecfc06593dda5242a1347f75e93b",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public setModelAndRecordFieldNameToCamelCase(toLowerCaseAnyway boolean) : void extracted from public setModelAndRecordFieldNameToCamelCase() : void in class com.jfinal.json.JFinalJsonKit",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/json/JFinalJsonKit.java",
+		"startLine": 798,
+		"endLine": 810,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setModelAndRecordFieldNameToCamelCase() : void"
+}, {
+		"filePath": "src/main/java/com/jfinal/json/JFinalJsonKit.java",
+		"startLine": 807,
+		"endLine": 809,
+		"startColumn": 3,
+		"endColumn": 5,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/jfinal/json/JFinalJsonKit.java",
+		"startLine": 808,
+		"endLine": 808,
+		"startColumn": 4,
+		"endColumn": 47,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/jfinal/json/JFinalJsonKit.java",
+		"startLine": 807,
+		"endLine": 809,
+		"startColumn": 53,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/json/JFinalJsonKit.java",
+		"startLine": 798,
+		"endLine": 811,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public setModelAndRecordFieldNameToCamelCase(toLowerCaseAnyway boolean) : void"
+}, {
+		"filePath": "src/main/java/com/jfinal/json/JFinalJsonKit.java",
+		"startLine": 808,
+		"endLine": 810,
+		"startColumn": 3,
+		"endColumn": 5,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/jfinal/json/JFinalJsonKit.java",
+		"startLine": 809,
+		"endLine": 809,
+		"startColumn": 4,
+		"endColumn": 60,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/jfinal/json/JFinalJsonKit.java",
+		"startLine": 808,
+		"endLine": 810,
+		"startColumn": 53,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/jfinal/json/JFinalJsonKit.java",
+		"startLine": 813,
+		"endLine": 822,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setModelAndRecordFieldNameToCamelCase() : void"
+}, {
+		"filePath": "src/main/java/com/jfinal/json/JFinalJsonKit.java",
+		"startLine": 821,
+		"endLine": 821,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "setModelAndRecordFieldNameToCamelCase(true)"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method protected compressLine(content StringBuilder, start int, end int, lineType int, result StringBuilder) : void from class com.jfinal.template.stat.Compressor to protected compressLine(content StringBuilder, start int, end int, lineType int, result StringBuilder) : void from class com.jfinal.template.stat.LineCompressor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/template/stat/Compressor.java",
+		"startLine": 85,
+		"endLine": 131,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected compressLine(content StringBuilder, start int, end int, lineType int, result StringBuilder) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/template/stat/LineCompressor.java",
+		"startLine": 91,
+		"endLine": 137,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "protected compressLine(content StringBuilder, start int, end int, lineType int, result StringBuilder) : void"
+}]
+}
+]
+}]
+}

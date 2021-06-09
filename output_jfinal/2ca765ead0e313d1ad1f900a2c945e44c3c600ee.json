@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jfinal/jfinal.git",
+	"sha1": "2ca765ead0e313d1ad1f900a2c945e44c3c600ee",
+	"url": "https://github.com/jfinal/jfinal/commit/2ca765ead0e313d1ad1f900a2c945e44c3c600ee",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable stat : Expr to expr : Expr in method package exprList() : ExprList from class com.jfinal.template.expr.ExprParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/template/expr/ExprParser.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "stat : Expr"
+}, {
+		"filePath": "src/main/java/com/jfinal/template/expr/ExprParser.java",
+		"startLine": 105,
+		"endLine": 125,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package exprList() : ExprList"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/template/expr/ExprParser.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "expr : Expr"
+}, {
+		"filePath": "src/main/java/com/jfinal/template/expr/ExprParser.java",
+		"startLine": 105,
+		"endLine": 125,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with renamed variable",
+		"codeElement": "package exprList() : ExprList"
+}]
+}
+]
+}]
+}

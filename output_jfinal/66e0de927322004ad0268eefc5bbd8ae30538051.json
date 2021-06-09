@@ -1,0 +1,177 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jfinal/jfinal.git",
+	"sha1": "66e0de927322004ad0268eefc5bbd8ae30538051",
+	"url": "https://github.com/jfinal/jfinal/commit/66e0de927322004ad0268eefc5bbd8ae30538051",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter roundingMode : RoundingMode in method private outputWithoutPattern(value Object, roundingMode RoundingMode, writer Writer) : void from class com.jfinal.template.ext.directive.NumberDirective",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 83,
+		"endLine": 86,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private outputWithoutPattern(writer Writer, value Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 50,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "roundingMode : RoundingMode"
+}, {
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 87,
+		"endLine": 93,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private outputWithoutPattern(value Object, roundingMode RoundingMode, writer Writer) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter roundingMode : RoundingMode in method private outputWithPattern(value Object, roundingMode RoundingMode, scope Scope, writer Writer) : void from class com.jfinal.template.ext.directive.NumberDirective",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 88,
+		"endLine": 96,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private outputWithPattern(scope Scope, writer Writer, value Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 47,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "roundingMode : RoundingMode"
+}, {
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 95,
+		"endLine": 106,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private outputWithPattern(value Object, roundingMode RoundingMode, scope Scope, writer Writer) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable df : DecimalFormat in method private outputWithoutPattern(value Object, roundingMode RoundingMode, writer Writer) : void from class com.jfinal.template.ext.directive.NumberDirective",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 83,
+		"endLine": 86,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private outputWithoutPattern(writer Writer, value Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "df : DecimalFormat"
+}, {
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 87,
+		"endLine": 93,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with extracted variable",
+		"codeElement": "private outputWithoutPattern(value Object, roundingMode RoundingMode, writer Writer) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable df : DecimalFormat in method private outputWithPattern(value Object, roundingMode RoundingMode, scope Scope, writer Writer) : void from class com.jfinal.template.ext.directive.NumberDirective",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 3,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 88,
+		"endLine": 96,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private outputWithPattern(scope Scope, writer Writer, value Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "df : DecimalFormat"
+}, {
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/jfinal/template/ext/directive/NumberDirective.java",
+		"startLine": 95,
+		"endLine": 106,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with extracted variable",
+		"codeElement": "private outputWithPattern(value Object, roundingMode RoundingMode, scope Scope, writer Writer) : void"
+}]
+}
+]
+}]
+}

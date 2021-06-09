@@ -1,0 +1,93 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jfinal/jfinal.git",
+	"sha1": "abb064d418376c4ecd24d496494211af9226cc21",
+	"url": "https://github.com/jfinal/jfinal/commit/abb064d418376c4ecd24d496494211af9226cc21",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type java.math.BigDecimal to BigDecimal in method public queryBigDecimal(sql String, paras Object...) : BigDecimal from class com.jfinal.plugin.activerecord.Db",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 16,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "BigDecimal"
+}, {
+		"filePath": "src/main/java/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 165,
+		"endLine": 167,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public queryBigDecimal(sql String, paras Object...) : BigDecimal"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 16,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "BigDecimal"
+}, {
+		"filePath": "src/main/java/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 167,
+		"endLine": 169,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public queryBigDecimal(sql String, paras Object...) : BigDecimal"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type java.math.BigDecimal to BigDecimal in method public queryBigDecimal(sql String) : BigDecimal from class com.jfinal.plugin.activerecord.Db",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 16,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "BigDecimal"
+}, {
+		"filePath": "src/main/java/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 169,
+		"endLine": 171,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public queryBigDecimal(sql String) : BigDecimal"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 16,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "BigDecimal"
+}, {
+		"filePath": "src/main/java/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 171,
+		"endLine": 173,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public queryBigDecimal(sql String) : BigDecimal"
+}]
+}
+]
+}]
+}

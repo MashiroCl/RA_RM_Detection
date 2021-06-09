@@ -4,10 +4,26 @@ import sys
 import glob
 import json
 
-
 BEFORE_SQUASHED="before_squashed"
 RMSupportedREF="RMSupportedREF.txt"
 
+class MyDict(dict):
+    def __init__(self):
+        self.dict=dict
+    def add(self,dict2):
+        for each1 in self.dict:
+            for each2 in dict2:
+                if each1.lower()==each2.lower():
+                    self.dict[each1]+=dict2[each2]
+    def setDicts(self):
+        self.dict=RM_supported_type()
+
+def dictAdd(dictS,dict2)->dict:
+    for each1 in dictS:
+        for each2 in dict2:
+            if each1.lower() == each2.lower():
+                dictS[each1] += dict2[each2]
+    return dictS
 #create a folder to save information under current script path
 def create_folder(folder):
     # folder= sys.argv[0]
@@ -155,7 +171,7 @@ def combine(output,compare_file):
     return compare_file
 
 # use date to find the squashed commit id
-def find_after_squash(cc_commits,log1,log2):
+def find_after_squash(cc_commits,log1,log2)->list:
     c_d_lists_1 = extract_c_d(log1)
     c_d_lists_2=extract_c_d(log2)
 
@@ -241,6 +257,34 @@ def RM_supported_type():
         dict[each.strip()]=0
     return dict
 
+def process_one(path,RM_path,output,before_log,cc_list,p_list,after_logF="after.txt",f_compare="compare_file") -> int:
+
+        # write cc_cluster_info with commits before the 1st merge
+        cc_commits = cc_cluster_info(path, cc_list)
+        # create output folder
+        create_folder(output)
+        # Refactoring Miner on commits in cc_cluster_info
+        RM(RM_path, path, cc_commits, output)
+        # Combine RM results into one txt
+        compare_file=combine(output, f_compare)
+        # squash commits
+        squash(path, p_list)
+
+        # obtain squashed git log
+        squashed_log = git_log(path, file_name=after_logF)
+
+        # obtain squashed commit id
+        squashed_c_d = find_after_squash(cc_commits, before_log, squashed_log)
+
+        if squashed_c_d is not None:
+            # RM on squashed commit
+            RM(RM_path, path, [squashed_c_d[0]], compare_file)
+            f1=compare_file+"/"+BEFORE_SQUASHED+".json"
+            f2 = compare_file + "/" + squashed_c_d[0] + ".json"
+            ref_num_before,dict1_temp=stat_analysis(f1)
+            ref_num_after, dict2_temp = stat_analysis(f2)
+
+        return ref_num_before,ref_num_after,dict1_temp,dict2_temp
 
 def process(id,path,RM_path,output,before_logF="before.txt",after_logF="after.txt",f_compare="compare_file"):
     #obtain git log before squash
@@ -249,39 +293,71 @@ def process(id,path,RM_path,output,before_logF="before.txt",after_logF="after.tx
     num_before=count_commit(before_log)
     #get before squashed commits
     cc_lists,p_lists=strategy(id, path,before_log)
-    #write cc_cluster_info with commits before the 1st merge
-    cc_commits=cc_cluster_info(path,cc_lists[0])
-    #create output folder
-    create_folder(output)
-    #Refactoring Miner on commits in cc_cluster_info
-    RM(RM_path,path,cc_commits,output)
-    #Combine RM results into one txt
-    compare_file=combine(output,f_compare)
-    #copy auto-seq-editor.rb to the path
+
+    # copy auto-seq-editor.rb to the path
     copy_auto_seq_editor(path)
-    #squash commits
-    squash(path,p_lists[0])
-    #obtain squashed git log
-    squashed_log=git_log(path,file_name=after_logF)
-    #count commits num
-    num_after=count_commit(after_logF)
-    #obtain squashed commit id
-    squashed_c_d=find_after_squash(cc_commits,before_log,squashed_log)
 
-    if squashed_c_d is not None:
-        #RM on squashed commit
-        RM(RM_path,path,[squashed_c_d[0]],compare_file)
-        # #Compare RM results
-        f1=compare_file+"/"+BEFORE_SQUASHED+".json"
-        f2=compare_file+"/"+squashed_c_d[0]+".json"
-        # compare(f1,f2)
-        ref_num_before,dict1_temp=stat_analysis(f1)
-        ref_num_after, dict2_temp = stat_analysis(f2)
-        print("Fine grained",num_before,"commits in total: ", "Total ",ref_num_before," detected, ",exclude_0_in_dict(dict1_temp))
-        print("Coarese-grained",num_after,"commits in total: ", "Total ",ref_num_after," detected, ",exclude_0_in_dict(dict2_temp))
+    ref_num_before = 0
+    ref_num_after = 0
+    dict_before = RM_supported_type()
+    dict_after = RM_supported_type()
 
-    totalCommits=len(cc_lists)
-    totalRefactoringsDetected=0
+    if id=="sequence":
+        for i in range(len(cc_lists)):
+            num1,num2,dict1,dict2=process_one(path,RM_path,output,before_log,cc_lists[i],p_lists[i],after_logF,f_compare)
+            ref_num_before=ref_num_before+num1
+            ref_num_after = ref_num_after+num2
+            dictAdd(dict_before,dict1)
+            dictAdd(dict_after, dict2)
+
+
+    # count commits num
+    num_after = count_commit(after_logF)
+    print("Fine grained",num_before,"commits in total: ", "Total ",ref_num_before," detected, ",exclude_0_in_dict(dict_before))
+    print("Coarese-grained",num_after,"commits in total: ", "Total ",ref_num_after," detected, ",exclude_0_in_dict(dict_after))
+
+         # for i in range(len(cc_lists)):
+         #    #write cc_cluster_info with commits before the 1st merge
+         #    cc_commits=cc_cluster_info(path,cc_lists[i])
+         #    #create output folder
+         #    create_folder(output)
+         #    #Refactoring Miner on commits in cc_cluster_info
+         #    RM(RM_path,path,cc_commits,output)
+         #    #Combine RM results into one txt
+         #    compare_file=combine(output,f_compare)
+         #
+         #    #squash commits
+         #    squash(path,p_lists[i])
+         #    # #write cc_cluster_info with commits before the 1st merge
+         #    # cc_commits=cc_cluster_info(path,cc_lists[0])
+         #    # #create output folder
+         #    # create_folder(output)
+         #    # #Refactoring Miner on commits in cc_cluster_info
+         #    # RM(RM_path,path,cc_commits,output)
+         #    # #Combine RM results into one txt
+         #    # compare_file=combine(output,f_compare)
+         #    #
+         #    # #squash commits
+         #    # squash(path,p_lists[0])
+         # # obtain squashed git log
+         # squashed_log=git_log(path,file_name=after_logF)
+         # #count commits num
+         # num_after=count_commit(after_logF)
+         # #obtain squashed commit id
+         # squashed_c_d=find_after_squash(cc_commits,before_log,squashed_log)
+
+    # if squashed_c_d is not None:
+    #     #RM on squashed commit
+    #     RM(RM_path,path,[squashed_c_d[0]],compare_file)
+    #     # #Compare RM results
+    #     f1=compare_file+"/"+BEFORE_SQUASHED+".json"
+    #     f2=compare_file+"/"+squashed_c_d[0]+".json"
+    #     # compare(f1,f2)
+    #     ref_num_before,dict1_temp=stat_analysis(f1)
+    #     ref_num_after, dict2_temp = stat_analysis(f2)
+    #     print("Fine grained",num_before,"commits in total: ", "Total ",ref_num_before," detected, ",exclude_0_in_dict(dict1_temp))
+    #     print("Coarese-grained",num_after,"commits in total: ", "Total ",ref_num_after," detected, ",exclude_0_in_dict(dict2_temp))
+
 
 
 path="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
@@ -290,22 +366,29 @@ merge_file="/Users/leichen/Code/pythonProject/For_file_compare/git_merge.txt"
 log_file="/Users/leichen/Code/pythonProject/For_file_compare/git_log.txt"
 
 RM_path="/Users/leichen/ResearchAssistant/RefactoringMiner_commandline/RefactoringMiner-2.1.0/bin/RefactoringMiner"
-# commits=extract_commit(merge_file)
-# RM(RM_path,repository,commits,output)
 
 path_refactoring_toy="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
 path_jfinal="/Users/leichen/ResearchAssistant/InteractiveRebase/data/jfinal"
 path_android_demos="/Users/leichen/ResearchAssistant/InteractiveRebase/data/android-demos"
+path_mbassador="/Users/leichen/ResearchAssistant/InteractiveRebase/data/mbassador"
+
 output_jfinal="/Users/leichen/Code/pythonProject/For_file_compare/output_jfinal"
 output_android_demos="/Users/leichen/Code/pythonProject/For_file_compare/output_android_demos"
 output_refactoring_toy="/Users/leichen/Code/pythonProject/For_file_compare/refactoring-toy-example"
-output4="/Users/leichen/Code/pythonProject/For_file_compare/output4"
+output_mbassador="/Users/leichen/Code/pythonProject/For_file_compare/mbassador"
+
+
+
 f_compare_jfinal="compare_file_jfinal"
 f_compare_android_demos="compare_file_android_demos"
 f_compare_refactoring_toy="compare_file_refactoring_toy"
+f_compare_mbassador="compare_file_mbassador"
+
+
 #id,path,RM_path,output,before_logF="before.txt",after_logF="after.txt",
 #            ,f_compare="compare_file"
 process(id="sequence",path=path_refactoring_toy,RM_path=RM_path,output=output_refactoring_toy,f_compare=f_compare_refactoring_toy)
-# process("sequence",path_jfinal,RM_path,output_jfinal,f_compare_jfinal)
+# process(id="sequence",path=path_jfinal,RM_path=RM_path,output=output_jfinal,f_compare=f_compare_jfinal)
+# process(id="sequence",path=path_mbassador,RM_path=RM_path,output=output_mbassador,f_compare=f_compare_mbassador)
 
 

@@ -1,0 +1,135 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jfinal/jfinal.git",
+	"sha1": "8c3689bb71e3d429507d341a1898a2b3323cf1de",
+	"url": "https://github.com/jfinal/jfinal/commit/8c3689bb71e3d429507d341a1898a2b3323cf1de",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type callback : ICallback to callback : ICallback<T> in method public call(callback ICallback<T>) : T from class com.jfinal.plugin.redis.Redis",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/plugin/redis/Redis.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 27,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "callback : ICallback"
+}, {
+		"filePath": "src/main/java/com/jfinal/plugin/redis/Redis.java",
+		"startLine": 75,
+		"endLine": 77,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public call(callback ICallback) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/plugin/redis/Redis.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 27,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "callback : ICallback<T>"
+}, {
+		"filePath": "src/main/java/com/jfinal/plugin/redis/Redis.java",
+		"startLine": 75,
+		"endLine": 77,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed variable type",
+		"codeElement": "public call(callback ICallback<T>) : T"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type callback : ICallback to callback : ICallback<T> in method public call(callback ICallback<T>, cacheName String) : T from class com.jfinal.plugin.redis.Redis",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/plugin/redis/Redis.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 27,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "callback : ICallback"
+}, {
+		"filePath": "src/main/java/com/jfinal/plugin/redis/Redis.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public call(callback ICallback, cacheName String) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/plugin/redis/Redis.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 27,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "callback : ICallback<T>"
+}, {
+		"filePath": "src/main/java/com/jfinal/plugin/redis/Redis.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed variable type",
+		"codeElement": "public call(callback ICallback<T>, cacheName String) : T"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type callback : ICallback to callback : ICallback<T> in method private call(callback ICallback<T>, cache Cache) : T from class com.jfinal.plugin.redis.Redis",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/plugin/redis/Redis.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 28,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "callback : ICallback"
+}, {
+		"filePath": "src/main/java/com/jfinal/plugin/redis/Redis.java",
+		"startLine": 83,
+		"endLine": 99,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private call(callback ICallback, cache Cache) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/plugin/redis/Redis.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 28,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "callback : ICallback<T>"
+}, {
+		"filePath": "src/main/java/com/jfinal/plugin/redis/Redis.java",
+		"startLine": 83,
+		"endLine": 99,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed variable type",
+		"codeElement": "private call(callback ICallback<T>, cache Cache) : T"
+}]
+}
+]
+}]
+}

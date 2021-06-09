@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jfinal/jfinal.git",
+	"sha1": "95d4e398ffff39127408b4d082b2dd41176b7d3a",
+	"url": "https://github.com/jfinal/jfinal/commit/95d4e398ffff39127408b4d082b2dd41176b7d3a",
+	"refactorings": [{
+	"type": "Move Attribute",
+	"description": "Move Attribute protected injectDependency : boolean from class com.jfinal.core.ActionHandler to protected injectDependency : boolean from class com.jfinal.core.ControllerFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/core/ActionHandler.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 20,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected injectDependency : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/jfinal/core/ControllerFactory.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 20,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected injectDependency : boolean"
+}]
+}
+]
+}]
+}

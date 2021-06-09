@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/danilofes/refactoring-toy-example.git",
+	"sha1": "70b71b7fd3c5973511904c468e464d4910597928",
+	"url": "https://github.com/danilofes/refactoring-toy-example/commit/70b71b7fd3c5973511904c468e464d4910597928",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class org.animals.Cat moved to org.felines.Cat",
+	"leftSideLocations": [{
+		"filePath": "src/org/animals/Cat.java",
+		"startLine": 3,
+		"endLine": 9,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.animals.Cat"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/felines/Cat.java",
+		"startLine": 3,
+		"endLine": 9,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.felines.Cat"
+}]
+}
+]
+}]
+}
