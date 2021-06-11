@@ -1,6 +1,6 @@
 import json
 
-class Commit():
+class Commit:
     def __init__(self,info:str):
         self.commitID=info["commit"]
         self.parentID=info["parent"].split(" ")
@@ -11,11 +11,12 @@ class Commit():
         self.parent=[]
         self.child=[]
 
-    def setParent(self,pCommit):
+    def setParent(self,pCommit)->None:
         self.parent.append(pCommit)
 
-    def setChinld(self,cCommit):
+    def setChild(self,cCommit)->None:
         self.child.append(cCommit)
+
 
 if __name__ =="__main__":
     path="/Users/leichen/ResearchAssistant/InteractiveRebase/data/jfinal/test.json"
@@ -25,3 +26,4 @@ if __name__ =="__main__":
     commits=[]
     for each in data:
         commits.append(Commit(each))
+    print(commits)
