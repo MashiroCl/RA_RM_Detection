@@ -1,0 +1,291 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jfinal/jfinal.git",
+	"sha1": "c18371b6eb9b3274438383e2a02f994e2d2e8f8e",
+	"url": "https://github.com/jfinal/jfinal/commit/c18371b6eb9b3274438383e2a02f994e2d2e8f8e",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type Cookie to String in method public getCookie(name String) : String from class com.jfinal.core.Controller",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 363,
+		"endLine": 363,
+		"startColumn": 9,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Cookie"
+}, {
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 360,
+		"endLine": 370,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCookie(name String) : Cookie"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 356,
+		"endLine": 356,
+		"startColumn": 9,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "String"
+}, {
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 353,
+		"endLine": 358,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getCookie(name String) : String"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type String to Integer in method public getCookieToInt(name String, defaultValue Integer) : Integer from class com.jfinal.core.Controller",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 348,
+		"endLine": 348,
+		"startColumn": 9,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "String"
+}, {
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 345,
+		"endLine": 351,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCookieValue(name String, defaultValue String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 9,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Integer"
+}, {
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 368,
+		"endLine": 374,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getCookieToInt(name String, defaultValue Integer) : Integer"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type defaultValue : String to defaultValue : Integer in method public getCookieToInt(name String, defaultValue Integer) : Integer from class com.jfinal.core.Controller",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 348,
+		"endLine": 348,
+		"startColumn": 44,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "defaultValue : String"
+}, {
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 345,
+		"endLine": 351,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCookieValue(name String, defaultValue String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 45,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "defaultValue : Integer"
+}, {
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 368,
+		"endLine": 374,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed variable type",
+		"codeElement": "public getCookieToInt(name String, defaultValue Integer) : Integer"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getCookieValue(name String, defaultValue String) : String renamed to public getCookieToInt(name String, defaultValue Integer) : Integer in class com.jfinal.core.Controller",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 345,
+		"endLine": 351,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCookieValue(name String, defaultValue String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 368,
+		"endLine": 374,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getCookieToInt(name String, defaultValue Integer) : Integer"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getCookies() : Cookie[] renamed to public getCookieObjects() : Cookie[] in class com.jfinal.core.Controller",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 372,
+		"endLine": 377,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCookies() : Cookie[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 404,
+		"endLine": 410,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getCookieObjects() : Cookie[]"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type cookie : Cookie to result : String in method public getCookieToInt(name String, defaultValue Integer) : Integer from class com.jfinal.core.Controller",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 10,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "cookie : Cookie"
+}, {
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 345,
+		"endLine": 351,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCookieValue(name String, defaultValue String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 10,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "result : String"
+}, {
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 368,
+		"endLine": 374,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed variable type",
+		"codeElement": "public getCookieToInt(name String, defaultValue Integer) : Integer"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable cookie : Cookie to result : String in method public getCookieToInt(name String, defaultValue Integer) : Integer from class com.jfinal.core.Controller",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 10,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "cookie : Cookie"
+}, {
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 345,
+		"endLine": 351,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCookieValue(name String, defaultValue String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 10,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "result : String"
+}, {
+		"filePath": "src/com/jfinal/core/Controller.java",
+		"startLine": 368,
+		"endLine": 374,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with renamed variable",
+		"codeElement": "public getCookieToInt(name String, defaultValue Integer) : Integer"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected getAttrs() : Map<String,Object> from class com.jfinal.plugin.activerecord.Model",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/Model.java",
+		"startLine": 246,
+		"endLine": 254,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getAttrs() : Map<String,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/Model.java",
+		"startLine": 246,
+		"endLine": 254,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected getAttrs() : Map<String,Object>"
+}]
+}
+]
+}]
+}

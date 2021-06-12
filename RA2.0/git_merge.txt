@@ -1,229 +1,327 @@
-commit c286db365e7374fe4d08f54077abb7fba81dd296
-Merge: ef34225 f3b628f
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:50:29 2014 -0200
+commit 35886bb3b5ad1a9cdc773aa61954aca960ab89f2
+Merge: 3c291ad 86ac61c
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Sun Sep 13 20:14:07 2015 +0200
 
-    Merge pull request #24 from danilofes/branch1
+    Merge pull request #125 from dorkbox/array_speedup
     
-    Delete attributes in Snake;
+    Performance improvements. Replacing generic collection with ArrayList and Iterable iteration with array iteration
 
-commit ef3422578c0bcaef1561980ef077d06c3f6fc9f9
-Merge: 3ce445f 1328d78
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:41:24 2014 -0200
+commit 3c291ad93d6f0a440ecce1efbac18c137898509d
+Merge: fda940c d8c2bba
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Sun Sep 13 20:12:17 2015 +0200
 
-    Merge pull request #23 from danilofes/branch1
+    Merge pull request #117 from ToddCostella/patch-1
     
-    Extract Interface Animal to Animal Super
+    Update README.md
 
-commit 3ce445fc6c67df447d30cc43556f204038e350c1
-Merge: 32c9c7b 0a46ed5
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:13:46 2014 -0200
+commit 86ac61c24827efc6e866a2b1580b7a4f50f3f840
+Merge: dfc1421 fda940c
+Author: nathan <nathan@dorkbox.com>
+Date:   Mon Sep 7 23:45:12 2015 +0200
 
-    Merge pull request #22 from danilofes/branch1
+    Merged with master
+
+commit d7201d536c1051dce9cf789b159bd378988ba678
+Merge: 5bc924c 6df0bae
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Thu Aug 27 18:04:15 2015 +0200
+
+    Merge pull request #123 from davidsowerby/master
     
-    Push down Attributes and methods AnimalMarilho to Reptile.
+    Fix for broken link in README
 
-commit 32c9c7bf044c1cc0aeb4f9086c62b094bcc6f77a
-Merge: f7b41d1 638f37c
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:09:56 2014 -0200
+commit 2a50396de29dc54a9149f6b678d4882d1c06457f
+Merge: 017f52a cca88c3
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Fri May 8 10:43:32 2015 +0200
 
-    Merge pull request #21 from danilofes/branch1
+    Merge pull request #112 from dorkbox/recursion_fix
     
-    Push down methodo Reptile to TurtleMarinha.
+    Improved recursive method in reflection utils
 
-commit f7b41d1ef7cacf04c023305ae028a01aaa06562c
-Merge: e6237f7 0e193b7
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:07:10 2014 -0200
+commit 017f52a3c9593e6294db4059eb643a8e07de9440
+Merge: bccc449 6c19fd3
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Tue Apr 14 16:20:00 2015 +0200
 
-    Merge pull request #20 from danilofes/branch1
+    Merge pull request #109 from davidsowerby/errorhandler
     
-    Extract Method AnimalMarilho to Reptile
+    ErrorHandler moved to IBusConfiguration
 
-commit e6237f795546c5f14765330ceebe44cd41cdfffe
-Merge: 9697891 b61e75b
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:03:13 2014 -0200
+commit bccc4496f65611a359ab4740fdfde0bed9f135d7
+Merge: 8678757 b86c32b
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Mon Mar 16 09:40:46 2015 +0100
 
-    Merge pull request #19 from danilofes/branch1
+    Merge pull request #105 from davidsowerby/gradle
     
-    Push down method Equals to AnimalMarilho to Reptile.
+    Corrected gradle build file
 
-commit 96978914696ea0b0bf0a69146145d96f6d5a9ee2
-Merge: a474193 6bbfab9
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:58:30 2014 -0200
+commit 867875759c943447d44c94e55cc122ba0bac90be
+Merge: 395e872 fd70480
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Mon Mar 16 09:39:38 2015 +0100
 
-    Merge pull request #18 from danilofes/branch1
+    Merge pull request #104 from davidsowerby/error_handler_msg
     
-    Extract SuperClass AnimalMarilho to Reptile.
+    Changed warning message when no error handler is explicitly configured.
 
-commit a47419336fd3cdacba8d03f24ad4f25c26cd881a
-Merge: 6213ba3 bbd8dc0
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:56:33 2014 -0200
+commit 577495b7ec050cdc75d27650b101a259453bcf65
+Merge: 0064586 70ddc31
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Fri Feb 27 16:17:29 2015 +0100
 
-    Merge pull request #17 from danilofes/branch1
+    Merge pull request #100 from dorkbox/polish
     
-    Create AnimalMarilho. Extract SuperClass.
+    Added AbstractConcurrentSet.clear(), some lock polish
 
-commit 6213ba3222cb095b09bb20553be4157c3983f67c
-Merge: 4db9657 9803046
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:53:16 2014 -0200
+commit 0064586be24898f577c1178525b2de9c4b353743
+Merge: e9a1e6c 3b613c9
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Fri Feb 27 11:46:07 2015 +0100
 
-    Merge pull request #16 from danilofes/branch1
+    Merge pull request #99 from dorkbox/concurrent_map
     
-    Push down method Age and Name Reptile to TurtleMarinha.
+    Upgraded ConcurrentSet to Set
 
-commit 4db96573ae339aa9b50860a4f2ff5dfe57a50a14
-Merge: 213db3b 9b23cc2
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:47:35 2014 -0200
+commit 50ae4dc05a35b30cf1dde4ee64002a7e09266774
+Merge: 4fce938 e9a1e6c
+Author: nathan <nathan@dorkbox.com>
+Date:   Wed Feb 25 12:41:47 2015 +0100
 
-    Merge pull request #15 from danilofes/branch1
+    Merge branch 'master' into concurrent_map
+
+commit f509bfe57ff348717ba3d7d4dc04359f659b1825
+Merge: fd1ca55 7b30328
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Thu Dec 18 12:40:20 2014 +0100
+
+    Merge pull request #91 from dorkbox/master
     
-    Create Turtle e TurtleTerrarium
+    Extend the message publication factory to return an interface type instead of class type to allow for easier extension of message publication behaviour
 
-commit 213db3b657692bd0e27a34f0daf4279cf7aba59a
-Merge: 70a7a2e a1b3a91
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:42:08 2014 -0200
+commit f485cdef1cd1c516dc8f8af2b76ac8c7a72bce37
+Merge: 5c56360 800aefa
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Aug 31 12:37:00 2014 +0200
 
-    Merge pull request #14 from danilofes/branch1
+    Merge branch 'master' of https://github.com/bennidi/mbassador
     
-    Rename class turtle to TurtleMarinha.
+    Conflicts:
+            README.md
 
-commit 70a7a2e7df29bae52a7cc35d68e200dca5342927
-Merge: 4340f2f 802e21b
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:36:06 2014 -0200
+commit 800aefa85e0b5144dfdb96c69af339bd5f9d541a
+Merge: 86830b8 10b7761
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sat Aug 30 17:36:26 2014 +0200
 
-    Merge pull request #13 from danilofes/branch1
+    Merge pull request #80 from bdavisx/master
     
-    Create superclass Reptile. Extract atributos and methods of Turtle to Re...
+    Made a small change to the main readme.md to make it clearer
 
-commit 4340f2f64fd5409e3a09966a21d4c82dd82e1ce5
-Merge: 0060ef1 5849e14
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:30:00 2014 -0200
+commit 86830b847dea460c47cea9d471a18b9b6918bc6d
+Merge: 9a81992 1834145
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sat Jul 5 11:36:06 2014 +0200
 
-    Merge pull request #12 from danilofes/branch1
+    Merge pull request #74 from arne-vandamme/master
     
-    Create ToString in Turtle.java.
+    Added support for meta annotations
 
-commit 0060ef157ad76efd4c9e68e764cf423aa8f5d3f2
-Merge: 97a9ff2 3f35528
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:26:02 2014 -0200
+commit 86bdcad3364acfda93b04e3ba386db6da99e8a5a
+Merge: 79323c5 cf10466
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Thu May 22 10:01:05 2014 +0200
 
-    Merge pull request #11 from danilofes/branch1
+    Merge pull request #70 from Rossi1337/master
     
-    Move speed Feline to Tiger.
+    Support Message filtering per Expression Language
 
-commit 97a9ff285d2b71c320857f0025ebb067fa1e1bd4
-Merge: dde3ef0 f35b2c8
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:04:36 2014 -0200
-
-    Merge pull request #10 from danilofes/branch1
-    
-    Extract method in Cat.java.
-
-commit dde3ef036bdddae550c4e98373db4c81d77b5043
-Merge: b95891f c0a051f
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:00:56 2014 -0200
-
-    Merge pull request #9 from danilofes/branch1
-    
-    Create method sleep in cat. Move attribute speed the Tiger to Feline.
-
-commit b95891f09907aaa0c6dfc6012a7b3add6b33a9b1
-Merge: 76b12f8 7ebd3de
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:52:09 2014 -0200
-
-    Merge pull request #8 from danilofes/branch1
-    
-    Create attribute Tiger, remove extentes and include implemets Anima
-
-commit 76b12f8bd6559f9ab1c830ae2b4be2afad16ec22
-Merge: df7fd69 217e55f
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:45:33 2014 -0200
-
-    Merge pull request #7 from danilofes/branch1
-    
-    Create method action em Animal Interface. Cat implements Animal.
-
-commit df7fd6915a9bde2fab01565073dd60205a7462f5
-Merge: c964e5e 32bf625
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:37:51 2014 -0200
-
-    Merge pull request #6 from danilofes/branch1
-    
-    Create interface Animal.
-
-commit c964e5e19ad5a0a1f17a6fe491c82875997514b3
-Merge: 1fb6934 92b2013
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:33:30 2014 -0200
-
-    Merge pull request #5 from danilofes/branch1
-    
-    Move methods class Tiger to Feline.
-
-commit 1fb6934dac150a239ef7a1dc3f27b128f4ac00aa
-Merge: 06380fc 9a9878a
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:29:35 2014 -0200
-
-    Merge pull request #4 from danilofes/branch1
-    
-    Move method cat to feline. Create attributes in Tiger.
-
-commit 06380fcfc8e54577f9c07a8a9ed7113c59af2c54
-Merge: 90c0927 c946700
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:23:03 2014 -0200
-
-    Merge pull request #3 from danilofes/branch1
-    
-    Move method
-
-commit 90c0927162e4cef50fd65da6715932f908264d24
-Merge: 3bfbc10 0c5c243
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:05:50 2014 -0200
-
-    Merge pull request #2 from danilofes/branch1
-    
-    Move Feline the org.felines to org.birds
-
-commit 3bfbc107eac92f388de9f8b87682c3a0baf74981
-Merge: 05c1e77 12b11bf
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 16:55:30 2014 -0200
-
-    Merge pull request #1 from danilofes/branch1
-    
-    Branch1
-
-commit 35790f60a526af57c82c39f5118b85c8ef36bab8
-Merge: 6022692 05c1e77
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 16:24:11 2014 -0200
-
-    Merge branch 'iss01' into branch1
-
-commit e78b02fe027621aec1227cbf5555c75775ba296b
-Merge: 63cbed9 5849563
-Author: Danilo F. Silva <danilofes@gmail.com>
-Date:   Mon Oct 20 16:17:05 2014 -0200
+commit fe696c2f95a91ed60bd13627fba560e9134a2b00
+Merge: d2175fa 1763988
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Thu Jan 9 15:39:14 2014 +0100
 
     Merge remote-tracking branch 'origin/master'
+
+commit 17639887d59cbbdf7962147417ee1fda37cc3114
+Merge: 0d36eb6 5612cbe
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Sat Nov 30 04:56:10 2013 -0800
+
+    Merge pull request #57 from durron597/master
+    
+    Added ISubscriptionManagerProvider to plugin custom behaviour how single subscriptions are managed.
+
+commit eb555ca1afc102206118cfe4e22e267ed9d09cff
+Merge: edf4939 0d36eb6
+Author: durron597 <martin.jared@gmail.com>
+Date:   Mon Nov 25 14:12:13 2013 -0800
+
+    Merge pull request #2 from bennidi/master
+    
+    Download from upstream
+
+commit edf4939f5909b50316fa184a463fe771798c2a02
+Merge: 52f5286 cf0328c
+Author: durron597 <martin.jared@gmail.com>
+Date:   Fri Nov 8 13:46:45 2013 -0800
+
+    Merge pull request #1 from bennidi/master
+    
+    Download the latest changes from bennidi
+
+commit 6d641f5056584469884503c33e1abd1606cdbe20
+Merge: 078e374 52f5286
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Tue Oct 8 01:47:43 2013 -0700
+
+    Merge pull request #52 from durron597/master
+    
+    Created ISyncBusConfiguration for synchronous only bus.
+
+commit 078e374074f870f3d7485ff0d2150c78d68ee51f
+Merge: 69e6d57 bc267cd
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Tue Sep 10 12:33:23 2013 +0200
+
+    Merge branch 'master' of https://github.com/bennidi/mbassador
+
+commit bc267cde2b5fe078759d334048caff2c9f443c30
+Merge: d6aa291 9eda5ba
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Wed Sep 4 00:25:42 2013 -0700
+
+    Merge pull request #49 from durron597/master
+    
+    Overloading factory methods for default bus configuration
+
+commit 8aa3fca57fae4bc24f9675268d4db84a8c0ff06b
+Merge: 65fcf85 e4b6a84
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Wed Aug 14 03:58:57 2013 -0700
+
+    Merge pull request #47 from durron597/master
+    
+    Added custom names to identify MBassador dispatchers.
+
+commit 6e4f838d10c2d0d0259940da89da9308d814b8e9
+Merge: 5915038 ca9f931
+Author: bennidi <b.diedrichsen@googlemail.com>
+Date:   Wed Jul 10 05:27:29 2013 -0700
+
+    Merge pull request #40 from o-nix/patch-1
+    
+    The latest Maven published version is 1.1.7
+
+commit 40109de6ee20c24ddf98e4c9ceed1375d213dffc
+Merge: 5c2fc81 7d53f6a
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sun Jun 23 12:29:40 2013 +0200
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 7d53f6a904e26c0ae2a2b336573d779dc5cf23e7
+Merge: 3a6814a 033d31d
+Author: bennidi <b.diedrichsen@googlemail.com>
+Date:   Fri Jun 7 00:16:21 2013 -0700
+
+    Merge pull request #34 from durron597/master
+    
+    Changed Publication Error to use system independent newline
+
+commit e021af4ace8b30092fb714105690f594ca042c6f
+Merge: 41309cc b25b9da
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sun Jun 2 13:27:17 2013 +0200
+
+    Merge remote-tracking branch 'origin/master'
+
+commit cc58fa6ff76a0d800ac17ddd4efbcbba24f11c0c
+Merge: 6100c65 b50b25b
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sun May 26 17:39:27 2013 +0200
+
+    Merge remote-tracking branch 'origin/master'
+
+commit e5b13ba8e6ea5fbdf8de1c8858e060059778c886
+Merge: a6462b4 1e445ad
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Wed May 22 18:06:09 2013 +0200
+
+    subscription manager test improvements
+
+commit 16f92eee06c54530221af77a97eff21b55588ee0
+Merge: 7c08bd0 eceba9e
+Author: bennidi <b.diedrichsen@googlemail.com>
+Date:   Tue May 21 13:47:45 2013 -0700
+
+    Merge pull request #32 from durron597/master
+    
+    Fixed bug #31
+
+commit eceba9ef099a864fafb0411dff8cac0cee9f4f44
+Merge: 8f30ea6 7c08bd0
+Author: durron597 <martin.jared@gmail.com>
+Date:   Tue May 21 09:28:04 2013 -0700
+
+    Merge pull request #1 from bennidi/master
+    
+    better support of interfaces in message publication
+
+commit 3b215115fbcce09a734f6e700ee5cc9e1b211fc1
+Merge: 17b1fee bf0ce95
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun May 12 14:37:08 2013 +0200
+
+    Added SubsciptionManager, fixed #30 and #31
+
+commit f52fc0e681a58959eab8a10b0964716290e982b4
+Merge: b0efe8a 8349aef
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Fri Mar 29 12:17:54 2013 +0100
+
+    Merge of lennartj-master, code style fixes
+
+commit fb2bdd4c1a72de2222c8a31cbe8c0b6c71b53c24
+Merge: cb949a2 03d21a0
+Author: Lennart Jörelid <lj@jguru.se>
+Date:   Sat Mar 23 10:18:27 2013 +0100
+
+    Merged gitignore versions.
+
+commit b0efe8a283106096f075654c261fbe1ab2f4022b
+Merge: c74e3da acc59eb
+Author: bennidi <b.diedrichsen@googlemail.com>
+Date:   Fri Mar 22 08:11:11 2013 -0700
+
+    Merge pull request #23 from bigbear3001/master
+    
+    Fix StackOverflowExcpetion for large Lists
+
+commit bbc2004232f871fbe7df8cbba573f7f53a133b50
+Merge: a4f15c4 39ec901
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun Dec 16 17:26:57 2012 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 39ec9019c20d6eed7151e70a01c0182a175220cb
+Merge: 4459a56 4d617a2
+Author: bennidi <b.diedrichsen@googlemail.com>
+Date:   Sat Dec 15 07:17:49 2012 -0800
+
+    Merge pull request #13 from KenFromNN/master
+    
+    Organized imports to reduce number of warnings in some IDEs/CodeCheckers
+
+commit 4459a56245bf234aec0b56874d8ef94afe11452a
+Merge: c8b60ef 11c337d
+Author: bennidi <b.diedrichsen@googlemail.com>
+Date:   Thu Dec 13 08:45:21 2012 -0800
+
+    Merge pull request #12 from merjadok/master
+    
+    Removing "unchecked call" warnings

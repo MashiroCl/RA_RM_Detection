@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/danilofes/refactoring-toy-example.git",
+	"sha1": "638f37ca6b4dcdbb6a4735f93e37445aeef79749",
+	"url": "https://github.com/danilofes/refactoring-toy-example/commit/638f37ca6b4dcdbb6a4735f93e37445aeef79749",
+	"refactorings": [{
+	"type": "Push Down Method",
+	"description": "Push Down Method public equals(obj Object) : boolean from class org.reptile.Reptile to public equals(obj Object) : boolean from class org.reptile.TurtleMarinha",
+	"leftSideLocations": [{
+		"filePath": "src/org/reptile/Reptile.java",
+		"startLine": 5,
+		"endLine": 26,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public equals(obj Object) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/reptile/TurtleMarinha.java",
+		"startLine": 38,
+		"endLine": 59,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public equals(obj Object) : boolean"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public equals(obj Object) : boolean from class org.reptile.Reptile to public equals(obj Object) : boolean from class org.reptile.TurtleTerrarium",
+	"leftSideLocations": [{
+		"filePath": "src/org/reptile/Reptile.java",
+		"startLine": 5,
+		"endLine": 26,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public equals(obj Object) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/reptile/TurtleTerrarium.java",
+		"startLine": 13,
+		"endLine": 34,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public equals(obj Object) : boolean"
+}]
+}
+]
+}]
+}

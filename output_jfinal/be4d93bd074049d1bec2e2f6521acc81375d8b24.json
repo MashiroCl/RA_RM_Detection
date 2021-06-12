@@ -1,0 +1,2409 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jfinal/jfinal.git",
+	"sha1": "be4d93bd074049d1bec2e2f6521acc81375d8b24",
+	"url": "https://github.com/jfinal/jfinal/commit/be4d93bd074049d1bec2e2f6521acc81375d8b24",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class com.jfinal.plugin.activerecord.CaseInsensitiveMap moved to com.jfinal.plugin.activerecord.CaseInsensitiveContainerFactory.CaseInsensitiveMap",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 19,
+		"endLine": 53,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.jfinal.plugin.activerecord.CaseInsensitiveMap"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveContainerFactory.java",
+		"startLine": 71,
+		"endLine": 95,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "com.jfinal.plugin.activerecord.CaseInsensitiveContainerFactory.CaseInsensitiveMap"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class com.jfinal.plugin.activerecord.IMapFactory renamed to com.jfinal.plugin.activerecord.IContainerFactory",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/IMapFactory.java",
+		"startLine": 5,
+		"endLine": 9,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.jfinal.plugin.activerecord.IMapFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/IContainerFactory.java",
+		"startLine": 22,
+		"endLine": 27,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "com.jfinal.plugin.activerecord.IContainerFactory"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.core.ActionRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/core/ActionRender.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/core/ActionRender.java",
+		"startLine": 21,
+		"endLine": 40,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.core.ActionRender"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/core/ActionRender.java",
+		"startLine": 21,
+		"endLine": 40,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.core.ActionRender"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.core.ModelInjectException",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/core/ModelInjector.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/core/ModelInjector.java",
+		"startLine": 108,
+		"endLine": 118,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.core.ModelInjectException"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/core/ModelInjector.java",
+		"startLine": 108,
+		"endLine": 119,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.core.ModelInjectException"
+}]
+},
+{
+	"type": "Remove Attribute Annotation",
+	"description": "Remove Attribute Annotation @SuppressWarnings(\"serial\") in attribute private set : Set<String> from class com.jfinal.ext.interceptor.Restful",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/Restful.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 2,
+		"endColumn": 29,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/Restful.java",
+		"startLine": 32,
+		"endLine": 38,
+		"startColumn": 22,
+		"endColumn": 4,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private set : Set<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/Restful.java",
+		"startLine": 31,
+		"endLine": 38,
+		"startColumn": 22,
+		"endColumn": 4,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed annotation",
+		"codeElement": "private set : Set<String>"
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @SuppressWarnings({\"deprecation\",\"serial\",\"rawtypes\"}) to @SuppressWarnings({\"rawtypes\",\"deprecation\"}) in class com.jfinal.ext.interceptor.JFinalSession",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 0,
+		"endColumn": 57,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@SuppressWarnings({\"deprecation\",\"serial\",\"rawtypes\"})"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 59,
+		"endLine": 135,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.ext.interceptor.JFinalSession"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 0,
+		"endColumn": 47,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@SuppressWarnings({\"rawtypes\",\"deprecation\"})"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 59,
+		"endLine": 135,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "com.jfinal.ext.interceptor.JFinalSession"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute s : HttpSession to session : HttpSession in class com.jfinal.ext.interceptor.JFinalSession",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 22,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "s : HttpSession"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 22,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "session : HttpSession"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.ext.render.CaptchaRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/render/CaptchaRender.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/ext/render/CaptchaRender.java",
+		"startLine": 33,
+		"endLine": 163,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.ext.render.CaptchaRender"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/render/CaptchaRender.java",
+		"startLine": 33,
+		"endLine": 164,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.ext.render.CaptchaRender"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.ext.render.JsonWithContentTypeRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/render/JsonWithContentTypeRender.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/ext/render/JsonWithContentTypeRender.java",
+		"startLine": 28,
+		"endLine": 97,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.ext.render.JsonWithContentTypeRender"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/render/JsonWithContentTypeRender.java",
+		"startLine": 28,
+		"endLine": 98,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.ext.render.JsonWithContentTypeRender"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ILoggerFactory to void in method public init() : void from class com.jfinal.log.Logger",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/log/Logger.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ILoggerFactory"
+}, {
+		"filePath": "src/com/jfinal/log/Logger.java",
+		"startLine": 39,
+		"endLine": 47,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createLoggerFactory() : ILoggerFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/log/Logger.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 16,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "src/com/jfinal/log/Logger.java",
+		"startLine": 44,
+		"endLine": 54,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public init() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public init() : void from class com.jfinal.log.Logger",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/log/Logger.java",
+		"startLine": 39,
+		"endLine": 47,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createLoggerFactory() : ILoggerFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/log/Logger.java",
+		"startLine": 44,
+		"endLine": 54,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public init() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private createLoggerFactory() : ILoggerFactory renamed to public init() : void in class com.jfinal.log.Logger",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/log/Logger.java",
+		"startLine": 39,
+		"endLine": 47,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createLoggerFactory() : ILoggerFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/log/Logger.java",
+		"startLine": 44,
+		"endLine": 54,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public init() : void"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.plugin.activerecord.ActiveRecordException",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/ActiveRecordException.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/ActiveRecordException.java",
+		"startLine": 19,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.plugin.activerecord.ActiveRecordException"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/ActiveRecordException.java",
+		"startLine": 19,
+		"endLine": 37,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.plugin.activerecord.ActiveRecordException"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type map : java.util.Map to map : Map in method private batch(conn Connection, sql String, columns String, list List, batchSize int) : int[] from class com.jfinal.plugin.activerecord.Db",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 950,
+		"endLine": 950,
+		"startColumn": 18,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "map : Map"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 930,
+		"endLine": 969,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private batch(conn Connection, sql String, columns String, list List, batchSize int) : int[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 956,
+		"endLine": 956,
+		"startColumn": 8,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "map : Map"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 936,
+		"endLine": 975,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed variable type",
+		"codeElement": "private batch(conn Connection, sql String, columns String, list List, batchSize int) : int[]"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter mapFactory : IMapFactory to containerFactory : IContainerFactory in method package setContainerFactory(containerFactory IContainerFactory) : void from class com.jfinal.plugin.activerecord.DbKit",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/DbKit.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 28,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "mapFactory : IMapFactory"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/DbKit.java",
+		"startLine": 52,
+		"endLine": 55,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package setMapFactory(mapFactory IMapFactory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/DbKit.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 34,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "containerFactory : IContainerFactory"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/DbKit.java",
+		"startLine": 55,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with renamed variable",
+		"codeElement": "package setContainerFactory(containerFactory IContainerFactory) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type mapFactory : IMapFactory to containerFactory : IContainerFactory in method package setContainerFactory(containerFactory IContainerFactory) : void from class com.jfinal.plugin.activerecord.DbKit",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/DbKit.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 28,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "mapFactory : IMapFactory"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/DbKit.java",
+		"startLine": 52,
+		"endLine": 55,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package setMapFactory(mapFactory IMapFactory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/DbKit.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 34,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "containerFactory : IContainerFactory"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/DbKit.java",
+		"startLine": 55,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed variable type",
+		"codeElement": "package setContainerFactory(containerFactory IContainerFactory) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package setMapFactory(mapFactory IMapFactory) : void renamed to package setContainerFactory(containerFactory IContainerFactory) : void in class com.jfinal.plugin.activerecord.DbKit",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/DbKit.java",
+		"startLine": 52,
+		"endLine": 55,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package setMapFactory(mapFactory IMapFactory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/DbKit.java",
+		"startLine": 55,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package setContainerFactory(containerFactory IContainerFactory) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable value : Object in method public forModelSave(tableInfo TableInfo, attrs Map<String,Object>, sql StringBuilder, paras List<Object>) : void from class com.jfinal.plugin.activerecord.dialect.OracleDialect",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/OracleDialect.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/OracleDialect.java",
+		"startLine": 35,
+		"endLine": 51,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public forModelSave(tableInfo TableInfo, attrs Map<String,Object>, sql StringBuilder, paras List<Object>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/OracleDialect.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "value : Object"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/OracleDialect.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/OracleDialect.java",
+		"startLine": 38,
+		"endLine": 61,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with extracted variable",
+		"codeElement": "public forModelSave(tableInfo TableInfo, attrs Map<String,Object>, sql StringBuilder, paras List<Object>) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable value : Object in method public forDbSave(sql StringBuilder, paras List<Object>, tableName String, record Record) : void from class com.jfinal.plugin.activerecord.dialect.OracleDialect",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/OracleDialect.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 4,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/OracleDialect.java",
+		"startLine": 122,
+		"endLine": 138,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public forDbSave(sql StringBuilder, paras List<Object>, tableName String, record Record) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/OracleDialect.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 11,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "value : Object"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/OracleDialect.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/OracleDialect.java",
+		"startLine": 132,
+		"endLine": 155,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with extracted variable",
+		"codeElement": "public forDbSave(sql StringBuilder, paras List<Object>, tableName String, record Record) : void"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.plugin.druid.DruidStatViewHandler.JFinalStatViewServlet",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/druid/DruidStatViewHandler.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 2,
+		"endColumn": 29,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/plugin/druid/DruidStatViewHandler.java",
+		"startLine": 62,
+		"endLine": 166,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.plugin.druid.DruidStatViewHandler.JFinalStatViewServlet"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/druid/DruidStatViewHandler.java",
+		"startLine": 62,
+		"endLine": 168,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.plugin.druid.DruidStatViewHandler.JFinalStatViewServlet"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.render.Error404Exception",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/Error404Exception.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/render/Error404Exception.java",
+		"startLine": 19,
+		"endLine": -1,
+		"startColumn": 0,
+		"endColumn": -1,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.Error404Exception"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/Error404Exception.java",
+		"startLine": 19,
+		"endLine": -1,
+		"startColumn": 0,
+		"endColumn": -1,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.render.Error404Exception"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.render.Error404Render",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/Error404Render.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/render/Error404Render.java",
+		"startLine": 24,
+		"endLine": 67,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.Error404Render"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/Error404Render.java",
+		"startLine": 24,
+		"endLine": 68,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.render.Error404Render"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.render.Error500Exception",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/Error500Exception.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/render/Error500Exception.java",
+		"startLine": 19,
+		"endLine": -1,
+		"startColumn": 0,
+		"endColumn": -1,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.Error500Exception"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/Error500Exception.java",
+		"startLine": 19,
+		"endLine": -1,
+		"startColumn": 0,
+		"endColumn": -1,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.render.Error500Exception"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.render.Error500Render",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/Error500Render.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/render/Error500Render.java",
+		"startLine": 24,
+		"endLine": 67,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.Error500Render"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/Error500Render.java",
+		"startLine": 24,
+		"endLine": 68,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.render.Error500Render"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.render.FileRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/FileRender.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/render/FileRender.java",
+		"startLine": 29,
+		"endLine": 111,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.FileRender"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/FileRender.java",
+		"startLine": 29,
+		"endLine": 111,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.render.FileRender"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.render.FreeMarkerRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/FreeMarkerRender.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/render/FreeMarkerRender.java",
+		"startLine": 31,
+		"endLine": 113,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.FreeMarkerRender"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/FreeMarkerRender.java",
+		"startLine": 32,
+		"endLine": 135,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.render.FreeMarkerRender"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type writer : Writer to writer : PrintWriter in method public render() : void from class com.jfinal.render.FreeMarkerRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/FreeMarkerRender.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 10,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "writer : Writer"
+}, {
+		"filePath": "src/com/jfinal/render/FreeMarkerRender.java",
+		"startLine": 91,
+		"endLine": 112,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public render() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/FreeMarkerRender.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 15,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "writer : PrintWriter"
+}, {
+		"filePath": "src/com/jfinal/render/FreeMarkerRender.java",
+		"startLine": 112,
+		"endLine": 134,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed variable type",
+		"codeElement": "public render() : void"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.render.HtmlRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/HtmlRender.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/render/HtmlRender.java",
+		"startLine": 22,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.HtmlRender"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/HtmlRender.java",
+		"startLine": 22,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.render.HtmlRender"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.render.JavascriptRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/JavascriptRender.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/render/JavascriptRender.java",
+		"startLine": 22,
+		"endLine": 50,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.JavascriptRender"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/JavascriptRender.java",
+		"startLine": 22,
+		"endLine": 50,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.render.JavascriptRender"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.render.JsonRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/JsonRender.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/render/JsonRender.java",
+		"startLine": 26,
+		"endLine": 104,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.JsonRender"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/JsonRender.java",
+		"startLine": 26,
+		"endLine": 119,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.render.JsonRender"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"serial\") in method public JsonRender(key String, value Object) from class com.jfinal.render.JsonRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/JsonRender.java",
+		"startLine": 51,
+		"endLine": 54,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public JsonRender(key String, value Object)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/JsonRender.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 2,
+		"endColumn": 29,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/render/JsonRender.java",
+		"startLine": 51,
+		"endLine": 56,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public JsonRender(key String, value Object)"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type String to void in method private buildJsonText() : void from class com.jfinal.render.JsonRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/JsonRender.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 10,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "String"
+}, {
+		"filePath": "src/com/jfinal/render/JsonRender.java",
+		"startLine": 83,
+		"endLine": 103,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private buildJsonText() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/JsonRender.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "src/com/jfinal/render/JsonRender.java",
+		"startLine": 101,
+		"endLine": 118,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private buildJsonText() : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute key : String to jsonText : String in class com.jfinal.render.JsonRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/JsonRender.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 17,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "key : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/JsonRender.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 17,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "jsonText : String"
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @SuppressWarnings({\"serial\",\"rawtypes\",\"unchecked\"}) to @SuppressWarnings({\"rawtypes\",\"unchecked\"}) in class com.jfinal.render.JspRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/JspRender.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 0,
+		"endColumn": 55,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@SuppressWarnings({\"serial\",\"rawtypes\",\"unchecked\"})"
+}, {
+		"filePath": "src/com/jfinal/render/JspRender.java",
+		"startLine": 30,
+		"endLine": 143,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.JspRender"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/JspRender.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 0,
+		"endColumn": 45,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@SuppressWarnings({\"rawtypes\",\"unchecked\"})"
+}, {
+		"filePath": "src/com/jfinal/render/JspRender.java",
+		"startLine": 30,
+		"endLine": 144,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "com.jfinal.render.JspRender"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public setSupportActiveRecord(supportActiveRecord boolean) : void from class com.jfinal.render.JspRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/JspRender.java",
+		"startLine": 38,
+		"endLine": 40,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package setSupportActiveRecord(supportActiveRecord boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/JspRender.java",
+		"startLine": 39,
+		"endLine": 41,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public setSupportActiveRecord(supportActiveRecord boolean) : void"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.render.NullRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/NullRender.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/render/NullRender.java",
+		"startLine": 20,
+		"endLine": 42,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.NullRender"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/NullRender.java",
+		"startLine": 19,
+		"endLine": 32,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.render.NullRender"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.render.Redirect301Render",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/Redirect301Render.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/render/Redirect301Render.java",
+		"startLine": 21,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.Redirect301Render"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/Redirect301Render.java",
+		"startLine": 21,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.render.Redirect301Render"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.render.RedirectRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/RedirectRender.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/render/RedirectRender.java",
+		"startLine": 21,
+		"endLine": 55,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.RedirectRender"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/RedirectRender.java",
+		"startLine": 21,
+		"endLine": 55,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.render.RedirectRender"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.render.TextRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/TextRender.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/render/TextRender.java",
+		"startLine": 22,
+		"endLine": 67,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.TextRender"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/TextRender.java",
+		"startLine": 22,
+		"endLine": 67,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.render.TextRender"
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @SuppressWarnings({\"serial\",\"unchecked\"}) to @SuppressWarnings({\"unchecked\"}) in class com.jfinal.render.VelocityRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/VelocityRender.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 0,
+		"endColumn": 43,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@SuppressWarnings({\"serial\",\"unchecked\"})"
+}, {
+		"filePath": "src/com/jfinal/render/VelocityRender.java",
+		"startLine": 33,
+		"endLine": 138,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.render.VelocityRender"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/VelocityRender.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 0,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@SuppressWarnings({\"unchecked\"})"
+}, {
+		"filePath": "src/com/jfinal/render/VelocityRender.java",
+		"startLine": 32,
+		"endLine": 134,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "com.jfinal.render.VelocityRender"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public setProperties(properties Properties) : void from class com.jfinal.render.VelocityRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/VelocityRender.java",
+		"startLine": 70,
+		"endLine": 76,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package setProperties(properties Properties) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/VelocityRender.java",
+		"startLine": 70,
+		"endLine": 76,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public setProperties(properties Properties) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type writer : Writer to writer : PrintWriter in method public render() : void from class com.jfinal.render.VelocityRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/VelocityRender.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 10,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "writer : Writer"
+}, {
+		"filePath": "src/com/jfinal/render/VelocityRender.java",
+		"startLine": 78,
+		"endLine": 137,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public render() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/VelocityRender.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 15,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "writer : PrintWriter"
+}, {
+		"filePath": "src/com/jfinal/render/VelocityRender.java",
+		"startLine": 78,
+		"endLine": 133,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed variable type",
+		"codeElement": "public render() : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type sb : StringBuffer to sb : StringBuilder in method public listToJson(list List, depth int) : String from class com.jfinal.util.JsonBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/util/JsonBuilder.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 22,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "sb : StringBuffer"
+}, {
+		"filePath": "src/com/jfinal/util/JsonBuilder.java",
+		"startLine": 77,
+		"endLine": 101,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public listToJson(list List, depth int) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/util/JsonBuilder.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 23,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "sb : StringBuilder"
+}, {
+		"filePath": "src/com/jfinal/util/JsonBuilder.java",
+		"startLine": 77,
+		"endLine": 101,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed variable type",
+		"codeElement": "public listToJson(list List, depth int) : String"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"serial\") in class com.jfinal.validate.ValidateException",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/validate/ValidateException.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"serial\")"
+}, {
+		"filePath": "src/com/jfinal/validate/ValidateException.java",
+		"startLine": 19,
+		"endLine": -1,
+		"startColumn": 0,
+		"endColumn": -1,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.validate.ValidateException"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/validate/ValidateException.java",
+		"startLine": 19,
+		"endLine": -1,
+		"startColumn": 0,
+		"endColumn": -1,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.validate.ValidateException"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings({\"rawtypes\",\"unchecked\"}) in class com.jfinal.plugin.activerecord.CaseInsensitiveMap",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 0,
+		"endColumn": 45,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings({\"rawtypes\",\"unchecked\"})"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 19,
+		"endLine": 53,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.plugin.activerecord.CaseInsensitiveMap"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveContainerFactory.java",
+		"startLine": 71,
+		"endLine": 95,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "com.jfinal.plugin.activerecord.CaseInsensitiveContainerFactory.CaseInsensitiveMap"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public get(key Object) : Object from class com.jfinal.plugin.activerecord.CaseInsensitiveMap",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 2,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 24,
+		"endLine": 28,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public get(key Object) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveContainerFactory.java",
+		"startLine": 75,
+		"endLine": 77,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public get(key Object) : Object"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public containsKey(key Object) : boolean from class com.jfinal.plugin.activerecord.CaseInsensitiveMap",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 2,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 30,
+		"endLine": 34,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public containsKey(key Object) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveContainerFactory.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public containsKey(key Object) : boolean"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public put(key Object, value Object) : Object from class com.jfinal.plugin.activerecord.CaseInsensitiveMap",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 2,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 36,
+		"endLine": 40,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public put(key Object, value Object) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveContainerFactory.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public put(key Object, value Object) : Object"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public putAll(m Map) : void from class com.jfinal.plugin.activerecord.CaseInsensitiveMap",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 2,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 42,
+		"endLine": 46,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public putAll(m Map) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveContainerFactory.java",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public putAll(m Map) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public remove(key Object) : Object from class com.jfinal.plugin.activerecord.CaseInsensitiveMap",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 2,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 48,
+		"endLine": 52,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public remove(key Object) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveContainerFactory.java",
+		"startLine": 92,
+		"endLine": 94,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public remove(key Object) : Object"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public isSupportAutoIncrementKey() : boolean from class com.jfinal.plugin.activerecord.dialect.OracleDialect to public isOracle() : boolean from class com.jfinal.plugin.activerecord.dialect.Dialect",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/OracleDialect.java",
+		"startLine": 165,
+		"endLine": 167,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isSupportAutoIncrementKey() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 45,
+		"endLine": 47,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public isOracle() : boolean"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getAttrsMap() : Map<String,Object> from class com.jfinal.plugin.activerecord.CaseInsensitiveMapFactory to public getAttrsMap() : Map<String,Object> from class com.jfinal.plugin.activerecord.CaseInsensitiveContainerFactory",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 10,
+		"endLine": 12,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getAttrsMap() : Map<String,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveContainerFactory.java",
+		"startLine": 36,
+		"endLine": 38,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getAttrsMap() : Map<String,Object>"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getColumnsMap() : Map<String,Object> from class com.jfinal.plugin.activerecord.CaseInsensitiveMapFactory to public getColumnsMap() : Map<String,Object> from class com.jfinal.plugin.activerecord.CaseInsensitiveContainerFactory",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveMapFactory.java",
+		"startLine": 14,
+		"endLine": 16,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getColumnsMap() : Map<String,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/CaseInsensitiveContainerFactory.java",
+		"startLine": 40,
+		"endLine": 42,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getColumnsMap() : Map<String,Object>"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public setFreeMarkerProperty(propertyName String, propertyValue String) : void from class com.jfinal.render.CPI to public setProperty(propertyName String, propertyValue String) : void from class com.jfinal.render.FreeMarkerRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/CPI.java",
+		"startLine": 31,
+		"endLine": 42,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setFreeMarkerProperty(propertyName String, propertyValue String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/FreeMarkerRender.java",
+		"startLine": 53,
+		"endLine": 64,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public setProperty(propertyName String, propertyValue String) : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public setFreeMarkerProperties(properties Properties) : void from class com.jfinal.render.CPI to public setProperties(properties Properties) : void from class com.jfinal.render.FreeMarkerRender",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/CPI.java",
+		"startLine": 44,
+		"endLine": 50,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setFreeMarkerProperties(properties Properties) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/FreeMarkerRender.java",
+		"startLine": 66,
+		"endLine": 72,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public setProperties(properties Properties) : void"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public fillStatement(pst PreparedStatement, paras List<Object>) : void extracted from package save(conn Connection, tableName String, primaryKey String, record Record) : boolean in class com.jfinal.plugin.activerecord.Db & moved to class com.jfinal.plugin.activerecord.dialect.Dialect",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 591,
+		"endLine": 611,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package save(conn Connection, tableName String, primaryKey String, record Record) : boolean"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 603,
+		"endLine": 603,
+		"startColumn": 4,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 602,
+		"endLine": 604,
+		"startColumn": 49,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 602,
+		"endLine": 604,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 66,
+		"endLine": 70,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public fillStatement(pst PreparedStatement, paras List<Object>) : void"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 4,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 67,
+		"endLine": 69,
+		"startColumn": 49,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 67,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 596,
+		"endLine": 617,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package save(conn Connection, tableName String, primaryKey String, record Record) : boolean"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 607,
+		"endLine": 607,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "DbKit.dialect.fillStatement(pst,paras)"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public fillStatement(pst PreparedStatement, paras List<Object>) : void extracted from public save() : boolean in class com.jfinal.plugin.activerecord.Model & moved to class com.jfinal.plugin.activerecord.dialect.Dialect",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/Model.java",
+		"startLine": 263,
+		"endLine": 298,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public save() : boolean"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Model.java",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Model.java",
+		"startLine": 285,
+		"endLine": 287,
+		"startColumn": 50,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Model.java",
+		"startLine": 285,
+		"endLine": 287,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 66,
+		"endLine": 70,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public fillStatement(pst PreparedStatement, paras List<Object>) : void"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 4,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 67,
+		"endLine": 69,
+		"startColumn": 49,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 67,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Model.java",
+		"startLine": 267,
+		"endLine": 304,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public save() : boolean"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Model.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 4,
+		"endColumn": 43,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "DbKit.dialect.fillStatement(pst,paras)"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public fillStatement(pst PreparedStatement, paras Object...) : void extracted from package query(conn Connection, sql String, paras Object...) : List<T> in class com.jfinal.plugin.activerecord.Db & moved to class com.jfinal.plugin.activerecord.dialect.Dialect",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 36,
+		"endLine": 63,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package query(conn Connection, sql String, paras Object...) : List<T>"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 40,
+		"endLine": 42,
+		"startColumn": 38,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 40,
+		"endLine": 42,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 72,
+		"endLine": 76,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public fillStatement(pst PreparedStatement, paras Object...) : void"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 38,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 37,
+		"endLine": 66,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package query(conn Connection, sql String, paras Object...) : List<T>"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "DbKit.dialect.fillStatement(pst,paras)"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public fillStatement(pst PreparedStatement, paras Object...) : void extracted from package update(conn Connection, sql String, paras Object...) : int in class com.jfinal.plugin.activerecord.Db & moved to class com.jfinal.plugin.activerecord.dialect.Dialect",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 258,
+		"endLine": 270,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package update(conn Connection, sql String, paras Object...) : int"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 263,
+		"endLine": 265,
+		"startColumn": 38,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 263,
+		"endLine": 265,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 72,
+		"endLine": 76,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public fillStatement(pst PreparedStatement, paras Object...) : void"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 38,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 261,
+		"endLine": 274,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package update(conn Connection, sql String, paras Object...) : int"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 266,
+		"endLine": 266,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "DbKit.dialect.fillStatement(pst,paras)"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public fillStatement(pst PreparedStatement, paras Object...) : void extracted from package find(conn Connection, sql String, paras Object...) : List<Record> in class com.jfinal.plugin.activerecord.Db & moved to class com.jfinal.plugin.activerecord.dialect.Dialect",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 336,
+		"endLine": 345,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package find(conn Connection, sql String, paras Object...) : List<Record>"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 339,
+		"endLine": 339,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 338,
+		"endLine": 340,
+		"startColumn": 38,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 338,
+		"endLine": 340,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 72,
+		"endLine": 76,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public fillStatement(pst PreparedStatement, paras Object...) : void"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 38,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 340,
+		"endLine": 350,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package find(conn Connection, sql String, paras Object...) : List<Record>"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Db.java",
+		"startLine": 342,
+		"endLine": 342,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "DbKit.dialect.fillStatement(pst,paras)"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public fillStatement(pst PreparedStatement, paras Object...) : void extracted from private find(conn Connection, sql String, paras Object...) : List<M> in class com.jfinal.plugin.activerecord.Model & moved to class com.jfinal.plugin.activerecord.dialect.Dialect",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/Model.java",
+		"startLine": 387,
+		"endLine": 405,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private find(conn Connection, sql String, paras Object...) : List<M>"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Model.java",
+		"startLine": 397,
+		"endLine": 397,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Model.java",
+		"startLine": 396,
+		"endLine": 398,
+		"startColumn": 38,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Model.java",
+		"startLine": 396,
+		"endLine": 398,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 72,
+		"endLine": 76,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public fillStatement(pst PreparedStatement, paras Object...) : void"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 38,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Model.java",
+		"startLine": 393,
+		"endLine": 412,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private find(conn Connection, sql String, paras Object...) : List<M>"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Model.java",
+		"startLine": 402,
+		"endLine": 402,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "DbKit.dialect.fillStatement(pst,paras)"
+}]
+}
+]
+}]
+}

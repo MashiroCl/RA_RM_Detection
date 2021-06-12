@@ -1,0 +1,756 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jfinal/jfinal.git",
+	"sha1": "e3838d76358a151922faefc556387abbd3db9369",
+	"url": "https://github.com/jfinal/jfinal/commit/e3838d76358a151922faefc556387abbd3db9369",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class com.jfinal.util.SessionIdGenerator moved to com.jfinal.ext.util.SessionIdGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/util/SessionIdGenerator.java",
+		"startLine": 24,
+		"endLine": 68,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.jfinal.util.SessionIdGenerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/util/SessionIdGenerator.java",
+		"startLine": 24,
+		"endLine": 68,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "com.jfinal.ext.util.SessionIdGenerator"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter defaultInterceptor : Interceptor to globalInterceptor : Interceptor in method public add(globalInterceptor Interceptor) : Interceptors from class com.jfinal.config.Interceptors",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/config/Interceptors.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 26,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "defaultInterceptor : Interceptor"
+}, {
+		"filePath": "src/com/jfinal/config/Interceptors.java",
+		"startLine": 30,
+		"endLine": 34,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public add(defaultInterceptor Interceptor) : Interceptors"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/config/Interceptors.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 26,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "globalInterceptor : Interceptor"
+}, {
+		"filePath": "src/com/jfinal/config/Interceptors.java",
+		"startLine": 30,
+		"endLine": 34,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with renamed variable",
+		"codeElement": "public add(globalInterceptor Interceptor) : Interceptors"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings({\"rawtypes\",\"unchecked\"}) in method public intercept(ai ActionInvocation) : void from class com.jfinal.ext.interceptor.SessionInViewInterceptor",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 31,
+		"endLine": 39,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public intercept(ai ActionInvocation) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 2,
+		"endColumn": 46,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings({\"rawtypes\",\"unchecked\"})"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 42,
+		"endLine": 56,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public intercept(ai ActionInvocation) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable session : Map in method public intercept(ai ActionInvocation) : void from class com.jfinal.ext.interceptor.SessionInViewInterceptor",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 4,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 31,
+		"endLine": 39,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public intercept(ai ActionInvocation) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 8,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "session : Map"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 42,
+		"endLine": 56,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with extracted variable",
+		"codeElement": "public intercept(ai ActionInvocation) : void"
+}]
+},
+{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute private createSession : boolean in class com.jfinal.ext.interceptor.SessionInViewInterceptor",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 18,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private createSession : boolean"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @SuppressWarnings({\"deprecation\",\"rawtypes\"}) to @SuppressWarnings({\"deprecation\",\"serial\",\"rawtypes\"}) in class com.jfinal.ext.interceptor.JFinalSession",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 0,
+		"endColumn": 47,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@SuppressWarnings({\"deprecation\",\"rawtypes\"})"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 42,
+		"endLine": 125,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.ext.interceptor.JFinalSession"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 0,
+		"endColumn": 57,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@SuppressWarnings({\"deprecation\",\"serial\",\"rawtypes\"})"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 59,
+		"endLine": 135,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "com.jfinal.ext.interceptor.JFinalSession"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter arg0 : String to key : String in method public getAttribute(key String) : Object from class com.jfinal.ext.interceptor.JFinalSession",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "arg0 : String"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 58,
+		"endLine": 60,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getAttribute(arg0 String) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "key : String"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 68,
+		"endLine": 70,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with renamed variable",
+		"codeElement": "public getAttribute(key String) : Object"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter arg0 : String to key : String in method public getValue(key String) : Object from class com.jfinal.ext.interceptor.JFinalSession",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 25,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "arg0 : String"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 90,
+		"endLine": 92,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getValue(arg0 String) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 25,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "key : String"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 100,
+		"endLine": 102,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with renamed variable",
+		"codeElement": "public getValue(key String) : Object"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter arg0 : String to key : String in method public putValue(key String, value Object) : void from class com.jfinal.ext.interceptor.JFinalSession",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 23,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "arg0 : String"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public putValue(arg0 String, arg1 Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "key : String"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 116,
+		"endLine": 118,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with renamed variable",
+		"codeElement": "public putValue(key String, value Object) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter arg1 : Object to value : Object in method public putValue(key String, value Object) : void from class com.jfinal.ext.interceptor.JFinalSession",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 36,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "arg1 : Object"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public putValue(arg0 String, arg1 Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 35,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "value : Object"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 116,
+		"endLine": 118,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with renamed variable",
+		"codeElement": "public putValue(key String, value Object) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter arg0 : String to key : String in method public removeAttribute(key String) : void from class com.jfinal.ext.interceptor.JFinalSession",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 30,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "arg0 : String"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 110,
+		"endLine": 112,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public removeAttribute(arg0 String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 30,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "key : String"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 120,
+		"endLine": 122,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with renamed variable",
+		"codeElement": "public removeAttribute(key String) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter arg0 : String to key : String in method public removeValue(key String) : void from class com.jfinal.ext.interceptor.JFinalSession",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 26,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "arg0 : String"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 114,
+		"endLine": 116,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public removeValue(arg0 String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "key : String"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 124,
+		"endLine": 126,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with renamed variable",
+		"codeElement": "public removeValue(key String) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter arg0 : String to key : String in method public setAttribute(key String, value Object) : void from class com.jfinal.ext.interceptor.JFinalSession",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 27,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "arg0 : String"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 118,
+		"endLine": 120,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setAttribute(arg0 String, arg1 Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 27,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "key : String"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 128,
+		"endLine": 130,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with renamed variable",
+		"codeElement": "public setAttribute(key String, value Object) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter arg1 : Object to value : Object in method public setAttribute(key String, value Object) : void from class com.jfinal.ext.interceptor.JFinalSession",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 40,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "arg1 : Object"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 118,
+		"endLine": 120,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setAttribute(arg0 String, arg1 Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 39,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "value : Object"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 128,
+		"endLine": 130,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with renamed variable",
+		"codeElement": "public setAttribute(key String, value Object) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter arg0 : int to maxInactiveInterval : int in method public setMaxInactiveInterval(maxInactiveInterval int) : void from class com.jfinal.ext.interceptor.JFinalSession",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 37,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "arg0 : int"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 122,
+		"endLine": 124,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setMaxInactiveInterval(arg0 int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 37,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "maxInactiveInterval : int"
+}, {
+		"filePath": "src/com/jfinal/ext/interceptor/SessionInViewInterceptor.java",
+		"startLine": 132,
+		"endLine": 134,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with renamed variable",
+		"codeElement": "public setMaxInactiveInterval(maxInactiveInterval int) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package setDialect(dialect Dialect) : void from class com.jfinal.plugin.activerecord.DbKit",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/DbKit.java",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setDialect(dialect Dialect) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/DbKit.java",
+		"startLine": 65,
+		"endLine": 68,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package setDialect(dialect Dialect) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package setCache(cache ICache) : void from class com.jfinal.plugin.activerecord.DbKit",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/DbKit.java",
+		"startLine": 66,
+		"endLine": 68,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setCache(cache ICache) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/DbKit.java",
+		"startLine": 70,
+		"endLine": 72,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package setCache(cache ICache) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setmainRenderFactory(mainRenderFactory IMainRenderFactory) : void renamed to public setMainRenderFactory(mainRenderFactory IMainRenderFactory) : void in class com.jfinal.render.RenderFactory",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/render/RenderFactory.java",
+		"startLine": 50,
+		"endLine": 53,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setmainRenderFactory(mainRenderFactory IMainRenderFactory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/render/RenderFactory.java",
+		"startLine": 50,
+		"endLine": 53,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setMainRenderFactory(mainRenderFactory IMainRenderFactory) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getFilesystemName() : String renamed to public getFileName() : String in class com.jfinal.upload.UploadFile",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/upload/UploadFile.java",
+		"startLine": 45,
+		"endLine": 47,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getFilesystemName() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/upload/UploadFile.java",
+		"startLine": 45,
+		"endLine": 47,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getFileName() : String"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute filesystemName : String to fileName : String in class com.jfinal.upload.UploadFile",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/upload/UploadFile.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "filesystemName : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/upload/UploadFile.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 17,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "fileName : String"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private initLoggerFactory() : void from class com.jfinal.core.JFinal to private initLoggerFactory() : void from class com.jfinal.core.Config",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/core/JFinal.java",
+		"startLine": 128,
+		"endLine": 130,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private initLoggerFactory() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/core/Config.java",
+		"startLine": 92,
+		"endLine": 95,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private initLoggerFactory() : void"
+}]
+}
+]
+}]
+}

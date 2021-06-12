@@ -1,0 +1,279 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jfinal/jfinal.git",
+	"sha1": "94f4cbf9f1fa8c5f892ecc51c3609a220a034709",
+	"url": "https://github.com/jfinal/jfinal/commit/94f4cbf9f1fa8c5f892ecc51c3609a220a034709",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class com.jfinal.ext.util.SessionIdGenerator moved to com.jfinal.ext.kit.SessionIdGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/ext/util/SessionIdGenerator.java",
+		"startLine": 24,
+		"endLine": 68,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.jfinal.ext.util.SessionIdGenerator"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/ext/kit/SessionIdGenerator.java",
+		"startLine": 24,
+		"endLine": 68,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "com.jfinal.ext.kit.SessionIdGenerator"
+}]
+},
+{
+	"type": "Change Package",
+	"description": "Change Package com.jfinal.util to com.jfinal.kit",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/util/HandlerKit.java",
+		"startLine": 25,
+		"endLine": 64,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.jfinal.util.HandlerKit"
+}, {
+		"filePath": "src/com/jfinal/util/StringKit.java",
+		"startLine": 19,
+		"endLine": 75,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.jfinal.util.StringKit"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/kit/HandlerKit.java",
+		"startLine": 25,
+		"endLine": 64,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "com.jfinal.kit.HandlerKit"
+}, {
+		"filePath": "src/com/jfinal/kit/StringKit.java",
+		"startLine": 19,
+		"endLine": 75,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "com.jfinal.kit.StringKit"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class com.jfinal.util.HandlerKit moved to com.jfinal.kit.HandlerKit",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/util/HandlerKit.java",
+		"startLine": 25,
+		"endLine": 64,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.jfinal.util.HandlerKit"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/kit/HandlerKit.java",
+		"startLine": 25,
+		"endLine": 64,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "com.jfinal.kit.HandlerKit"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class com.jfinal.util.StringKit moved to com.jfinal.kit.StringKit",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/util/StringKit.java",
+		"startLine": 19,
+		"endLine": 75,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.jfinal.util.StringKit"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/kit/StringKit.java",
+		"startLine": 19,
+		"endLine": 75,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "com.jfinal.kit.StringKit"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class com.jfinal.util.JsonBuilder moved and renamed to com.jfinal.kit.JsonKit",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/util/JsonBuilder.java",
+		"startLine": 28,
+		"endLine": 262,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.jfinal.util.JsonBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/kit/JsonKit.java",
+		"startLine": 28,
+		"endLine": 266,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "com.jfinal.kit.JsonKit"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class com.jfinal.util.PathUtil moved and renamed to com.jfinal.kit.PathKit",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/util/PathUtil.java",
+		"startLine": 22,
+		"endLine": 77,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.jfinal.util.PathUtil"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/kit/PathKit.java",
+		"startLine": 22,
+		"endLine": 77,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "com.jfinal.kit.PathKit"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute actionMapping : Map<String,Action> to mapping : Map<String,Action> in class com.jfinal.core.ActionMapping",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/core/ActionMapping.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 36,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "actionMapping : Map<String,Action>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/core/ActionMapping.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 36,
+		"endColumn": 75,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "mapping : Map<String,Action>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public handle(cacheName String, key Object, dataLoader IDataLoader) : T renamed to public get(cacheName String, key Object, dataLoader IDataLoader) : T in class com.jfinal.plugin.ehcache.CacheKit",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/ehcache/CacheKit.java",
+		"startLine": 80,
+		"endLine": 88,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public handle(cacheName String, key Object, dataLoader IDataLoader) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/ehcache/CacheKit.java",
+		"startLine": 80,
+		"endLine": 88,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public get(cacheName String, key Object, dataLoader IDataLoader) : T"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public getDefaultPrimaryKey() : String extracted from public TableInfo(tableName String, modelClass Class<? extends Model<?>>) in class com.jfinal.plugin.activerecord.TableInfo & moved to class com.jfinal.plugin.activerecord.dialect.Dialect",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/TableInfo.java",
+		"startLine": 61,
+		"endLine": 63,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public TableInfo(tableName String, modelClass Class<? extends Model<?>>)"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/TableInfo.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 3,
+		"endColumn": 37,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 78,
+		"endLine": 80,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getDefaultPrimaryKey() : String"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/dialect/Dialect.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 3,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/TableInfo.java",
+		"startLine": 61,
+		"endLine": 63,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public TableInfo(tableName String, modelClass Class<? extends Model<?>>)"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/TableInfo.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 19,
+		"endColumn": 55,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "DbKit.dialect.getDefaultPrimaryKey()"
+}]
+}
+]
+}]
+}

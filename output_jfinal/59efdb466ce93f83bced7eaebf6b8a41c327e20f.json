@@ -1,0 +1,192 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jfinal/jfinal.git",
+	"sha1": "59efdb466ce93f83bced7eaebf6b8a41c327e20f",
+	"url": "https://github.com/jfinal/jfinal/commit/59efdb466ce93f83bced7eaebf6b8a41c327e20f",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @SuppressWarnings(\"rawtypes\") in class com.jfinal.plugin.activerecord.IMapFactory",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/IMapFactory.java",
+		"startLine": 5,
+		"endLine": 8,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.jfinal.plugin.activerecord.IMapFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/IMapFactory.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 0,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"rawtypes\")"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/IMapFactory.java",
+		"startLine": 5,
+		"endLine": 9,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "com.jfinal.plugin.activerecord.IMapFactory"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<String,Object> to Map in method public getAttrsMap() : Map from class com.jfinal.plugin.activerecord.IMapFactory",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/IMapFactory.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 2,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<String,Object>"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/IMapFactory.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 2,
+		"endColumn": 36,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getAttrsMap() : Map<String,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/IMapFactory.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 5,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/IMapFactory.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 20,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getAttrsMap() : Map"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<String,Object> to Map in method public getColumnsMap() : Map from class com.jfinal.plugin.activerecord.IMapFactory",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/IMapFactory.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<String,Object>"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/IMapFactory.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 2,
+		"endColumn": 38,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getColumnsMap() : Map<String,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/IMapFactory.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 2,
+		"endColumn": 5,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/IMapFactory.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 2,
+		"endColumn": 22,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getColumnsMap() : Map"
+}]
+},
+{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @SuppressWarnings(\"unchecked\") in attribute private columns : Map<String,Object> from class com.jfinal.plugin.activerecord.Record",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/Record.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 30,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private columns : Map<String,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/Record.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 2,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/Record.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 30,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "private columns : Map<String,Object>"
+}]
+},
+{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @SuppressWarnings(\"unchecked\") in attribute private columnTypeMap : Map<String,Class<?>> from class com.jfinal.plugin.activerecord.TableInfo",
+	"leftSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/TableInfo.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 32,
+		"endColumn": 79,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private columnTypeMap : Map<String,Class<?>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jfinal/plugin/activerecord/TableInfo.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 2,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "src/com/jfinal/plugin/activerecord/TableInfo.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 32,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "private columnTypeMap : Map<String,Class<?>>"
+}]
+}
+]
+}]
+}

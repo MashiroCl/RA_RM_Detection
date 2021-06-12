@@ -7,17 +7,6 @@ import json
 BEFORE_SQUASHED="before_squashed"
 RMSupportedREF="RMSupportedREF.txt"
 
-class MyDict(dict):
-    def __init__(self):
-        self.dict=dict
-    def add(self,dict2):
-        for each1 in self.dict:
-            for each2 in dict2:
-                if each1.lower()==each2.lower():
-                    self.dict[each1]+=dict2[each2]
-    def setDicts(self):
-        self.dict=RM_supported_type()
-
 def dictAdd(dictS,dict2)->dict:
     for each1 in dictS:
         for each2 in dict2:
@@ -41,7 +30,7 @@ def git_merge(path,file_name="git_merge.txt"):
     return file_name
 
 
-def git_log(path,file_name="git_log.txt"):
+def git_log(path,file_name="git_log.txt")->str:
     os.system('git -C '+path+'/.git log>'+file_name)
     return file_name
 
@@ -56,7 +45,7 @@ def count_commit(file_path):
                 num=num+1
     return num
 
-def extract_commit(file_path):
+def extract_commit(file_path)->list:
     with open(file_path) as f1:
         lines=f1.readlines()
     commits=[]
@@ -99,7 +88,6 @@ def RM(RM_path,repository,commits,output):
         os.system(command)
 
 
-#strategy
 def strategy(id,path,beforelog):
     if id=="sequence":
         merge=extract_commit(git_merge(path))
@@ -235,7 +223,7 @@ def stat_analysis(f_json):
 
     for each in list1:
         for each_r in each["commits"][0]["refactorings"]:
-            ref_num=ref_num+1;
+            ref_num=ref_num+1
             for eachD in dictS:
                 if eachD.lower() == each_r['type'].lower():
                     dictS[eachD] = dictS[eachD] + 1
@@ -257,8 +245,7 @@ def RM_supported_type():
         dict[each.strip()]=0
     return dict
 
-def process_one(path,RM_path,output,before_log,cc_list,p_list,after_logF="after.txt",f_compare="compare_file") -> int:
-
+def process_one(path,RM_path,output,before_log,cc_list,p_list,after_logF="after.txt",f_compare="compare_file") -> list:
         # write cc_cluster_info with commits before the 1st merge
         cc_commits = cc_cluster_info(path, cc_list)
         # create output folder
@@ -276,6 +263,11 @@ def process_one(path,RM_path,output,before_log,cc_list,p_list,after_logF="after.
         # obtain squashed commit id
         squashed_c_d = find_after_squash(cc_commits, before_log, squashed_log)
 
+        ref_num_before=0
+        dict1_temp={}
+        ref_num_after=0
+        dict2_temp={}
+
         if squashed_c_d is not None:
             # RM on squashed commit
             RM(RM_path, path, [squashed_c_d[0]], compare_file)
@@ -284,15 +276,48 @@ def process_one(path,RM_path,output,before_log,cc_list,p_list,after_logF="after.
             ref_num_before,dict1_temp=stat_analysis(f1)
             ref_num_after, dict2_temp = stat_analysis(f2)
 
-        return ref_num_before,ref_num_after,dict1_temp,dict2_temp
+        return squashed_c_d[0],ref_num_before,ref_num_after,dict1_temp,dict2_temp
+
+def findNextCommits(squashed_c,path,logF)->list:
+    merge = extract_commit(git_merge(path))
+    log = extract_commit(logF)
+    cc_lists = []
+    p_lists = []
+    j = 0
+    temp = []
+    for i in range(len(log)):
+        if j < len(merge):
+            if log[i] == merge[j]:
+                j = j + 1
+                cc_lists.append(temp)
+                p_lists.append(log[i])
+                temp = []
+            else:
+                temp.append(log[i])
+    print(cc_lists)
+    for i in range(len(cc_lists)):
+        if i+1<len(cc_lists):
+            if cc_lists[i][0]==squashed_c:
+                print("_________________________")
+                print(cc_lists[i+1])
+                print("ppppppppppppppp ", p_lists[i+1])
+                return cc_lists[i+1],p_lists[i+1]
+        else:
+            return None,None
 
 def process(id,path,RM_path,output,before_logF="before.txt",after_logF="after.txt",f_compare="compare_file"):
     #obtain git log before squash
     before_log=git_log(path,file_name=before_logF)
     #count commits num
     num_before=count_commit(before_log)
+
+
     #get before squashed commits
     cc_lists,p_lists=strategy(id, path,before_log)
+    for i in range(len(cc_lists)):
+        print("cc_lists: ", cc_lists[i])
+        print("p_lists: ", p_lists[i])
+
 
     # copy auto-seq-editor.rb to the path
     copy_auto_seq_editor(path)
@@ -302,14 +327,47 @@ def process(id,path,RM_path,output,before_logF="before.txt",after_logF="after.tx
     dict_before = RM_supported_type()
     dict_after = RM_supported_type()
 
-    if id=="sequence":
-        for i in range(len(cc_lists)):
-            num1,num2,dict1,dict2=process_one(path,RM_path,output,before_log,cc_lists[i],p_lists[i],after_logF,f_compare)
-            ref_num_before=ref_num_before+num1
-            ref_num_after = ref_num_after+num2
-            dictAdd(dict_before,dict1)
-            dictAdd(dict_after, dict2)
+    merge = extract_commit(git_merge(path))
+    log = extract_commit(before_log)
 
+    if id=="sequence":
+        squashed_c=None
+        cc_list=[]
+        p_list=[]
+        while True:
+            #first time
+            if squashed_c==None:
+                cc_list=cc_lists[0]
+                p_list=p_lists[0]
+                squashed_c, num1, num2, dict1, dict2 = process_one(path, RM_path, output, before_log,
+                                                                   cc_list, p_list, after_logF, f_compare)
+                ref_num_before=ref_num_before+num1
+                ref_num_after = ref_num_after+num2
+                dictAdd(dict_before,dict1)
+                dictAdd(dict_after, dict2)
+
+            else:
+                #find commits after squashed_c and merge
+                logF = git_log(path, file_name=before_logF)
+                cc_list,p_list=findNextCommits(squashed_c,path,logF)
+                if cc_list==p_list==None:
+                    break
+                else:
+                    squashed_c, num1, num2, dict1, dict2 = process_one(path, RM_path, output, before_log,
+                                                                   cc_list, p_list, after_logF, f_compare)
+                    ref_num_before = ref_num_before + num1
+                    ref_num_after = ref_num_after + num2
+                    dictAdd(dict_before, dict1)
+                    dictAdd(dict_after, dict2)
+
+
+        # for i in range(len(cc_lists)):
+        #     if len(cc_lists[i])!=0:
+        #         num1,num2,dict1,dict2=process_one(path,RM_path,output,before_log,cc_lists[i],p_lists[i],after_logF,f_compare)
+        #         ref_num_before=ref_num_before+num1
+        #         ref_num_after = ref_num_after+num2
+        #         dictAdd(dict_before,dict1)
+        #         dictAdd(dict_after, dict2)
 
     # count commits num
     num_after = count_commit(after_logF)
@@ -387,8 +445,8 @@ f_compare_mbassador="compare_file_mbassador"
 
 #id,path,RM_path,output,before_logF="before.txt",after_logF="after.txt",
 #            ,f_compare="compare_file"
-process(id="sequence",path=path_refactoring_toy,RM_path=RM_path,output=output_refactoring_toy,f_compare=f_compare_refactoring_toy)
+# process(id="sequence",path=path_refactoring_toy,RM_path=RM_path,output=output_refactoring_toy,f_compare=f_compare_refactoring_toy)
 # process(id="sequence",path=path_jfinal,RM_path=RM_path,output=output_jfinal,f_compare=f_compare_jfinal)
-# process(id="sequence",path=path_mbassador,RM_path=RM_path,output=output_mbassador,f_compare=f_compare_mbassador)
+process(id="sequence",path=path_mbassador,RM_path=RM_path,output=output_mbassador,f_compare=f_compare_mbassador)
 
 

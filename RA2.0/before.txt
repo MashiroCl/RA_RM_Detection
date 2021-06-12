@@ -1,478 +1,1791 @@
-commit d4bce13a443cf12da40a77c16c1e591f4f985b47
-Author: Danilo F. Silva <danilofes@gmail.com>
-Date:   Wed Jun 10 18:03:54 2015 -0300
+commit 10e76caa7d4d6888e2e55b3d4d7db02a52c6f95f
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Sep 13 22:42:23 2015 +0200
 
-    Move Method barkBark from Dog to DogManager
-
-commit 9a5c33b16d07d62651ea80552e8782974c96bb8a
-Author: Danilo F. Silva <danilofes@gmail.com>
-Date:   Wed Jun 10 18:02:48 2015 -0300
-
-    Move Attribute magicNumber from DogManager to Dog
-
-commit a5a7f852e45c7cadc8d1524bd4d14a1e39785aa5
-Author: Danilo F. Silva <danilofes@gmail.com>
-Date:   Wed Jun 10 18:00:59 2015 -0300
-
-    No refactoring.
-
-commit 0bb0526b70870d57cbac9fcc8c4a7346a4ce5879
-Author: Danilo F. Silva <danilofes@gmail.com>
-Date:   Mon Mar 23 16:53:52 2015 -0300
-
-    Rename Operation bark(): void to barkBark(): void in class
-    org.animals.Dog.
-
-commit c286db365e7374fe4d08f54077abb7fba81dd296
-Merge: ef34225 f3b628f
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:50:29 2014 -0200
-
-    Merge pull request #24 from danilofes/branch1
+    Release 1.2.2, See changelog for reference
     
-    Delete attributes in Snake;
-
-commit f3b628f8f9c71a2cdfa052025c4a1ed78ee4c45d
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:50:11 2014 -0200
-
-    Delete attributes in Snake;
-
-commit ef3422578c0bcaef1561980ef077d06c3f6fc9f9
-Merge: 3ce445f 1328d78
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:41:24 2014 -0200
-
-    Merge pull request #23 from danilofes/branch1
+    [maven-release-plugin] prepare release mbassador-1.2.2
     
-    Extract Interface Animal to Animal Super
-
-commit 1328d7873efe6caaffaf635424e19a4bb5e786a8
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:40:55 2014 -0200
-
-    Extract Interface Animal to Animal Super
-
-commit 3ce445fc6c67df447d30cc43556f204038e350c1
-Merge: 32c9c7b 0a46ed5
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:13:46 2014 -0200
-
-    Merge pull request #22 from danilofes/branch1
+    Retry release 1.2.2
     
-    Push down Attributes and methods AnimalMarilho to Reptile.
-
-commit 0a46ed5c56c8b1576dfc92f3ec5bc2f0ea68aafe
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:13:24 2014 -0200
-
-    Push down Attributes and methods AnimalMarilho to Reptile.
-
-commit 32c9c7bf044c1cc0aeb4f9086c62b094bcc6f77a
-Merge: f7b41d1 638f37c
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:09:56 2014 -0200
-
-    Merge pull request #21 from danilofes/branch1
+    [maven-release-plugin] prepare release mbassador-1.2.2
     
-    Push down methodo Reptile to TurtleMarinha.
-
-commit 638f37ca6b4dcdbb6a4735f93e37445aeef79749
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:09:32 2014 -0200
-
-    Push down methodo Reptile to TurtleMarinha.
-
-commit f7b41d1ef7cacf04c023305ae028a01aaa06562c
-Merge: e6237f7 0e193b7
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:07:10 2014 -0200
-
-    Merge pull request #20 from danilofes/branch1
+    Version bump 1.2.3 because of failed release plugin
     
-    Extract Method AnimalMarilho to Reptile
-
-commit 0e193b7d02902c6f2abf7c88eebe937d1ac5fc51
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:06:38 2014 -0200
-
-    Extract Method AnimalMarilho to Reptile
-
-commit e6237f795546c5f14765330ceebe44cd41cdfffe
-Merge: 9697891 b61e75b
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:03:13 2014 -0200
-
-    Merge pull request #19 from danilofes/branch1
+    [maven-release-plugin] prepare release mbassador-1.2.3
     
-    Push down method Equals to AnimalMarilho to Reptile.
-
-commit b61e75b773f48e680f5bb7362445ba0642c2ee91
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 19:02:50 2014 -0200
-
-    Push down method Equals to AnimalMarilho to Reptile.
-
-commit 96978914696ea0b0bf0a69146145d96f6d5a9ee2
-Merge: a474193 6bbfab9
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:58:30 2014 -0200
-
-    Merge pull request #18 from danilofes/branch1
+    [maven-release-plugin] prepare for next development iteration
     
-    Extract SuperClass AnimalMarilho to Reptile.
+    uniquely name each msg bus dispatcher thread
 
-commit 6bbfab9e7051362aad9d993f5f6a013b73e75117
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:58:19 2014 -0200
+commit 35886bb3b5ad1a9cdc773aa61954aca960ab89f2
+Merge: 3c291ad 86ac61c
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Sun Sep 13 20:14:07 2015 +0200
 
-    Extract SuperClass AnimalMarilho to Reptile.
-
-commit a47419336fd3cdacba8d03f24ad4f25c26cd881a
-Merge: 6213ba3 bbd8dc0
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:56:33 2014 -0200
-
-    Merge pull request #17 from danilofes/branch1
+    Merge pull request #125 from dorkbox/array_speedup
     
-    Create AnimalMarilho. Extract SuperClass.
+    Performance improvements. Replacing generic collection with ArrayList and Iterable iteration with array iteration
 
-commit bbd8dc082406a950adf73b7211c887bfab6480f1
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:56:10 2014 -0200
+commit 3c291ad93d6f0a440ecce1efbac18c137898509d
+Merge: fda940c d8c2bba
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Sun Sep 13 20:12:17 2015 +0200
 
-    Create AnimalMarilho. Extract SuperClass.
-
-commit 6213ba3222cb095b09bb20553be4157c3983f67c
-Merge: 4db9657 9803046
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:53:16 2014 -0200
-
-    Merge pull request #16 from danilofes/branch1
+    Merge pull request #117 from ToddCostella/patch-1
     
-    Push down method Age and Name Reptile to TurtleMarinha.
+    Update README.md
 
-commit 9803046111744317efaa65a83e65ce8ceb0c15c2
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:53:04 2014 -0200
+commit 86ac61c24827efc6e866a2b1580b7a4f50f3f840
+Merge: dfc1421 fda940c
+Author: nathan <nathan@dorkbox.com>
+Date:   Mon Sep 7 23:45:12 2015 +0200
 
-    Push down method Age and Name Reptile to TurtleMarinha.
-    Delete Turtle.java.
+    Merged with master
 
-commit 4db96573ae339aa9b50860a4f2ff5dfe57a50a14
-Merge: 213db3b 9b23cc2
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:47:35 2014 -0200
+commit dfc1421229a344fe692e7de4313b2e974fd0bcb4
+Author: nathan <nathan@dorkbox.com>
+Date:   Mon Sep 7 23:15:46 2015 +0200
 
-    Merge pull request #15 from danilofes/branch1
+    Added comments for unit tests
+
+commit 22e9becc73841c2b53615e4388f514ea1832b12e
+Author: nathan <nathan@dorkbox.com>
+Date:   Mon Sep 7 15:39:43 2015 +0200
+
+    Changed array iteration so that iterators are not created (now uses array iteration)
+
+commit fda940c2d232ffcdc862a0cf415ceee2561cfa8d
+Author: Benjamin Diedrichsen <benjamin.diedrichsen@okotta.com>
+Date:   Mon Aug 31 23:02:31 2015 +0200
+
+    Small improvements to code documentation
+
+commit d7201d536c1051dce9cf789b159bd378988ba678
+Merge: 5bc924c 6df0bae
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Thu Aug 27 18:04:15 2015 +0200
+
+    Merge pull request #123 from davidsowerby/master
     
-    Create Turtle e TurtleTerrarium
+    Fix for broken link in README
 
-commit 9b23cc2184438f93923c972c45b7caeb43d77d24
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:47:16 2014 -0200
+commit 6df0bae0c1b5025321813a7e06562b2a0d5df634
+Author: David Sowerby <david.sowerby@virgin.net>
+Date:   Thu Aug 27 16:29:22 2015 +0100
 
-    Create Turtle e TurtleTerrarium
-
-commit 213db3b657692bd0e27a34f0daf4279cf7aba59a
-Merge: 70a7a2e a1b3a91
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:42:08 2014 -0200
-
-    Merge pull request #14 from danilofes/branch1
+    Broken link in README
     
-    Rename class turtle to TurtleMarinha.
+    Link to Guice integration page broken
+    Also Changed reference from #106 to #109 as being slightly more relevant
 
-commit a1b3a91d1a423f2b7360e009e47f30aedb663b6f
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:40:35 2014 -0200
+commit c31467da32150ea54b6eafa90f1973ef6ad0345c
+Author: nathan <nathan@dorkbox.com>
+Date:   Fri Jul 17 13:02:37 2015 +0200
 
-    Rename class turtle to TurtleMarinha.
+    Convert to array/arrayList for performance. Changed some iterators to
+    index based iterators.
 
-commit 70a7a2e7df29bae52a7cc35d68e200dca5342927
-Merge: 4340f2f 802e21b
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:36:06 2014 -0200
+commit d8c2bba93365a941c5c7495df171d59db699f76d
+Author: Todd Costella <ToddCostella@gmail.com>
+Date:   Thu Jul 2 14:22:41 2015 -0600
 
-    Merge pull request #13 from danilofes/branch1
+    Update README.md
+
+commit 5bc924c11dd339fb288c69128d7d2faba58e3d07
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Tue Jun 23 10:57:17 2015 +0200
+
+    Refactorings, Documentation
+
+commit 005915b42e2486f5095893a4429db32fcc5341ec
+Author: bennidi <b.diedrichsen@gmail.com>
+Date:   Fri Jun 19 16:32:30 2015 +0200
+
+    fixed pmd codestyle errors
+
+commit 4a4b355a7f6a1a88deae429f66cc4995fa7dbe3e
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Fri Jun 19 10:15:48 2015 +0200
+
+    test improvements
+
+commit 261cab2dc5eb57bc3a915d5c89dbf771bf375be5
+Author: bennidi <b.diedrichsen@gmail.com>
+Date:   Wed Jun 17 13:07:35 2015 +0200
+
+    added link
+
+commit ba301c7aec7cda5d8538fec7f8daad5c15aa0ae9
+Author: bennidi <b.diedrichsen@gmail.com>
+Date:   Wed Jun 17 13:01:15 2015 +0200
+
+    Fixed broken links
+
+commit 40e41d11d7847d660bba6691859b0506514bd0ac
+Author: bennidi <b.diedrichsen@gmail.com>
+Date:   Wed Jun 17 12:55:23 2015 +0200
+
+    Fixing pom.xml, JavaDoc and unit tests + small code polishing
+
+commit 2a50396de29dc54a9149f6b678d4882d1c06457f
+Merge: 017f52a cca88c3
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Fri May 8 10:43:32 2015 +0200
+
+    Merge pull request #112 from dorkbox/recursion_fix
     
-    Create superclass Reptile. Extract atributos and methods of Turtle to Re...
+    Improved recursive method in reflection utils
 
-commit 802e21bffe95f0740f44d1a45e3c22adae0ba48c
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:32:45 2014 -0200
+commit cca88c367be8fac8440527a36cb818af80bb3bc9
+Author: nathan <nathan@dorkbox.com>
+Date:   Fri May 8 04:06:59 2015 +0200
 
-    Create superclass Reptile. Extract atributos and methods of Turtle to Reptile
+    Fixed recusion in reflection utils
 
-commit 4340f2f64fd5409e3a09966a21d4c82dd82e1ce5
-Merge: 0060ef1 5849e14
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:30:00 2014 -0200
+commit 017f52a3c9593e6294db4059eb643a8e07de9440
+Merge: bccc449 6c19fd3
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Tue Apr 14 16:20:00 2015 +0200
 
-    Merge pull request #12 from danilofes/branch1
+    Merge pull request #109 from davidsowerby/errorhandler
     
-    Create ToString in Turtle.java.
+    ErrorHandler moved to IBusConfiguration
 
-commit 5849e143567474f037950f005d994729de0775fc
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:29:41 2014 -0200
+commit 6c19fd3bd9c7005c3f329fb43586db6ea7f45ad9
+Author: David Sowerby <david.sowerby@virgin.net>
+Date:   Mon Apr 13 14:18:20 2015 +0100
 
-    Create ToString in Turtle.java.
+    PublicationErrorHandler moved to the BusConfiguration.  There are now 3 constructors for each bus type (MBassador and SyncMessageBus), enabling construction with either a) all default settings, b) all defaults plus a specified error handler or c) with a fully specified configuration.
+    Unit tests added, build.gradle and pom.xml updated with assertj and mockito
 
-commit 0060ef157ad76efd4c9e68e764cf423aa8f5d3f2
-Merge: 97a9ff2 3f35528
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:26:02 2014 -0200
+commit bccc4496f65611a359ab4740fdfde0bed9f135d7
+Merge: 8678757 b86c32b
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Mon Mar 16 09:40:46 2015 +0100
 
-    Merge pull request #11 from danilofes/branch1
+    Merge pull request #105 from davidsowerby/gradle
     
-    Move speed Feline to Tiger.
+    Corrected gradle build file
 
-commit 3f3552830d3e464f96f99bd55641a7c7b16bdd11
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:25:42 2014 -0200
+commit 867875759c943447d44c94e55cc122ba0bac90be
+Merge: 395e872 fd70480
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Mon Mar 16 09:39:38 2015 +0100
 
-    Move speed Feline to Tiger.
-    Create Snake, Turtle (attributes: age, nage, spead and action)
-    Methods Get and Set to attributes: age, nage, spead and action
-    Methods equals, hashCode and ToString.
-    Constructors to attributes: age, nage, spead and action.
-
-commit 97a9ff285d2b71c320857f0025ebb067fa1e1bd4
-Merge: dde3ef0 f35b2c8
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:04:36 2014 -0200
-
-    Merge pull request #10 from danilofes/branch1
+    Merge pull request #104 from davidsowerby/error_handler_msg
     
-    Extract method in Cat.java.
+    Changed warning message when no error handler is explicitly configured.
 
-commit f35b2c8eb8c320f173237e44d04eefb4634649a2
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:04:03 2014 -0200
+commit b86c32b876c6c8651522250ab6a41580bbf9bbb3
+Author: David Sowerby <david.sowerby@virgin.net>
+Date:   Sat Mar 14 18:26:30 2015 +0000
 
-    Extract method in Cat.java.
+    Corrected Gradle file
 
-commit dde3ef036bdddae550c4e98373db4c81d77b5043
-Merge: b95891f c0a051f
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:00:56 2014 -0200
+commit fd70480775b4cf4b6101c630e9221e436db69271
+Author: David Sowerby <david.sowerby@virgin.net>
+Date:   Sat Mar 14 18:05:43 2015 +0000
 
-    Merge pull request #9 from danilofes/branch1
+    Change to error message only
+
+commit 395e87210d3c28e1dcfb4c6a0044a43dacedd44d
+Author: bennidi <b.diedrichsen@gmail.com>
+Date:   Fri Feb 27 17:13:34 2015 +0100
+
+    Switched back from concurrent hashmap to normal hashmap
+
+commit 577495b7ec050cdc75d27650b101a259453bcf65
+Merge: 0064586 70ddc31
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Fri Feb 27 16:17:29 2015 +0100
+
+    Merge pull request #100 from dorkbox/polish
     
-    Create method sleep in cat. Move attribute speed the Tiger to Feline.
+    Added AbstractConcurrentSet.clear(), some lock polish
 
-commit c0a051fdeb02fd4374ebe625d6af9e3125a2b9af
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 18:00:32 2014 -0200
+commit 70ddc3142f86288e3430d2c56cdf21071af1ba5d
+Author: nathan <nathan@dorkbox.com>
+Date:   Fri Feb 27 12:25:34 2015 +0100
 
-    Create method sleep in cat. Move attribute speed the Tiger to Feline.
+    Fixed subscription.publish, since .size() is expensive, what we want is .isEmpty() compare
 
-commit b95891f09907aaa0c6dfc6012a7b3add6b33a9b1
-Merge: 76b12f8 7ebd3de
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:52:09 2014 -0200
+commit fdd3a7a310410ae3c18486eeaaa433d17fee6feb
+Author: nathan <nathan@dorkbox.com>
+Date:   Fri Feb 27 12:22:25 2015 +0100
 
-    Merge pull request #8 from danilofes/branch1
+    Added AbstractConcurrentSet.clear(), misc lock polish
+
+commit 0064586be24898f577c1178525b2de9c4b353743
+Merge: e9a1e6c 3b613c9
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Fri Feb 27 11:46:07 2015 +0100
+
+    Merge pull request #99 from dorkbox/concurrent_map
     
-    Create attribute Tiger, remove extentes and include implemets Anima
+    Upgraded ConcurrentSet to Set
 
-commit 7ebd3deba1ae42ff1e9c8585fc304839c5288863
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:51:37 2014 -0200
+commit 3b613c9a91cf85cb7c7ec3a7d39a9e41f14e1734
+Author: nathan <nathan@dorkbox.com>
+Date:   Wed Feb 25 12:44:27 2015 +0100
 
-    Create attribute Tiger, remove extentes and include implemets Anima
+    Removed eclipse specific settings
 
-commit 76b12f8bd6559f9ab1c830ae2b4be2afad16ec22
-Merge: df7fd69 217e55f
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:45:33 2014 -0200
+commit c239103b901e93f88373c10f5231070df460c60c
+Author: nathan <nathan@dorkbox.com>
+Date:   Wed Feb 25 12:43:42 2015 +0100
 
-    Merge pull request #7 from danilofes/branch1
+    Updated .gitignore
+
+commit 50ae4dc05a35b30cf1dde4ee64002a7e09266774
+Merge: 4fce938 e9a1e6c
+Author: nathan <nathan@dorkbox.com>
+Date:   Wed Feb 25 12:41:47 2015 +0100
+
+    Merge branch 'master' into concurrent_map
+
+commit 4fce93874619bd364c46186e4e335773f752c60a
+Author: nathan <nathan@dorkbox.com>
+Date:   Wed Feb 25 12:32:43 2015 +0100
+
+    Implemented/added methods to AbstractConcurrentSet, so it can implement the Set interface, Added ConcurrentHashMapV8 to SubscriptionManager and StrongConcurrentSet
+
+commit e9a1e6c95e9cd9b9696b61c4b368de980a301920
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Feb 22 23:13:50 2015 +0100
+
+    updated to release 1.2.1
+
+commit 00f346b0aa0b47e9d069dfc127c22351e2417f11
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Feb 22 22:58:15 2015 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit 1d4149a1019c3c8dd8e9053bb275153358854e7e
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Feb 22 22:58:11 2015 +0100
+
+    [maven-release-plugin] prepare release mbassador-1.2.1
+
+commit cebe1bab8d637c3b62c8414f7555ff8eea046abc
+Author: bennidi <b.diedrichsen@gmail.com>
+Date:   Sun Feb 22 19:00:35 2015 +0100
+
+    Preparing release 1.2.1
+
+commit f509bfe57ff348717ba3d7d4dc04359f659b1825
+Merge: fd1ca55 7b30328
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Thu Dec 18 12:40:20 2014 +0100
+
+    Merge pull request #91 from dorkbox/master
     
-    Create method action em Animal Interface. Cat implements Animal.
+    Extend the message publication factory to return an interface type instead of class type to allow for easier extension of message publication behaviour
 
-commit 217e55ff9d01038a23508d24fe4b8af33ac449d1
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:44:47 2014 -0200
+commit 7b3032877afb7ea1cf7bb00154b081cdda65d75c
+Author: nathan <nathan@dorkbox.com>
+Date:   Sun Nov 16 14:32:43 2014 +0100
 
-    Create method action em Animal Interface. Cat implements Animal.
+    Factory returns interface instead of object to allow for extending message publication
 
-commit df7fd6915a9bde2fab01565073dd60205a7462f5
-Merge: c964e5e 32bf625
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:37:51 2014 -0200
+commit 1bb957769ff180c687e843f7da8be4b6cc02b9e9
+Author: nathan <nathan@dorkbox.com>
+Date:   Sun Nov 16 01:11:35 2014 +0100
 
-    Merge pull request #6 from danilofes/branch1
+    Added eclipse classes dir and libs to .gitignore
+
+commit 2a51bb4378a8518c6191ae9440f5d4b4e6fbcc99
+Author: nathan <nathan@dorkbox.com>
+Date:   Sun Nov 16 00:55:56 2014 +0100
+
+    Changed MessagePublication to interface (IMessagePublication) to permit extending the MessagePublication and Factories
+
+commit fd1ca55f58d991e9e7c3f55af3a767c1c39dc66c
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Nov 2 09:56:39 2014 +0100
+
+    updated release notes
+
+commit 1ab19f84c9946a898115d96e222b56f2ae1d8192
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Nov 2 09:54:53 2014 +0100
+
+    first steps towards release 1.2.1
+
+commit 7cd5a71e797e9b4b0f7afec31d8e0cc07862c094
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Wed Sep 17 22:43:54 2014 +0200
+
+    updated link to maven central repo
+
+commit 85dc02c4e32e5e9a75ec5eb9dd5d30bada8da3a8
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Fri Sep 5 14:50:17 2014 +0200
+
+    added JProfiler link
+
+commit 02cbeb9df17968d6a50adaceaad0c6cf404d7d96
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Aug 31 21:25:57 2014 +0200
+
+    fixed README
+
+commit 3c9e234406fc23bcf2cd13979c775ebdc006a740
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Aug 31 21:11:20 2014 +0200
+
+    improved README, added comments
+
+commit 58630b1657ec3ba4cabf1ab3bacfbcc6c61d574c
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Aug 31 14:25:24 2014 +0200
+
+    updated documentation
+
+commit 716ba7eaccc60f9a0c580febcac5964049ed5417
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Aug 31 13:16:49 2014 +0200
+
+    update documentation
+
+commit b796ee7ba6ed8bb4a633087af7207b699501c4c5
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Aug 31 13:16:23 2014 +0200
+
+    merged README
+
+commit 37f19166af71a89dea9325fdaa16b8aaceb37f8d
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Aug 31 13:14:26 2014 +0200
+
+    update documentation
+
+commit 3a81b0a7b03ede5b6d7b3d58468dabc40c04fa8d
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Aug 31 13:12:05 2014 +0200
+
+    updated README
+
+commit cc37df92fa496c80d8f1c8dc625b18e41da68f9b
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Aug 31 12:47:25 2014 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit 56597b125fc88539d38208fae7e1aa16f831ab4a
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Aug 31 12:47:18 2014 +0200
+
+    [maven-release-plugin] prepare release mbassador-1.2.0
+
+commit e2a403e8577a0c3eeb5e0eb7c39bd0fa7f61eeb9
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Aug 31 12:44:41 2014 +0200
+
+    fixed pom
+
+commit f485cdef1cd1c516dc8f8af2b76ac8c7a72bce37
+Merge: 5c56360 800aefa
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Aug 31 12:37:00 2014 +0200
+
+    Merge branch 'master' of https://github.com/bennidi/mbassador
     
-    Create interface Animal.
+    Conflicts:
+            README.md
 
-commit 32bf625304762aaad475fa817150634038f07af5
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:37:34 2014 -0200
+commit 5c56360bf85b6eb0894fbe552a814b22dee1640c
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sun Aug 31 12:33:37 2014 +0200
 
-    Create interface Animal.
+    implemented #73
+    reworked bus configuration
 
-commit c964e5e19ad5a0a1f17a6fe491c82875997514b3
-Merge: 1fb6934 92b2013
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:33:30 2014 -0200
+commit 800aefa85e0b5144dfdb96c69af339bd5f9d541a
+Merge: 86830b8 10b7761
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sat Aug 30 17:36:26 2014 +0200
 
-    Merge pull request #5 from danilofes/branch1
+    Merge pull request #80 from bdavisx/master
     
-    Move methods class Tiger to Feline.
+    Made a small change to the main readme.md to make it clearer
 
-commit 92b201345f730110445d83f4fefe8ae88bc4872b
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:32:44 2014 -0200
+commit 10b77616328daafdd498f246dc6e40380fc0bbdb
+Author: Bill Davis <bdavisx@yahoo.com>
+Date:   Sat Aug 30 09:28:07 2014 -0500
 
-    Move methods class Tiger to Feline.
+    Changes "must not implement" to "do not have to implement" because that is a clearer english description.
 
-commit 1fb6934dac150a239ef7a1dc3f27b128f4ac00aa
-Merge: 06380fc 9a9878a
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:29:35 2014 -0200
+commit 86830b847dea460c47cea9d471a18b9b6918bc6d
+Merge: 9a81992 1834145
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Sat Jul 5 11:36:06 2014 +0200
 
-    Merge pull request #4 from danilofes/branch1
+    Merge pull request #74 from arne-vandamme/master
     
-    Move method cat to feline. Create attributes in Tiger.
+    Added support for meta annotations
 
-commit 9a9878aeb62a6bb6ff2bed6c03dd1dd7ed1f202b
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:28:47 2014 -0200
+commit 1834145fe7c9670b24357f3df38cc53e760cb984
+Author: Arne Vandamme <arne@foreach.be>
+Date:   Sat Jul 5 11:11:49 2014 +0200
 
-    Move method cat to feline. Create attributes in Tiger.
+    Add support for meta annotations
 
-commit 06380fcfc8e54577f9c07a8a9ed7113c59af2c54
-Merge: 90c0927 c946700
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:23:03 2014 -0200
+commit 9a81992a0ac991e7eb8b007e98a786229075d13f
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Mon Jun 30 12:05:36 2014 +0200
 
-    Merge pull request #3 from danilofes/branch1
+    added documentation
+
+commit ed901a85016dad266d9c90b2bf83dad74974efc0
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Thu Jun 26 08:59:52 2014 +0200
+
+    small code improvements
+
+commit 7c0c0b6f825d98793525595a7be5ed43f6b99e43
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Thu May 22 12:52:28 2014 +0200
+
+    refactored EL resolution for conditional handlers
+
+commit 86bdcad3364acfda93b04e3ba386db6da99e8a5a
+Merge: 79323c5 cf10466
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Thu May 22 10:01:05 2014 +0200
+
+    Merge pull request #70 from Rossi1337/master
     
-    Move method
+    Support Message filtering per Expression Language
 
-commit c946700398fc43a437d124f027a9bd3ba25bcafc
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:22:19 2014 -0200
+commit cf104666c6e660c6ecf82136a90d18c3b71a4806
+Author: rossi <java@rosstauscher.de>
+Date:   Tue May 20 17:53:01 2014 +0200
 
-    Move class Feline birds to felines pkc.
+    JUEL dependencies are now optional.
 
-commit 16be1426aeb34352ba5d97811f3a721b11e3ae00
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:10:36 2014 -0200
+commit 79323c55cfb791a191d6ef9a94f9fe9459327f9e
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Tue May 20 15:31:45 2014 +0200
 
-    Move method
+    update doc for current version
 
-commit 90c0927162e4cef50fd65da6715932f908264d24
-Merge: 3bfbc10 0c5c243
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:05:50 2014 -0200
+commit 752feca1c2e7a6b3ad0d1c87f9b707c2861ac51e
+Author: rossi <java@rosstauscher.de>
+Date:   Tue May 20 13:08:56 2014 +0200
 
-    Merge pull request #2 from danilofes/branch1
-    
-    Move Feline the org.felines to org.birds
+    Use single quotes for better readability.
 
-commit 0c5c24356f3179ee320c3318f91278520caafb3a
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 17:04:14 2014 -0200
+commit e170301c2c591dc3289909f2d3ea2ab10e293753
+Author: rossi <java@rosstauscher.de>
+Date:   Fri May 16 18:12:42 2014 +0200
 
-    Move Feline the org.felines to org.birds
+    Added support for EL based event filter conditions
 
-commit 3bfbc107eac92f388de9f8b87682c3a0baf74981
-Merge: 05c1e77 12b11bf
-Author: Tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 16:55:30 2014 -0200
+commit de9515ed7d3576c38c1f5b161c5982dfe345bccb
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Wed Apr 2 09:47:46 2014 +0200
 
-    Merge pull request #1 from danilofes/branch1
-    
-    Branch1
+    [maven-release-plugin] prepare for next development iteration
 
-commit 12b11bf39cb4800e3fa57fb1112c5fbda26de3df
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 16:48:15 2014 -0200
+commit c0a087b26abe7f538dc07843783c15fa09d9724e
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Wed Apr 2 09:47:40 2014 +0200
 
-    Move class Tiger the pkc org.animals to org.felines
+    [maven-release-plugin] prepare release mbassador-1.1.10
 
-commit b2c7be7001d4833d14d7fee8c7c989279b4ad039
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 16:42:41 2014 -0200
+commit 4034024e30c5033878ae9905495fa8dce28a9732
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Wed Apr 2 09:45:04 2014 +0200
 
-    create class tiger in package org.animals extends Feline.java.
+    release 1.1.10
 
-commit 35790f60a526af57c82c39f5118b85c8ef36bab8
-Merge: 6022692 05c1e77
-Author: tsilva08 <thiagomagelat@yahoo.com.br>
-Date:   Mon Oct 27 16:24:11 2014 -0200
+commit 54f7bd72b90ff7608c97b8ba4708ca95bc4de573
+Author: Benjamin Diedrichsen <b.diedrichsen@gmail.com>
+Date:   Fri Mar 28 10:11:21 2014 +0100
 
-    Merge branch 'iss01' into branch1
+    Subtype only filter, small refactorings
 
-commit 05c1e773878bbacae64112f70964f4f2f7944398
-Author: Danilo F. Silva <danilofes@gmail.com>
-Date:   Mon Oct 20 16:31:39 2014 -0200
+commit d84b3877faa2596015c9efdfa119a4e456cac29a
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sat Mar 1 18:20:47 2014 +0100
 
-    Superclass Feline extract from class Cat.
+    updated documentation
 
-commit 60226924fead7d0c4646df4f4fd65667e83da6dc
-Author: Danilo F. Silva <danilofes@gmail.com>
-Date:   Mon Oct 20 16:27:41 2014 -0200
+commit 64974b7eefdf64581f048d4c691aa91d8949d45e
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sat Feb 1 15:41:49 2014 +0100
 
-    Moving Bird, Chicken and Duck to org.birds package.
+    fixed #58 (ordering of handler priorities)
 
-commit 70b71b7fd3c5973511904c468e464d4910597928
-Author: Danilo F. Silva <danilofes@gmail.com>
-Date:   Mon Oct 20 16:18:12 2014 -0200
+commit 6792d18f3aedf6f7f917a1c0fa56d31203801cd5
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sat Feb 1 15:34:37 2014 +0100
 
-    Move Class      org.animals.Cat moved to org.felines.Cat
+    Made IMessageFilter generic
+    Added javadoc to IMessageFilter
 
-commit e78b02fe027621aec1227cbf5555c75775ba296b
-Merge: 63cbed9 5849563
-Author: Danilo F. Silva <danilofes@gmail.com>
-Date:   Mon Oct 20 16:17:05 2014 -0200
+commit 5d7591ccdfaf09e8344d717bf26e43223ddd85b7
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Fri Jan 10 18:18:21 2014 +0100
+
+    linked javadoc
+
+commit 9ee3f11578d5d166cbbf1d83da4fb68c8a023aa2
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Fri Jan 10 18:05:25 2014 +0100
+
+    added javadoc to github pages
+
+commit fe696c2f95a91ed60bd13627fba560e9134a2b00
+Merge: d2175fa 1763988
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Thu Jan 9 15:39:14 2014 +0100
 
     Merge remote-tracking branch 'origin/master'
 
-commit 63cbed99a601e79c6a0ae389b2a57acdbd3e1b44
-Author: Danilo F. Silva <danilofes@gmail.com>
-Date:   Mon Oct 20 16:14:11 2014 -0200
+commit d2175fa2152f0ddc64de362f717eee9829e42ee5
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Wed Jan 8 10:52:13 2014 +0100
 
-    Rename Class    org.animals.Cow renamed to org.animals.CowRenamed
+    fixed priority handling, extended respective unit tests
 
-commit 58495630295833c9d73559bd958c2f95339f9c62
-Author: Danilo F. Silva <danilofes@gmail.com>
-Date:   Mon Oct 20 16:10:08 2014 -0200
+commit 17639887d59cbbdf7962147417ee1fda37cc3114
+Merge: 0d36eb6 5612cbe
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Sat Nov 30 04:56:10 2013 -0800
 
-    Extract Operation       public takeABreath() : void extracted from public
-    bark() : void in class org.animals.Dog
+    Merge pull request #57 from durron597/master
+    
+    Added ISubscriptionManagerProvider to plugin custom behaviour how single subscriptions are managed.
 
-commit 40950c317bd52ea5ce4cf0d19707fe426b66649c
-Author: Danilo F. Silva <danilofes@gmail.com>
-Date:   Mon Oct 20 15:47:36 2014 -0200
+commit 5612cbee517d2bd74afcab22fac2fe0f4f84f953
+Author: durron597 <martin.jared@gmail.com>
+Date:   Mon Nov 25 16:33:12 2013 -0600
 
-    Extract Operation       public takeABreath() : void extracted from public
-    bark() : void in class org.animals.Dog
+    Added the ability to plug in your own subscription manager. This way you
+    can implement caching if you want to, or not if you don't want to.
+    Existing applications should be unaffected.
 
-commit 36287f7c3b09eff78395267a3ac0d7da067863fd
-Author: Danilo F. Silva <danilofes@gmail.com>
-Date:   Mon Oct 20 15:12:28 2014 -0200
+commit eb555ca1afc102206118cfe4e22e267ed9d09cff
+Merge: edf4939 0d36eb6
+Author: durron597 <martin.jared@gmail.com>
+Date:   Mon Nov 25 14:12:13 2013 -0800
 
-    Move Attribute  private age : int from class org.animals.Labrador to
-    class org.animals.Dog
-    Move Attribute  private age : int from class org.animals.Poodle to class
-    org.animals.Dog
-    Move Operation  public getAge() : int from class org.animals.Labrador to
-    public getAge() : int from class org.animals.Dog
-    Move Operation  public getAge() : int from class org.animals.Poodle to
-    public getAge() : int from class org.animals.Dog
+    Merge pull request #2 from bennidi/master
+    
+    Download from upstream
 
-commit cd61fd2a70828030ccb3cf46d8719f8b204c52ed
-Author: Danilo F. Silva <danilofes@gmail.com>
-Date:   Mon Oct 20 15:02:14 2014 -0200
+commit 0d36eb65c7491fc1e6d5bc70cde968b1ac1e8b79
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Mon Nov 11 11:15:49 2013 +0100
 
-    Versão inicial.
+    updated release documentation
 
-commit 819b202bfb09d4142dece04d4039f1708735019b
-Author: danilofes <danilofes@gmail.com>
-Date:   Fri Oct 10 10:20:53 2014 -0300
+commit a48811455c057e7e0568f758ef8b831ac7b9f528
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Mon Nov 11 11:04:45 2013 +0100
+
+    updated documentation, small refactoring
+
+commit edf4939f5909b50316fa184a463fe771798c2a02
+Merge: 52f5286 cf0328c
+Author: durron597 <martin.jared@gmail.com>
+Date:   Fri Nov 8 13:46:45 2013 -0800
+
+    Merge pull request #1 from bennidi/master
+    
+    Download the latest changes from bennidi
+
+commit cf0328ce005d048350f14a33168f0ee06341d9a0
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Thu Oct 31 22:20:50 2013 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit 7a139240b5d8270e71eaa5bce33664364495ddee
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Thu Oct 31 22:20:45 2013 +0100
+
+    [maven-release-plugin] prepare release mbassador-1.1.9
+
+commit a6d5daed0ecf33c25f27179a0601376cd191fb64
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sun Oct 27 17:54:21 2013 +0100
+
+    addressed issue 53
+
+commit b0443680c601623450aea184bccb3dec37912054
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Tue Oct 8 11:05:49 2013 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit e215da51c83b38e77cd0ddf6b11cde24ec4424f6
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Tue Oct 8 11:05:44 2013 +0200
+
+    [maven-release-plugin] prepare release mbassador-1.1.8
+
+commit 6d641f5056584469884503c33e1abd1606cdbe20
+Merge: 078e374 52f5286
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Tue Oct 8 01:47:43 2013 -0700
+
+    Merge pull request #52 from durron597/master
+    
+    Created ISyncBusConfiguration for synchronous only bus.
+
+commit 52f52864de3a0b9fc9b6a0459370f63a18510834
+Author: durron597 <martin.jared@gmail.com>
+Date:   Fri Sep 20 10:29:42 2013 -0500
+
+    Created ISyncBusConfiguration
+    
+    Previously, SyncMessageBus required a full IBusConfiguration, which
+    has lots of methods about threading, etc. However, if you want a
+    purely Sync bus that never uses multithreading, you probably don't
+    want to create all those threads and dispatchers. This change allows
+    you to call `new SyncMessageBus(new SyncBusConfiguration())`.
+
+commit 078e374074f870f3d7485ff0d2150c78d68ee51f
+Merge: 69e6d57 bc267cd
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Tue Sep 10 12:33:23 2013 +0200
+
+    Merge branch 'master' of https://github.com/bennidi/mbassador
+
+commit 69e6d57d73c976c9be0030400467c726d3518a28
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Tue Sep 10 12:33:04 2013 +0200
+
+    added method to wait for running publications in tests
+
+commit bc267cde2b5fe078759d334048caff2c9f443c30
+Merge: d6aa291 9eda5ba
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Wed Sep 4 00:25:42 2013 -0700
+
+    Merge pull request #49 from durron597/master
+    
+    Overloading factory methods for default bus configuration
+
+commit 9eda5ba450cd11b595735f4cc186be57446de68e
+Author: durron597 <martin.jared@gmail.com>
+Date:   Tue Sep 3 12:14:56 2013 -0500
+
+    Converted System.out.println to LOG.info
+
+commit 02f18f8e4a120e05ab20cd1cc9a4f51d871394e3
+Author: durron597 <martin.jared@gmail.com>
+Date:   Tue Sep 3 09:28:16 2013 -0500
+
+    Added some convenience methods for those who don't want to use
+    the default configurations but don't want to have to start from scratch
+
+commit d6aa291b8662849033a1d8ec0772babd6e3ef166
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Mon Sep 2 17:49:06 2013 +0200
+
+    fixed #35 #44 addressed #45, major refactorings, added documentation and tests
+
+commit 8aa3fca57fae4bc24f9675268d4db84a8c0ff06b
+Merge: 65fcf85 e4b6a84
+Author: Benjamin Diedrichsen <b.diedrichsen@googlemail.com>
+Date:   Wed Aug 14 03:58:57 2013 -0700
+
+    Merge pull request #47 from durron597/master
+    
+    Added custom names to identify MBassador dispatchers.
+
+commit e4b6a84ab8d2487fe610d294535f3f593b2f819c
+Author: durron597 <martin.jared@gmail.com>
+Date:   Mon Aug 12 08:41:45 2013 -0500
+
+    Added custom names to identify MBassador dispatchers.
+    Added a null check on ExecutorService
+
+commit 65fcf85829a522f7d36cc7e3e9ee98b5b44ca8fc
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Thu Jul 11 15:39:38 2013 +0200
+
+    fixed #39
+
+commit 6e4f838d10c2d0d0259940da89da9308d814b8e9
+Merge: 5915038 ca9f931
+Author: bennidi <b.diedrichsen@googlemail.com>
+Date:   Wed Jul 10 05:27:29 2013 -0700
+
+    Merge pull request #40 from o-nix/patch-1
+    
+    The latest Maven published version is 1.1.7
+
+commit ca9f931d0d7925f2bbc37f11501f015e1a78d92f
+Author: Kirill Vergun <code@o-nix.me>
+Date:   Wed Jul 10 13:28:22 2013 +0300
+
+    The latest Maven published version is 1.1.7
+
+commit 5915038acaea1d38e61b13257a56d86e196b21dc
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Thu Jul 4 14:26:11 2013 +0200
+
+    fixed #39
+
+commit 46cedcee46155f7394256becf0fc36a972337886
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Wed Jul 3 15:06:29 2013 +0200
+
+    fixed race condition in set iterators
+
+commit 7bfc426a678fa9523dba098f81d9d7d94e8f44de
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Wed Jul 3 10:28:12 2013 +0200
+
+    added logging in tests
+
+commit 1ecf5ebef807c0c3d0194a8630369b1f824a994b
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Wed Jun 26 16:23:05 2013 +0200
+
+    split message publication test, introduced message manager for easy synchronization of async messages
+
+commit 40109de6ee20c24ddf98e4c9ceed1375d213dffc
+Merge: 5c2fc81 7d53f6a
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sun Jun 23 12:29:40 2013 +0200
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 5c2fc81e7af7b18b2077a87e9d9abdb6916373ee
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sun Jun 23 12:29:16 2013 +0200
+
+    fixed synchronization issue in test code
+
+commit 7d53f6a904e26c0ae2a2b336573d779dc5cf23e7
+Merge: 3a6814a 033d31d
+Author: bennidi <b.diedrichsen@googlemail.com>
+Date:   Fri Jun 7 00:16:21 2013 -0700
+
+    Merge pull request #34 from durron597/master
+    
+    Changed Publication Error to use system independent newline
+
+commit 033d31d9144b14bb9a733514efa368723a33bb52
+Author: durron597 <martin.jared@gmail.com>
+Date:   Thu Jun 6 09:15:03 2013 -0500
+
+    Changed newline to use system independent newline
+
+commit 3a6814ac5c74a60ca662f9985f0f936d25521035
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Wed Jun 5 15:18:20 2013 +0200
+
+    update documentation
+
+commit e021af4ace8b30092fb714105690f594ca042c6f
+Merge: 41309cc b25b9da
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sun Jun 2 13:27:17 2013 +0200
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 41309cca1c63026813ec8c4d53e594b252960660
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sun Jun 2 13:26:46 2013 +0200
+
+    changed signature of message dispatcher
+
+commit b25b9dae2cf1b7e0c9a1b5d83c5923d8542adf33
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Mon May 27 18:58:20 2013 +0200
+
+    prevent tests to run twice during build, removed redundant tests and unused objects
+
+commit b7c580432619aa4de9e43c0990173325e786fb24
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sun May 26 18:20:32 2013 +0200
+
+    release note 1.1.7
+
+commit 247a0686f087a91df024c08b332ff5f568b47e33
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sun May 26 18:03:28 2013 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit 72c0f60a5061fa713a755304a4255bf82645fdfd
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sun May 26 18:03:14 2013 +0200
+
+    [maven-release-plugin] prepare release mbassador-1.1.7
+
+commit cc58fa6ff76a0d800ac17ddd4efbcbba24f11c0c
+Merge: 6100c65 b50b25b
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sun May 26 17:39:27 2013 +0200
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 6100c657187dd654474fe2db2badab7876f919b7
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Sun May 26 17:38:16 2013 +0200
+
+    fixed #27 #29 #30 #31, higher test coverage, stabilized tests,
+
+commit b50b25bf210861948025be47be5f9962bf8e6f8f
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Thu May 23 11:06:36 2013 +0200
+
+    stabilized test with GC issues
+
+commit 55d9ad8daf204d3b6fb8ed0761c3d5ef2f3d83d9
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Wed May 22 22:37:30 2013 +0200
+
+    fixed test, stable build
+
+commit 0a7ed2e651b04756ff210eacb68671d5cd0c2f2b
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Wed May 22 18:06:24 2013 +0200
+
+    subscription manager test improvements
+
+commit e5b13ba8e6ea5fbdf8de1c8858e060059778c886
+Merge: a6462b4 1e445ad
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Wed May 22 18:06:09 2013 +0200
+
+    subscription manager test improvements
+
+commit a6462b4d174f124e05aef1b98f9c64494a1fd7bb
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Wed May 22 15:55:14 2013 +0200
+
+    subscription manager tests
+
+commit 1e445adb0450056511e1ee3cbd16fa9147d394be
+Author: bennidi <b.diedrichsen@googlemai.com>
+Date:   Wed May 22 00:06:44 2013 +0200
+
+    test for handlers of interfaces
+
+commit 16f92eee06c54530221af77a97eff21b55588ee0
+Merge: 7c08bd0 eceba9e
+Author: bennidi <b.diedrichsen@googlemail.com>
+Date:   Tue May 21 13:47:45 2013 -0700
+
+    Merge pull request #32 from durron597/master
+    
+    Fixed bug #31
+
+commit eceba9ef099a864fafb0411dff8cac0cee9f4f44
+Merge: 8f30ea6 7c08bd0
+Author: durron597 <martin.jared@gmail.com>
+Date:   Tue May 21 09:28:04 2013 -0700
+
+    Merge pull request #1 from bennidi/master
+    
+    better support of interfaces in message publication
+
+commit 7c08bd02993694b115474f63ba0b3f91f0beeaab
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Tue May 21 18:13:27 2013 +0200
+
+    better support of interfaces in message publication
+
+commit 8f30ea6c53f9f9f998860248857705ac567a318f
+Author: durron597 <martin.jared@gmail.com>
+Date:   Mon May 20 18:08:34 2013 -0500
+
+    1. Fixed bug #31, added a test case
+    2. SyncBusTest didn't compile, I fixed the imports so that it did.
+
+commit 2ecefc9b0413d5d02890d992faf43719ee058064
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Mon May 13 19:01:25 2013 +0200
+
+    Added interface PubSubSupport
+
+commit 3b215115fbcce09a734f6e700ee5cc9e1b211fc1
+Merge: 17b1fee bf0ce95
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun May 12 14:37:08 2013 +0200
+
+    Added SubsciptionManager, fixed #30 and #31
+
+commit 17b1fee1b6b44612588e711aa0279c511c9d8d3a
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun May 12 14:32:16 2013 +0200
+
+    Added SubsciptionManager, fixed #30 and #31
+
+commit bf0ce9535be084a1767095887351da9db358f680
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Wed Apr 3 09:39:00 2013 +0200
+
+    Added concrete SyncBus implementation
+
+commit f5ecdefcd093e5aca4593e764d5378772b32509c
+Author: benjamin <benjamin.diedrichsen@profitbricks.com>
+Date:   Wed Apr 3 09:32:06 2013 +0200
+
+    Added concrete SyncBus implementation
+
+commit c7922f5e7e147828f679183fda03f6932373fc5c
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 16:25:59 2013 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit 302d96f46b66b43fe49f8541747c1402fc944bf9
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 16:25:52 2013 +0200
+
+    [maven-release-plugin] prepare release mbassador-1.1.6
+
+commit a9b25b65097a6405431ec045e58aae42e1585529
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 16:21:59 2013 +0200
+
+    Release 1.1.6
+
+commit a6995018adc51b1f251b2c07d1e0a7b22ba6eab1
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 16:18:34 2013 +0200
+
+    [maven-release-plugin] prepare release mbassador-1.1.4
+
+commit f79647884fae3a320e399c46fa564816d0812ea9
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 16:15:06 2013 +0200
+
+    Release 1.1.4
+
+commit 8da29f94cc2fcde87112139ee10af45ee387fb9d
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 16:10:10 2013 +0200
+
+    Release 1.2.0
+
+commit a1a6324d4494c8652446d3f6d83f8db0d95e7080
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 16:06:28 2013 +0200
+
+    Release 1.1.4
+
+commit 1230bc7691bda89d62544370ed98333bff7f64bc
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:59:40 2013 +0200
+
+    Release 1.1.4
+
+commit 812eefae19074db5e660da7860b8fc2170b7adcf
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:54:30 2013 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit e7c3dcfe568a3e2604622c7e95a9a131ea86c793
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:54:22 2013 +0200
+
+    [maven-release-plugin] prepare release mbassador-1.1.5
+
+commit 07dc4ebd57befe9e3005119b78a40a2ff3ae701a
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:40:58 2013 +0200
+
+    Release 1.1.4
+
+commit 6470735f11e79165bc4646902d6a983118e36962
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:39:44 2013 +0200
+
+    Release 1.1.4
+
+commit 41d298a4754651834958b9f8d1c0877085758bf3
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:38:22 2013 +0200
+
+    Release 1.1.4
+
+commit 7928f0a121c9c726b426612c1a1d974e08f7d7a9
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:37:35 2013 +0200
+
+    Release 1.1.4
+
+commit 39839f6aa619811b8f48740103dcca7f724e86d5
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:36:42 2013 +0200
+
+    Release 1.1.4
+
+commit f65160d50295729cbdf0b89f69e8594468a5dcab
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:35:03 2013 +0200
+
+    Release 1.1.4
+
+commit e1c8db1a1d3055575c197abb2431eb08f9c33b82
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:34:19 2013 +0200
+
+    Release 1.1.4
+
+commit d68cb63cadc3bbf22ac9901d8c5d02e421bda660
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:33:18 2013 +0200
+
+    Release 1.1.4
+
+commit 8d1379c6aad49df7e87234d62b52a1a97daa9c0e
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:30:43 2013 +0200
+
+    Release 1.1.4
+
+commit aecb1593eb76d3715644b59a32f94db8a103403f
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:29:19 2013 +0200
+
+    Release 1.1.4
+
+commit 913c38edba518b6269b7645f04bb2f498040f870
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:24:16 2013 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit 7e818b584e5febe71a33c1158dff13a8e4383bd6
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:24:08 2013 +0200
+
+    [maven-release-plugin] prepare release mbassador-1.1.4
+
+commit 12a3e778e99564b1c7031516a26786a9a96362db
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Apr 1 15:13:52 2013 +0200
+
+    Release 1.1.4
+
+commit f52fc0e681a58959eab8a10b0964716290e982b4
+Merge: b0efe8a 8349aef
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Fri Mar 29 12:17:54 2013 +0100
+
+    Merge of lennartj-master, code style fixes
+
+commit 8349aef7c8cd33f944c87c2bde961ea7663b0f10
+Author: Lennart Jörelid <lj@jguru.se>
+Date:   Sat Mar 23 11:21:20 2013 +0100
+
+    Added some codestyle-induced fixes.
+
+commit fb2bdd4c1a72de2222c8a31cbe8c0b6c71b53c24
+Merge: cb949a2 03d21a0
+Author: Lennart Jörelid <lj@jguru.se>
+Date:   Sat Mar 23 10:18:27 2013 +0100
+
+    Merged gitignore versions.
+
+commit cb949a219ee69600d85639ee5bee1c70e6a22628
+Author: Lennart Jörelid <lj@jguru.se>
+Date:   Sat Mar 23 10:16:12 2013 +0100
+
+    Set an ignore comment on the failing testcase. Ran PMD on the code to clean up some unused modifiers.
+
+commit b0efe8a283106096f075654c261fbe1ab2f4022b
+Merge: c74e3da acc59eb
+Author: bennidi <b.diedrichsen@googlemail.com>
+Date:   Fri Mar 22 08:11:11 2013 -0700
+
+    Merge pull request #23 from bigbear3001/master
+    
+    Fix StackOverflowExcpetion for large Lists
+
+commit acc59eb8c324b94acad6251e026abd37b01b94b5
+Author: Andreas Perhab <bigbear.ap@gmail.com>
+Date:   Fri Mar 22 13:19:44 2013 +0100
+
+    added settings files to gitignore
+
+commit 54b3154ddc53e1511ec1bfc829f4bcccd35368f6
+Author: Andreas Perhab <bigbear3001@pc48059.brz.gv.at>
+Date:   Fri Mar 22 13:08:01 2013 +0100
+
+    unwrap the recursion when removing orphan references. this caused a stack overflow exception if a thew thousand references where empty
+
+commit 03d21a096f778f3f215722f843bbca690220dfaf
+Author: Lennart Jörelid <lj@jguru.se>
+Date:   Thu Mar 21 23:15:39 2013 +0100
+
+    Added idea folder to gitignore.
+
+commit 295dfd3ec6ec552e9cf1e3559e1762e32d961023
+Author: Lennart Jörelid <lj@jguru.se>
+Date:   Sun Mar 17 18:09:51 2013 +0100
+
+    Made a trivial, non-invasive, OSGi addition to the parent pom
+
+commit c74e3da2dd11d56da8fb84661d419d84197fcb9d
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Wed Mar 6 12:08:48 2013 +0100
+
+    Updated documentation
+
+commit 0b2de1cf304f99b72e47545d924402ec6cf99f3b
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Mar 4 10:25:24 2013 +0100
+
+    Updated documentation
+
+commit b419dd240bdada8f10d21d9eea45056a79920dbc
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Mar 4 10:24:12 2013 +0100
+
+    Added FilteredMessage, interface optimization, refactorings
+
+commit b4d401a970f79c2a1450dfd8846437d4daf594b5
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Mar 4 09:52:11 2013 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit f29ec01eb734c299806af307bb733ed0d80b42c5
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Mar 4 09:52:04 2013 +0100
+
+    [maven-release-plugin] prepare release mbassador-1.1.3
+
+commit 818d3bcf19e054d68f1f1b20b0ab427d37032252
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Mar 4 09:44:52 2013 +0100
+
+    Added FilteredMessage, interface optimization, refactorings
+
+commit 2425b34ab3327d8a82749fa5628bd565b1fbe8f6
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Mar 4 09:40:28 2013 +0100
+
+    Added FilteredMessage, interface optimization, refactorings
+
+commit 62af3c7b22cbb9aeaabb53f058e2c42c21868297
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Mar 4 09:38:42 2013 +0100
+
+    [maven-release-plugin] prepare release mbassador-1.1.2
+
+commit b82632490bfb057ea06a36efca911f4f0ebde368
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Mar 4 09:35:55 2013 +0100
+
+    Added FilteredMessage, interface optimization, refactorings
+
+commit 8fcce2f0eb005d7434735ea60303699a13b94cd1
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Mar 4 09:26:33 2013 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit 0f62f53ebda03a1ccdea71b5a0de8ff3a30e8e14
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Mar 4 09:26:26 2013 +0100
+
+    [maven-release-plugin] prepare release mbassador-1.1.2
+
+commit e7a76287cb4e9019a2f977240b6d7aa16fea8fe9
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Mar 4 09:14:08 2013 +0100
+
+    Added FilteredMessage, interface optimization, refactorings
+
+commit eb50dbc96ec8f82cfdddd1a17f4106b62cbc3c53
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Fri Mar 1 22:59:28 2013 +0100
+
+    added FilteredEvent, interface optimization
+
+commit 676f729e08e67774aa7c9ab10b4264c5070e5403
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Fri Jan 18 12:58:32 2013 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit 49ee3cb84b0e0c62b4fdef450e98e92a3b077f75
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Fri Jan 18 12:58:25 2013 +0100
+
+    [maven-release-plugin] prepare release mbassador-1.1.1
+
+commit 08a88a3c617c901dd679a545eaa4c110d0bee2e8
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Fri Jan 18 12:52:25 2013 +0100
+
+    updated documentation
+
+commit fca9c6017cb8210a7dd216388bf66e7af3bfd45e
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Fri Jan 18 12:47:42 2013 +0100
+
+    added support for DeadEvent
+
+commit d08470c339d317693d86b3efc356e16b1f16ad97
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Fri Jan 18 12:09:59 2013 +0100
+
+    Changed handler inheritance, added unit tests and docu
+
+commit 1ed1bb29a87d8faadbc919b64a585bc9cf3ee3c8
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Thu Jan 10 13:18:01 2013 +0100
+
+    Release to Maven Central
+
+commit f2a61c16b8e533770ab0d6c7ca512c15b7a4ba85
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Wed Jan 9 17:53:13 2013 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit c83d8702f0a553d06503fcb54efd34bef5c6c97c
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Wed Jan 9 17:53:00 2013 +0100
+
+    [maven-release-plugin] prepare release mbassador-1.1.0
+
+commit 32bed9afccc4701a8c97b650383ac432c9c476d1
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Wed Jan 9 17:43:35 2013 +0100
+
+    refactroring for release of 1.1.0
+
+commit 1c3444c2f0bbfc74e20b3a89e1f02d407f7eb17a
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Dec 29 15:52:47 2012 +0100
+
+    prepare upload to maven central repository
+
+commit 7ca48b5966582b342029ee9b73a3704bbbfd3322
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Dec 29 15:51:59 2012 +0100
+
+    prepare upload to maven central repository
+
+commit 95823abd9b3c6b0f1df822265886c753362145b1
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Dec 29 14:50:32 2012 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+commit 3c135faccd93eca3f463bc40b1f619f10e007a1a
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Dec 29 14:50:25 2012 +0100
+
+    [maven-release-plugin] prepare release mbassador-1.0.7
+
+commit 81a1d3fa9b276f7154395b8f106a79a34e4d01d2
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Dec 29 14:48:19 2012 +0100
+
+    prepare upload to maven central repository
+
+commit 9ab78422e4e692177d01ecd7495a3fdd0dd85ffb
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Dec 29 14:47:23 2012 +0100
+
+    prepare upload to maven central repository
+
+commit b798f77b874e31e23e0c34227eb3c1b0b79f7c53
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Dec 29 14:36:48 2012 +0100
+
+    prepare upload to maven central repository
+
+commit adc43a37453003567fdac40c19d9123069922f63
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Dec 25 17:22:07 2012 +0100
+
+    release of 1.0.6.RC, fixed #14 and #11
+
+commit acd19169afcab3332c446384f5ab2874b126daf2
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Dec 25 17:19:58 2012 +0100
+
+    release of 1.0.6.RC, fixed #14 and #11
+
+commit 39ab0d61efad48fa65646a4aa829e70ed7e5b2f7
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Dec 25 16:52:37 2012 +0100
+
+    release of 1.0.6.RC, fixed #14 and #11
+
+commit bbc2004232f871fbe7df8cbba573f7f53a133b50
+Merge: a4f15c4 39ec901
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun Dec 16 17:26:57 2012 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit a4f15c45645a5336add131b335948e2f8c1eee4e
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun Dec 16 17:26:41 2012 +0100
+
+    fix in metadata reader
+
+commit 39ec9019c20d6eed7151e70a01c0182a175220cb
+Merge: 4459a56 4d617a2
+Author: bennidi <b.diedrichsen@googlemail.com>
+Date:   Sat Dec 15 07:17:49 2012 -0800
+
+    Merge pull request #13 from KenFromNN/master
+    
+    Organized imports to reduce number of warnings in some IDEs/CodeCheckers
+
+commit 4d617a2f854d8f6fa7aa3784d97858b43978d00a
+Author: Konstantin Larionov <lkb@mail.ru>
+Date:   Sat Dec 15 00:30:23 2012 +0400
+
+    Organized imports to reduce number of warnings in some IDEs/CodeCheckers: removed unused, replaced several * imports with exact
+
+commit 87557a1a0d69fd2720fbf410540c38491ff0b69a
+Author: Konstantin Larionov <lkb@mail.ru>
+Date:   Fri Dec 14 14:10:37 2012 +0400
+
+    Removed unused import
+    
+    Removed
+    import com.sun.xml.internal.messaging.saaj.soap.Envelope
+    from the org.mbassy.listener.MetadataReader.
+
+commit 4459a56245bf234aec0b56874d8ef94afe11452a
+Merge: c8b60ef 11c337d
+Author: bennidi <b.diedrichsen@googlemail.com>
+Date:   Thu Dec 13 08:45:21 2012 -0800
+
+    Merge pull request #12 from merjadok/master
+    
+    Removing "unchecked call" warnings
+
+commit 11c337d512297085fc8baef3d06d3adbdb36ceb5
+Author: Filip Ristić <filip@brdo.org>
+Date:   Thu Dec 13 15:13:05 2012 +0100
+
+    Update src/main/java/org/mbassy/SyncAsyncPostCommand.java
+    
+    Removing "unchecked call" warnings.
+
+commit 9eacace23039d93416bfd0bce8417447fa5d2fed
+Author: Filip Ristić <filip@brdo.org>
+Date:   Thu Dec 13 15:12:18 2012 +0100
+
+    Update src/main/java/org/mbassy/MBassador.java
+    
+    Removing "unchecked call" warnings.
+
+commit c8b60ef8545a8023734ec4461f2890e0fd27e7f0
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Wed Dec 12 15:05:11 2012 +0100
+
+    release of 1.0.5.RC
+
+commit 687fbb72ed2f716332e4ff08229b8566e31d4f91
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Wed Dec 12 14:56:28 2012 +0100
+
+    release of 1.0.5.RC
+
+commit 95c5d8e535d0dc0c36438defd45f9917f124f713
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Dec 11 12:16:22 2012 +0100
+
+    release of 1.0.4.RC, fixed #8
+
+commit ffb5d01b70c5999379f53f150cf056423c30a089
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Dec 8 22:52:53 2012 +0100
+
+    release 1.0.3.RC
+
+commit 634e257dd5a3f7943dd47c703a04d701cba1be71
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Dec 8 09:14:59 2012 +0100
+
+    introduced configuration object
+
+commit 0d6348adaee59b31dd00eb7521a9efab0b42ee95
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Dec 8 09:12:36 2012 +0100
+
+    introduced configuration object, small performance tweaks, more tests
+
+commit 21385b605ed17f0de1b9e2c845b6128ceeae81ca
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Dec 8 09:10:30 2012 +0100
+
+    introduced configuration object, small performance tweaks, more tests
+
+commit 31e6ca18bbd0d52b77f35317b5f89b2a72e7615a
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Fri Nov 30 13:18:14 2012 +0100
+
+    new release 1.0.2.RC
+
+commit a47b63288097d5c34a6819769acebe1cff15587b
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Fri Nov 30 00:18:28 2012 +0100
+
+    fixed issue #5, added gradle build config
+
+commit 89f44544bd9d68c94c5fc84dcef167cb33b25df5
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 26 22:40:02 2012 +0100
+
+    refactorings, code optimizations, tests
+
+commit 2718a4afb2535679b63f212b8e65f17b3f22c04f
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Fri Nov 23 04:41:12 2012 +0100
+
+    fixed documentation
+
+commit bb4997d4989503d58d25f183dcdfb8b41fea8e8c
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Thu Nov 22 14:44:04 2012 +0100
+
+    added version 1.0.1.RC to maven repo
+
+commit 989ed67285d81de444ebc40630c5ccb78125c7ed
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Thu Nov 22 14:41:51 2012 +0100
+
+    bugfix issue #3, added more test cases
+
+commit 271a445a97ae4773086e17612eadbd1fc90446c2
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Wed Nov 21 00:46:23 2012 +0100
+
+    updated documentation
+
+commit 15fe30711ecb6094ebd8dd4be6b69b43292d9bd4
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Wed Nov 21 00:02:00 2012 +0100
+
+    updated documentation
+
+commit 9969f2b160dd51e15d83ecadf3713409cae45015
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Wed Nov 21 00:00:18 2012 +0100
+
+    updated documentation
+
+commit 77fe2c7f296ef1dfc864eed92156ea29343d0cdd
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Nov 20 14:18:03 2012 +0100
+
+    update documentation
+
+commit 67b03aa9566612a89259c21a2ef3f0808feea6a9
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Nov 20 14:15:15 2012 +0100
+
+    update documentation
+
+commit 20ce38440bf6ad12b81f047593edcbe06fd78e08
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Nov 20 14:12:57 2012 +0100
+
+    update documentation
+
+commit 82fb04e90a5f5839e711cc432c8aa9b57e7ff1c7
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Nov 20 14:03:30 2012 +0100
+
+    update documentation
+
+commit 71bdeda364ece356698067308d8fa9cd24229964
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Nov 20 13:58:36 2012 +0100
+
+    update documentation
+
+commit 2a19fd75b2e83176a829c2a532028a4adb001c8d
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 16:40:12 2012 +0100
+
+    updated documentation
+
+commit b11ad6e600d5262e0c78f524062748acc50731cb
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 16:39:32 2012 +0100
+
+    updated documentation
+
+commit b223a1b8b91a03deab1dad8aae9c209e9232f455
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 16:36:24 2012 +0100
+
+    updated documentation
+
+commit 5d2be4a7db318523b7c7ebf604a5ee00d851288c
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 16:34:49 2012 +0100
+
+    updated documentation
+
+commit a339f96cb7b7b64127b213ea443fc64d23807dc6
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 16:33:38 2012 +0100
+
+    updated documentation
+
+commit b683a6336a1e2e8482209db98c8f3b3517e9d925
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 16:32:02 2012 +0100
+
+    updated documentation
+
+commit 5510d515a7105853c6346c909a47f60a39f8f034
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 16:29:16 2012 +0100
+
+    updated documentation
+
+commit 438e378dd87b966665be1f10bfd5e171974141b8
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 16:28:08 2012 +0100
+
+    updated documentation
+
+commit aa4edc04101ae77361fb9ea3d7aa0d7b973c8f39
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 16:22:18 2012 +0100
+
+    updated documentation
+
+commit 899125ee0933c3c816ca9cb98beab871b179da39
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 16:19:10 2012 +0100
+
+    updated documentation
+
+commit 5b91a2d976915a0437913c0c5bcfe0d60024c722
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 16:10:40 2012 +0100
+
+    updated documentation
+
+commit b3fa0642173516c5d7add7d929ab6351735ff46b
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 16:03:27 2012 +0100
+
+    repackaged error handler
+
+commit 201518d9f4e8943646bbf598afd0f64e2b1dfc02
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 16:03:04 2012 +0100
+
+    maven repository update
+
+commit b66eeb59a6d3085fc48bc27fd8872b84b09e49ae
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 16:02:14 2012 +0100
+
+    removed unnecessary dependencies
+
+commit 49acafb88bf30a17ee15b2e8c105f02799e5a5f1
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 15:44:11 2012 +0100
+
+    mavenized
+
+commit da0e4dc551edf17fb6d2256c705c857ca6d5a451
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 15:22:11 2012 +0100
+
+    mavenized
+
+commit 04745a3fbc7d01be05695880461356dadf7d7422
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 12:37:35 2012 +0100
+
+    updated documentation
+
+commit bc1e3a636e2d890e8af31da57de445109f53593d
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 19 12:34:53 2012 +0100
+
+    updated documentation
+
+commit 9ce3ceb6f4f13ff016ee6c7e24ca6a38eb1c189f
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Nov 17 12:14:23 2012 +0100
+
+    refactorings. abstract base class. repackaging
+
+commit 2ae0e5fae09cb0cf4127a5528b21de0e7b2cf60d
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Nov 17 12:13:55 2012 +0100
+
+    introduced specialized subscriptions for better performance and customization options
+
+commit 014f22df9ea53c61111fa935eb108ad3103eae72
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Nov 17 12:13:40 2012 +0100
+
+    introduced specialized subscriptions for better performance and customization options
+
+commit 08f6e45c7cef622395da6e03832aaa66f48a21e3
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sat Nov 17 12:12:02 2012 +0100
+
+    removed dependency to apache commons
+
+commit 611718c4ec38e4b5531f9d9c79a301592aad393b
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Nov 13 19:39:23 2012 +0100
+
+    Extended feature roadmap
+
+commit 6aadcbe036b535732ef54f49cebc6498eb3f2d62
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Mon Nov 12 20:54:13 2012 +0100
+
+    Bugfix of synchronization issue (race condition when inserting the same object concurrently)
+    Extension of publishing api for more convenient usage
+    Added some tests for the underlying data structures
+
+commit 3f7b80bdebfc8aad7e70f9bb1544aafc1449f156
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Oct 30 14:22:56 2012 +0100
+
+    added license
+
+commit 1f4f087d7e3509708f5756566619375f5ecc67f1
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun Oct 28 09:42:28 2012 +0100
+
+    styling
+
+commit 9b1c586398bd85f1a36692d4ec2186a3ae82ac03
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun Oct 28 09:41:12 2012 +0100
+
+    documentation...
+
+commit 6a52f2dadf7f5f11878c23c9bf4b263e49a1186c
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun Oct 28 09:39:00 2012 +0100
+
+    documentation...
+
+commit b0aed604b451f234232c8d452ddb20dd754cb230
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun Oct 28 09:27:41 2012 +0100
+
+    corrected sampe code in documentation
+
+commit a6b436beb62b52854afd43e7efff9143b8751f39
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun Oct 28 09:27:04 2012 +0100
+
+    corrected sampe code in documentation
+
+commit d2a6395d4858da07e9093a0f9a62e543e37c4b3f
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun Oct 28 09:19:55 2012 +0100
+
+    added sampe code in documentation
+
+commit 4ce801c08642d8b347aafdc4abbe627a90740931
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun Oct 28 09:19:16 2012 +0100
+
+    added sampe code in documentation
+
+commit db5803eb033a3cc35ec200d19c0e438ffcc03e2a
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun Oct 28 09:18:17 2012 +0100
+
+    added sampe code in documentation
+
+commit 279c9b6a7a7fd4098a89099b55aef5c02ec24677
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun Oct 28 09:16:47 2012 +0100
+
+    added sampe code in documentation
+
+commit 591e107f4e379dba9117505eccba1a0aa3efb339
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Sun Oct 28 09:11:45 2012 +0100
+
+    added sampe code in documentation
+
+commit dbbeabebc96cc349f980a5f4f02b34189779b163
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Oct 23 14:31:35 2012 +0200
+
+    fixed broken dependency in pom
+
+commit d316b4c5ae24011b48d6e8865e53ae5e6ab03dd9
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Oct 23 11:05:38 2012 +0200
+
+    initial project setup
+
+commit 0d3228455641804df4b0c05858ec3a4272df452c
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Oct 23 11:02:37 2012 +0200
+
+    initial project setup
+
+commit cd4dd13555917505ede1f0e7966bea2843a5d8af
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Oct 23 10:37:19 2012 +0200
+
+    initial project setup
+
+commit c971e736a05dacd1a61983d7fb0cc8e8bf8468d7
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Oct 23 10:33:42 2012 +0200
+
+    initial project setup
+
+commit 924fb5e93b575bdeb55f1f5c9ae6245ff5844776
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Oct 23 10:31:12 2012 +0200
+
+    initial project setup
+
+commit ddfd9595b119dbeca15b2daddb7643e0ff9f42b1
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Oct 23 09:42:48 2012 +0200
+
+    initial project setup
+
+commit f6d01fdbd026f7db8b07b4bad7b9c61cd30a7224
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Oct 23 09:41:44 2012 +0200
+
+    initial project setup
+
+commit bf84dfceac990b1f2c15d70b69616366d5f36385
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Oct 23 09:37:12 2012 +0200
+
+    initial project setup
+
+commit 8c4d515c2131f37f05e4c51028a71d0c73acc6a9
+Author: benni <benjamin.diedrichsen@friendsurance.de>
+Date:   Tue Oct 23 09:32:55 2012 +0200
+
+    initial project setup
+
+commit 88ae82e3caaabe29e40cc6023df7329892e3914c
+Author: bennidi <b.diedrichsen@googlemail.com>
+Date:   Tue Oct 23 00:27:32 2012 -0700
 
     Initial commit
