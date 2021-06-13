@@ -35,98 +35,6 @@ class CommmitGraph():
                 flag=True
         return flag
 
-
-    def SequenceCommit(self)->list:
-        #start: child can be 1 or 2
-        #middle: child must be 1
-        cG=self.formGraph()
-        cc_lists=[]
-        p_lists=[]
-        cc_list=[]
-        p_list=[]
-
-        for each in self.commits:
-            if len(each.child)>2 or len(each.parentID)==2:
-                if len(cc_list)!=0:
-                    cc_lists.append(cc_list)
-                    cc_list=[]
-            else:
-                if len(cc_list)==0:
-                    cc_list.append(each)
-                else:
-                    if(self.isConnected(cc_list[-1],each)):
-                        cc_list.append(each)
-                    else:
-                        cc_lists.append(cc_list)
-                        cc_list = []
-        return cc_lists
-
-    def test(self,commit:Commit,cc_list:list,cc_lists:list):
-        if (len(commit.parent) == 0):
-                cc_list.append(commit)
-                cc_lists.append(cc_list)
-                return 1
-
-        if len(commit.parent)==2:
-            if len(cc_list) != 0:
-                cc_lists.append(cc_list)
-                cc_list = []
-        elif len(commit.child)>2:
-            if len(cc_list) != 0:
-                cc_lists.append(cc_list)
-                cc_list = []
-
-            cc_list.append(commit)
-        else:
-                cc_list.append(commit)
-
-        # if len(commit.child)>2 or len(commit.parent)==2:
-        #         if len(cc_list)!=0:
-        #             cc_lists.append(cc_list)
-        #             cc_list=[]
-        #         elif len(commit.parent)==1:
-        #             cc_list.append(commit)
-        # else:
-        #     if len(cc_list) == 0:
-        #         cc_list.append(commit)
-        #     else:
-        #         if (self.isConnected(cc_list[-1],commit)):
-        #             cc_list.append(commit)
-        #         else:
-        #             cc_lists.append(cc_list)
-        #             cc_list = []
-        #
-        for each in commit.parent:
-            self.test(each,cc_list,cc_lists)
-        return 1
-
-    def test2(self,commits:Commit,cc_list:list,cc_lists:list):
-
-        for commit in commits:
-            if len(commits) == 2:
-                if len(cc_list)!=0:
-                    cc_lists.append(cc_list)
-                    cc_list = []
-            if (len(commit.parent) == 0):
-                    cc_list.append(commit)
-                    cc_lists.append(list(set(cc_list)))
-                    return 1
-
-            if len(commit.parent)==2:
-                if len(cc_list) != 0:
-                    cc_lists.append(cc_list)
-                    cc_list = []
-            elif len(commit.child)>2:
-                if len(cc_list) != 0:
-                    cc_lists.append(cc_list)
-                    cc_list = []
-
-                cc_list.append(commit)
-            else:
-                    cc_list.append(commit)
-
-        return self.test2(commit.parent,cc_list,cc_lists)
-
     def add(self,commit,cc_list)->list:
         if not commit.getAdded():
             cc_list.append(commit)
@@ -160,7 +68,7 @@ class CommmitGraph():
         visited=set()
         self.DFSUtil(node,visited,cc_list,cc_lists)
 
-    def test4(self):
+    def getCClist(self):
         temp=[]
         for each in self.commits:
             temp.append(each)
@@ -223,32 +131,7 @@ if __name__=="__main__":
     head = cG.formGraph()
     # cG.DFS(head,cc_lists)
 
-    cc_lists=cG.test4()
-
-    # cG=CommmitGraph(commits)
-    # # print(cG.whichCommit(cG.commits[0].parentID[0]).commitID)
-    # head=cG.formGraph()
-    # # print(cG.commits[cG.num-2].parent[0].commitID)
-    # # print(cG.whichCommit("d85b175db4ce63f102ff2071caa8655724aed537").child[0].commitID)
-    # # c=cG.SequenceCommit()
-
-    #
-    # temp=[head]
-    # cG.test2(temp,cc_list,cc_lists)
-    # # cc_lists=listSet(cc_lists)
-    #
-    # # print(len(cG.whichCommit("a05da7f81debfa738c073c345d40815c5650da58").parent))
-    # # for each in cG.whichCommit("a05da7f81debfa738c073c345d40815c5650da58").parent:
-    # #     if each==None:
-    # #         print("!!!!!!!")
-    #
-    # # print(cG.isConnected(cG.whichCommit("125c4b00bf6a7d5f70dadaeb1992caf4f5682a24"),
-    # #                      cG.whichCommit("f2de6d8bcabdafe213dc7ba96de43d620cecaca1")))
-    # # print(cG.isConnected(cG.whichCommit("125c4b00bf6a7d5f70dadaeb1992caf4f5682a24"),None))
-    # # print(cc_lists)
-    #
-    # # cG.test(head,cc_list,cc_lists)
-    # # cc_lists=listSet(cc_lists)
+    cc_lists=cG.getCClist()
     num=0
     for each1 in cc_lists:
         print("_________________________")
