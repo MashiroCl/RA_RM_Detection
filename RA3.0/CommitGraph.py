@@ -1,7 +1,7 @@
 import json
 from Commit import Commit
 
-class CommmitGraph():
+class CommitGraph():
     def __init__(self,commits:list):
         self.commits=commits
         self.num=len(commits)
@@ -102,19 +102,13 @@ class CommmitGraph():
                     if len(p.parent)==1:
                         cc_list.append(p)
                     if len(p.parent)==0:
+                        cc_list.append(p)
                         break
                     else:
                         p=p.parent[0]
                 cc_lists.append(cc_list)
 
         return cc_lists
-
-
-def listSet(l):
-    temp=[]
-    for each in l:
-        temp.append(list(set(each)))
-    return temp
 
 def printCClists(cc_lists):
     num=0
@@ -126,18 +120,27 @@ def printCClists(cc_lists):
     print("_________________________")
     print("in total",num,"commits")
 
+def listSet(l):
+    temp=[]
+    for each in l:
+        temp.append(list(set(each)))
+    return temp
+
+
+
 if __name__=="__main__":
     path="/Users/leichen/ResearchAssistant/InteractiveRebase/data/jfinal/test.json"
     with open(path) as f:
         data=json.loads("["+f.read()+"]")
-    data=data[0]
+
     commits=[]
+    data=data[0]
     for each in data:
         commits.append(Commit(each))
 
     cc_lists = []
 
-    cG = CommmitGraph(commits)
+    cG = CommitGraph(commits)
     head = cG.formGraph()
     cc_lists=cG.getCClist()
     printCClists(cc_lists)

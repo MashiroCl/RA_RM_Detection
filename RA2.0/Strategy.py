@@ -176,40 +176,6 @@ def find_after_squash(cc_commits,log1,log2)->list:
             print("First commit contains merge")
             return None
 
-# use type and description to determine it as an unique refactoirng
-# def read_refactorings(file_path):
-#     refactorings = []
-#     file = open(file_path)
-#
-#     lines = file.readlines()
-#     for i in range(len(lines)):
-#         if '"type"' in lines[i]:
-#             one_refactoring = []
-#             one_refactoring.append(lines[i] + lines[i + 1])
-#             refactorings.append(one_refactoring)
-#
-#     return refactorings
-
-
-# def compare(f1_json,f2_json):
-#     for each in (with open(f1_json))
-#         flag = 0
-#         for each_2 in after_squashed_refactorings:
-#             if each == each_2:
-#                 flag = 1
-#         if flag == 0:
-#             difference.append(each)
-#     print(len(before_squashed_refactorings))
-#     print(len(after_squashed_refactorings))
-#     print(len(difference))
-#     if (len(difference) == 0):
-#         print("there is no difference before and after squash")
-#     else:
-#         print("differences are ")
-#         for each in difference:
-#             print(each)
-
-
 def stat_analysis(f_json):
     with open(f_json,"r") as f1:
         list1=json.load(f1)
@@ -361,61 +327,10 @@ def process(id,path,RM_path,output,before_logF="before.txt",after_logF="after.tx
                     dictAdd(dict_after, dict2)
 
 
-        # for i in range(len(cc_lists)):
-        #     if len(cc_lists[i])!=0:
-        #         num1,num2,dict1,dict2=process_one(path,RM_path,output,before_log,cc_lists[i],p_lists[i],after_logF,f_compare)
-        #         ref_num_before=ref_num_before+num1
-        #         ref_num_after = ref_num_after+num2
-        #         dictAdd(dict_before,dict1)
-        #         dictAdd(dict_after, dict2)
-
     # count commits num
     num_after = count_commit(after_logF)
     print("Fine grained",num_before,"commits in total: ", "Total ",ref_num_before," detected, ",exclude_0_in_dict(dict_before))
     print("Coarese-grained",num_after,"commits in total: ", "Total ",ref_num_after," detected, ",exclude_0_in_dict(dict_after))
-
-         # for i in range(len(cc_lists)):
-         #    #write cc_cluster_info with commits before the 1st merge
-         #    cc_commits=cc_cluster_info(path,cc_lists[i])
-         #    #create output folder
-         #    create_folder(output)
-         #    #Refactoring Miner on commits in cc_cluster_info
-         #    RM(RM_path,path,cc_commits,output)
-         #    #Combine RM results into one txt
-         #    compare_file=combine(output,f_compare)
-         #
-         #    #squash commits
-         #    squash(path,p_lists[i])
-         #    # #write cc_cluster_info with commits before the 1st merge
-         #    # cc_commits=cc_cluster_info(path,cc_lists[0])
-         #    # #create output folder
-         #    # create_folder(output)
-         #    # #Refactoring Miner on commits in cc_cluster_info
-         #    # RM(RM_path,path,cc_commits,output)
-         #    # #Combine RM results into one txt
-         #    # compare_file=combine(output,f_compare)
-         #    #
-         #    # #squash commits
-         #    # squash(path,p_lists[0])
-         # # obtain squashed git log
-         # squashed_log=git_log(path,file_name=after_logF)
-         # #count commits num
-         # num_after=count_commit(after_logF)
-         # #obtain squashed commit id
-         # squashed_c_d=find_after_squash(cc_commits,before_log,squashed_log)
-
-    # if squashed_c_d is not None:
-    #     #RM on squashed commit
-    #     RM(RM_path,path,[squashed_c_d[0]],compare_file)
-    #     # #Compare RM results
-    #     f1=compare_file+"/"+BEFORE_SQUASHED+".json"
-    #     f2=compare_file+"/"+squashed_c_d[0]+".json"
-    #     # compare(f1,f2)
-    #     ref_num_before,dict1_temp=stat_analysis(f1)
-    #     ref_num_after, dict2_temp = stat_analysis(f2)
-    #     print("Fine grained",num_before,"commits in total: ", "Total ",ref_num_before," detected, ",exclude_0_in_dict(dict1_temp))
-    #     print("Coarese-grained",num_after,"commits in total: ", "Total ",ref_num_after," detected, ",exclude_0_in_dict(dict2_temp))
-
 
 
 path="/Users/leichen/ResearchAssistant/InteractiveRebase/data/refactoring-toy-example"
